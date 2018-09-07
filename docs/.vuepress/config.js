@@ -2,6 +2,9 @@ module.exports = {
   title: 'OBKoro1前端积累',
   description: '种一棵树最好的时间是十年前，其次就是现在。',
   base: '/web_accumulate/',
+  markdown: {
+    lineNumbers: true
+  },
   themeConfig: {
     nav: [
       { text: '前端积累', link: '/accumulate/' },
@@ -31,8 +34,29 @@ module.exports = {
       '/accumulate/': [
         '/accumulate/',
         {
-          title: '数组',
-          children: ['/accumulate/Array/test', '/accumulate/Array/test2']
+          title: 'JS',
+          children: [
+            '/accumulate/JS/随机数组成的数组',
+            '/accumulate/JS/Object.defineProperty',
+            '/accumulate/JS/数组完全乱序',
+            '/accumulate/JS/函数防抖和函数节流'
+          ]
+        },
+        {
+          title: 'Vue',
+          children: ['/accumulate/Vue/极简双向绑定', '/accumulate/Vue/弹窗']
+        },
+        {
+          title: '面试题',
+          children: ['/accumulate/interviewQuestion/树状数组结构转化']
+        },
+        {
+          title: '功能',
+          children: ['/accumulate/effect/显示隐藏密码']
+        },
+        {
+          title: 'Demo',
+          children: ['/accumulate/amateur/推箱子']
         }
       ],
       '/algorithm/': [
