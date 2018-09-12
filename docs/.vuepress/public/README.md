@@ -2,13 +2,13 @@
 
 平时的一些积累，一些上手即用的东西/知识点等内容，范围较广。
 
-[文档地址](http://obkoro1.com/)
+[文档地址](http://obkoro1.com/web_accumulate/accumulate/)
 
 ### 前端算法：
 
 文档内容就是算法题了，我会将算法按照难度分级，代码中都有详细注释，且会提供多种解法。
 
-[文档地址](http://obkoro1.com/)
+[文档地址](http://obkoro1.com/web_accumulate/algorithm/)
 
 ### 持续更新
 

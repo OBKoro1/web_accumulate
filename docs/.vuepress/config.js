@@ -37,8 +37,9 @@ module.exports = {
           title: 'JS',
           children: [
             '/accumulate/JS/随机数组成的数组',
-            '/accumulate/JS/Object.defineProperty',
+            '/accumulate/JS/多维数组展开',
             '/accumulate/JS/数组完全乱序',
+            '/accumulate/JS/Object.defineProperty',
             '/accumulate/JS/函数防抖和函数节流'
           ]
         },
@@ -52,7 +53,10 @@ module.exports = {
         },
         {
           title: '功能',
-          children: ['/accumulate/effect/显示隐藏密码']
+          children: [
+            '/accumulate/effect/复制粘贴系列',
+            '/accumulate/effect/显示隐藏密码'
+          ]
         },
         {
           title: 'Demo',
@@ -61,6 +65,13 @@ module.exports = {
       ],
       '/algorithm/': [
         '/algorithm/',
+        {
+          title: '入门级别',
+          children: [
+            '/algorithm/induction/反转3位整数',
+            '/algorithm/induction/水仙花数',
+          ]
+        },
         {
           title: '简单难度',
           children: [
