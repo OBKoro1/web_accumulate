@@ -59,6 +59,12 @@ module.exports = {
           ]
         },
         {
+          title: 'CSS',
+          children:[
+            '/accumulate/CSS/CSS概念-BFC深入浅出'
+          ]
+        },
+        {
           title: 'Demo',
           children: ['/accumulate/amateur/推箱子']
         }
@@ -66,14 +72,14 @@ module.exports = {
       '/algorithm/': [
         '/algorithm/',
         {
-          title: '入门级别',
+          title: '入门',
           children: [
             '/algorithm/induction/反转3位整数',
             '/algorithm/induction/水仙花数',
           ]
         },
         {
-          title: '简单难度',
+          title: '简单',
           children: [
             '/algorithm/simple/姓名去重',
             '/algorithm/simple/反转整数',
