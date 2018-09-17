@@ -54,7 +54,9 @@ module.exports = {
         {
           title: '功能',
           children: [
+            '/accumulate/effect/正则表达式收集',
             '/accumulate/effect/复制粘贴系列',
+            '/accumulate/effect/判断用户浏览器',
             '/accumulate/effect/显示隐藏密码'
           ]
         },
@@ -74,16 +76,17 @@ module.exports = {
         {
           title: '入门',
           children: [
-            '/algorithm/induction/反转3位整数',
+            '/algorithm/induction/查找斐波纳契数列中第N个数',
             '/algorithm/induction/水仙花数',
+            '/algorithm/induction/反转3位整数',
           ]
         },
         {
           title: '简单',
           children: [
+            '/algorithm/simple/分解质因数',
             '/algorithm/simple/姓名去重',
             '/algorithm/simple/反转整数',
-            '/algorithm/simple/查找斐波纳契数列中第N个数',
             '/algorithm/simple/回文'
           ]
         }
