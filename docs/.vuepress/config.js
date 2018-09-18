@@ -45,7 +45,11 @@ module.exports = {
         },
         {
           title: 'Vue',
-          children: ['/accumulate/Vue/极简双向绑定', '/accumulate/Vue/弹窗']
+          children: [
+            '/accumulate/Vue/vue定义全局函数',
+            '/accumulate/Vue/极简双向绑定',
+            '/accumulate/Vue/弹窗'
+          ]
         },
         {
           title: '面试题',
@@ -62,9 +66,7 @@ module.exports = {
         },
         {
           title: 'CSS',
-          children:[
-            '/accumulate/CSS/CSS概念-BFC深入浅出'
-          ]
+          children: ['/accumulate/CSS/CSS概念-BFC深入浅出']
         },
         {
           title: 'Demo',
@@ -78,7 +80,7 @@ module.exports = {
           children: [
             '/algorithm/induction/查找斐波纳契数列中第N个数',
             '/algorithm/induction/水仙花数',
-            '/algorithm/induction/反转3位整数',
+            '/algorithm/induction/反转3位整数'
           ]
         },
         {
