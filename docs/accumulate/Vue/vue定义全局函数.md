@@ -39,7 +39,7 @@ exports.install = function(Vue, options) {
 main.js 入口文件：
 
 ```js
-import Vue from 'vue';
+import Vue from 'vue'; // vue要在引文件之前
 import base from './base.js'; // 引用文件
 Vue.use(base); //将全局函数当做插件来进行注册
 ```

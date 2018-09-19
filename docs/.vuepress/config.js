@@ -46,6 +46,7 @@ module.exports = {
         {
           title: 'Vue',
           children: [
+            '/accumulate/Vue/vue小技巧',
             '/accumulate/Vue/vue定义全局函数',
             '/accumulate/Vue/极简双向绑定',
             '/accumulate/Vue/弹窗'
@@ -79,6 +80,7 @@ module.exports = {
           title: '入门',
           children: [
             '/algorithm/induction/查找斐波纳契数列中第N个数',
+            '/algorithm/induction/数组重复次数',
             '/algorithm/induction/水仙花数',
             '/algorithm/induction/反转3位整数'
           ]
