@@ -88,6 +88,7 @@ module.exports = {
         {
           title: '简单',
           children: [
+            '/algorithm/simple/合并排序数组',
             '/algorithm/simple/分解质因数',
             '/algorithm/simple/姓名去重',
             '/algorithm/simple/反转整数',
