@@ -36,11 +36,12 @@ module.exports = {
         {
           title: 'JS',
           children: [
-            '/accumulate/JS/随机数组成的数组',
-            '/accumulate/JS/多维数组展开',
-            '/accumulate/JS/数组完全乱序',
+            '/accumulate/JS/计算两个时间的时间差',
             '/accumulate/JS/Object.defineProperty',
-            '/accumulate/JS/函数防抖和函数节流'
+            '/accumulate/JS/函数防抖和函数节流',
+            '/accumulate/JS/数组完全乱序',
+            '/accumulate/JS/多维数组展开',
+            '/accumulate/JS/随机数组成的数组',
           ]
         },
         {
