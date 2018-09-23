@@ -4,6 +4,10 @@
 
 [文档地址](http://obkoro1.com/web_accumulate/accumulate/)
 
+**文档长这样：**
+
+![](http://ww1.sinaimg.cn/large/005Y4rCogy1fvicymvh7nj30s30eg3z8.jpg)
+
 ### 前端算法：
 
 文档内容就是算法题了，我会将算法按照难度分级，代码中都有详细注释，且会提供多种解法。
