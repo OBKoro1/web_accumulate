@@ -90,6 +90,7 @@ module.exports = {
         {
           title: '简单',
           children: [
+            '/algorithm/simple/搜索二维矩阵',
             '/algorithm/simple/合并排序数组',
             '/algorithm/simple/分解质因数',
             '/algorithm/simple/姓名去重',
