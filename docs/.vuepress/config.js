@@ -41,6 +41,7 @@ module.exports = {
             '/accumulate/JS/函数防抖和函数节流',
             '/accumulate/JS/数组完全乱序',
             '/accumulate/JS/多维数组展开',
+            '/accumulate/JS/高性能js',
             '/accumulate/JS/cookie和storage的使用以及区别',
             '/accumulate/JS/随机数组成的数组',
           ]
@@ -62,6 +63,8 @@ module.exports = {
           title: '功能',
           children: [
             '/accumulate/effect/正则表达式收集',
+            '/accumulate/effect/input的一些坑点分享',
+            '/accumulate/effect/前端弹幕效果实现思路',
             '/accumulate/effect/复制粘贴系列',
             '/accumulate/effect/判断用户浏览器',
             '/accumulate/effect/显示隐藏密码'
@@ -90,6 +93,7 @@ module.exports = {
         {
           title: '简单',
           children: [
+            '/algorithm/simple/字符串密钥格式',
             '/algorithm/simple/搜索二维矩阵',
             '/algorithm/simple/合并排序数组',
             '/algorithm/simple/分解质因数',
