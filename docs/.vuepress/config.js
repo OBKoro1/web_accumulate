@@ -75,7 +75,7 @@ module.exports = {
           children: ['/accumulate/CSS/CSS概念-BFC深入浅出']
         },
         {
-          title: 'Demo',
+          title: 'other',
           children: ['/accumulate/amateur/推箱子']
         }
       ],
@@ -93,6 +93,7 @@ module.exports = {
         {
           title: '简单',
           children: [
+            '/algorithm/simple/比较字符串',
             '/algorithm/simple/最大子数组',
             '/algorithm/simple/字符串密钥格式',
             '/algorithm/simple/搜索二维矩阵',
