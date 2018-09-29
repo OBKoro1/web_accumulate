@@ -96,6 +96,7 @@ module.exports = {
         {
           title: '简单',
           children: [
+            '/algorithm/simple/两数之和',
             '/algorithm/simple/比较字符串',
             '/algorithm/simple/最大子数组',
             '/algorithm/simple/字符串密钥格式',
