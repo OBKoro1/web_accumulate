@@ -75,8 +75,11 @@ module.exports = {
           children: ['/accumulate/CSS/CSS概念-BFC深入浅出']
         },
         {
-          title: 'other',
-          children: ['/accumulate/amateur/推箱子']
+          title: '其他',
+          children: [
+            '/accumulate/amateur/VsCode文件头部注释生成',
+            '/accumulate/amateur/推箱子'
+          ]
         }
       ],
       '/algorithm/': [
