@@ -72,7 +72,10 @@ module.exports = {
         },
         {
           title: 'CSS',
-          children: ['/accumulate/CSS/CSS概念-BFC深入浅出']
+          children: [
+            '/accumulate/CSS/CSS权重规则',
+            '/accumulate/CSS/CSS概念-BFC深入浅出'
+          ]
         },
         {
           title: '其他',
