@@ -99,6 +99,7 @@ module.exports = {
         {
           title: '简单',
           children: [
+            '/algorithm/simple/落单的数',
             '/algorithm/simple/中位数',
             '/algorithm/simple/两数之和',
             '/algorithm/simple/比较字符串',
