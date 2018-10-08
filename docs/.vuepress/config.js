@@ -36,6 +36,7 @@ module.exports = {
         {
           title: 'JS',
           children: [
+            '/accumulate/JS/数组API解析合集',
             '/accumulate/JS/时间差与时区转换',
             '/accumulate/JS/Object.defineProperty',
             '/accumulate/JS/函数防抖和函数节流',
