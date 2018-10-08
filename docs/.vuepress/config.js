@@ -50,15 +50,12 @@ module.exports = {
         {
           title: 'Vue',
           children: [
+            '/accumulate/Vue/你或许不知道Vue的这些小技巧',
             '/accumulate/Vue/vue小技巧',
             '/accumulate/Vue/vue定义全局函数',
             '/accumulate/Vue/极简双向绑定',
             '/accumulate/Vue/弹窗'
           ]
-        },
-        {
-          title: '面试题',
-          children: ['/accumulate/interviewQuestion/树状数组结构转化']
         },
         {
           title: '功能',
@@ -70,6 +67,16 @@ module.exports = {
             '/accumulate/effect/判断用户浏览器',
             '/accumulate/effect/显示隐藏密码'
           ]
+        },
+        {
+          title: '工具/浏览器/机制',
+          children: [
+            '/accumulate/tool/http缓存'
+          ]
+        },
+        {
+          title: '面试题',
+          children: ['/accumulate/interviewQuestion/树状数组结构转化']
         },
         {
           title: 'CSS',
