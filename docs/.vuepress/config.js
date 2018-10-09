@@ -71,6 +71,7 @@ module.exports = {
         {
           title: '工具/浏览器/机制',
           children: [
+            '/accumulate/tool/js事件循环机制',
             '/accumulate/tool/http缓存'
           ]
         },

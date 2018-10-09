@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>树状数组结构转化</title>
+    <style>
+        .code {
+            margin-top: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="margin:30px 20px">
+        <a href="http://obkoro1.com/" target="_blank">树状数组结构转化</a>
+    </div>
+    <div class="code">
+        <h3>代码块也可右键查看源代码</h3>
+        <pre>
+            <code>
+                    let oldArr = [
+                    {
+                        '1_class': '工具',
+                        '2_class': '备忘录',
+                        '1_id': 1,
+                        '2_id': 2
+                    },
+                    {
+                        '1_class': '教育',
+                        '2_class': '学历教育',
+                        '3_class': '中等',
+                        '1_id': 3,
+                        '2_id': 4,
+                        '3_id': 6
+                    },
+                    {
+                        '1_class': '教育',
+                        '2_class': '学历教育',
+                        '3_class': '高等',
+                        '1_id': 3,
+                        '2_id': 4,
+                        '3_id': 5
+                    },
+                    {
+                        '1_class': '教育',
+                        '2_class': '成人教育',
+                        '1_id': 3,
+                        '2_id': 7,
+                    },
+                ];
+                // 输出：
+                let result = [
+                    {
+                        value: 1,
+                        label: "工具",
+                        children: [
+                            {
+                                value: 2,
+                                label: "备忘录",
+                                children: []
+                            }
+                        ]
+                    },
+                    {
+                        value: 3,
+                        label: "教育",
+                        children: [
+                            {
+                                value: 4,
+                                label: "学历教育",
+                                children: [
+                                    {
+                                        value: 6,
+                                        label: "中等",
+                                        children: []
+                                    },
+                                    {
+                                        value: 5,
+                                        label: "高等",
+                                        children: []
+                                    }
+                                ]
+                            },
+                            {
+                                value: 7,
+                                label: "成人教育",
+                                children: []
+                            }
+                        ]
+                    }
+                ];
+        
+                // 树状数组结构转化
+                let listToTree = (arr) => {
+                    let [levelNum, newArr, obj] = [1, [], {}];
+                    // 层级嵌套数
+                    arr.forEach(item => {
+                        for (let proto in item) {
+                            let protoLevel = parseInt(proto);
+                            if (levelNum < protoLevel) levelNum = protoLevel; // 总共多少层级
+                        }
+                    })
+                    // 分开层级 放在一个对象中
+                    for (let i = 1; i < levelNum + 1; i++) {
+                        levelClass(i);
+                    }
+                    // 将对象转化成数组
+                    Object.keys(obj).forEach(item => {
+                        let forNum = parseInt(item); // 当前层级数
+                        obj[item].forEach(itemChildren => {
+                            // 遍历每个层级的每个值
+                            packageArr(itemChildren, forNum, newArr);
+                        });
+                    });
+        
+                    // 分开每个层级
+                    function levelClass(name) {
+                        arr.forEach((value) => { // 每个元素都遍历一次 分开对应层级
+                            if (!value[`${name}_id`]) return; // 有的对象层级没那么多
+                            let objFor = {};
+                            // 其他层级的value 赋值
+                            for (let j = 1; j < name; j++) {
+                                objFor[`value${j}`] = value[`${j}_id`];
+                            }
+                            if (obj[`${name}_id`]) {
+                                // 相同层级不重复添加 比如第一层级 id都为1 只添加一个
+                                let status = obj[`${name}_id`].find(item => {
+                                    return item.value === value[`${name}_id`]
+                                })
+                                // 没有才添加
+                                if (!status) {
+                                    obj[`${name}_id`].push(Object.assign(objFor, {
+                                        value: value[`${name}_id`],
+                                        label: value[`${name}_class`]
+                                    }))
+                                }
+        
+                            } else {
+                                // 初始化创建一个数组
+                                obj[`${name}_id`] = [
+                                    Object.assign(objFor, {
+                                        value: value[`${name}_id`],
+                                        label: value[`${name}_class`],
+                                    })
+                                ]
+                            }
+                        })
+                    }
+        
+                    // 组装每个值
+                    function packageArr(sureName, index, arr, key = 1) {
+                        if (key === index) { // 当key和index相同时 即找到当前层级
+                            return arr.push({
+                                value: sureName.value,
+                                label: sureName.label,
+                                children: []
+                            });
+                        } else {
+                            key++;
+                            // 当前层级数组中对应的对象元素
+                            let num = arr.findIndex(value => {
+                                return value.value === sureName[`value${key - 1}`]
+                            })
+                            // 继续找或者已经找到
+                            return packageArr(sureName, index, arr[num].children, key);
+                        }
+                    }
+                    return newArr
+                }
+                console.log(listToTree(oldArr), '树结构数组');
+            </code>
+        </pre>
+    </div>
+    <script>
+        let oldArr = [
+            {
+                '1_class': '工具',
+                '2_class': '备忘录',
+                '1_id': 1,
+                '2_id': 2
+            },
+            {
+                '1_class': '教育',
+                '2_class': '学历教育',
+                '3_class': '中等',
+                '1_id': 3,
+                '2_id': 4,
+                '3_id': 6
+            },
+            {
+                '1_class': '教育',
+                '2_class': '学历教育',
+                '3_class': '高等',
+                '1_id': 3,
+                '2_id': 4,
+                '3_id': 5
+            },
+            {
+                '1_class': '教育',
+                '2_class': '成人教育',
+                '1_id': 3,
+                '2_id': 7,
+            },
+        ];
+        // 输出：
+        let result = [
+            {
+                value: 1,
+                label: "工具",
+                children: [
+                    {
+                        value: 2,
+                        label: "备忘录",
+                        children: []
+                    }
+                ]
+            },
+            {
+                value: 3,
+                label: "教育",
+                children: [
+                    {
+                        value: 4,
+                        label: "学历教育",
+                        children: [
+                            {
+                                value: 6,
+                                label: "中等",
+                                children: []
+                            },
+                            {
+                                value: 5,
+                                label: "高等",
+                                children: []
+                            }
+                        ]
+                    },
+                    {
+                        value: 7,
+                        label: "成人教育",
+                        children: []
+                    }
+                ]
+            }
+        ];
+
+        // 树状数组结构转化
+        let listToTree = (arr) => {
+            let [levelNum, newArr, obj] = [1, [], {}];
+            // 层级嵌套数
+            arr.forEach(item => {
+                for (let proto in item) {
+                    let protoLevel = parseInt(proto);
+                    if (levelNum < protoLevel) levelNum = protoLevel; // 总共多少层级
+                }
+            })
+            // 分开层级 放在一个对象中
+            for (let i = 1; i < levelNum + 1; i++) {
+                levelClass(i);
+            }
+            // 将对象转化成数组
+            Object.keys(obj).forEach(item => {
+                let forNum = parseInt(item); // 当前层级数
+                obj[item].forEach(itemChildren => {
+                    // 遍历每个层级的每个值
+                    packageArr(itemChildren, forNum, newArr);
+                });
+            });
+
+            // 分开每个层级
+            function levelClass(name) {
+                arr.forEach((value) => { // 每个元素都遍历一次 分开对应层级
+                    if (!value[`${name}_id`]) return; // 有的对象层级没那么多
+                    let objFor = {};
+                    // 其他层级的value 赋值
+                    for (let j = 1; j < name; j++) {
+                        objFor[`value${j}`] = value[`${j}_id`];
+                    }
+                    if (obj[`${name}_id`]) {
+                        // 相同层级不重复添加 比如第一层级 id都为1 只添加一个
+                        let status = obj[`${name}_id`].find(item => {
+                            return item.value === value[`${name}_id`]
+                        })
+                        // 没有才添加
+                        if (!status) {
+                            obj[`${name}_id`].push(Object.assign(objFor, {
+                                value: value[`${name}_id`],
+                                label: value[`${name}_class`]
+                            }))
+                        }
+
+                    } else {
+                        // 初始化创建一个数组
+                        obj[`${name}_id`] = [
+                            Object.assign(objFor, {
+                                value: value[`${name}_id`],
+                                label: value[`${name}_class`],
+                            })
+                        ]
+                    }
+                })
+            }
+
+            // 组装每个值
+            function packageArr(sureName, index, arr, key = 1) {
+                if (key === index) { // 当key和index相同时 即找到当前层级
+                    return arr.push({
+                        value: sureName.value,
+                        label: sureName.label,
+                        children: []
+                    });
+                } else {
+                    key++;
+                    // 当前层级数组中对应的对象元素
+                    let num = arr.findIndex(value => {
+                        return value.value === sureName[`value${key - 1}`]
+                    })
+                    // 继续找或者已经找到
+                    return packageArr(sureName, index, arr[num].children, key);
+                }
+            }
+            return newArr
+        }
+        console.log(listToTree(oldArr), '树结构数组');
+    </script>
+
+</body>
+
+</html>
