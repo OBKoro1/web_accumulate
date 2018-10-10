@@ -50,6 +50,7 @@ module.exports = {
         {
           title: 'Vue',
           children: [
+            '/accumulate/Vue/vue钩子函数',
             '/accumulate/Vue/你或许不知道Vue的这些小技巧',
             '/accumulate/Vue/vue小技巧',
             '/accumulate/Vue/vue定义全局函数',
@@ -71,6 +72,8 @@ module.exports = {
         {
           title: '工具/浏览器/机制',
           children: [
+            '/accumulate/tool/js垃圾回收机制',
+            '/accumulate/tool/忍者秘籍定时器机制',
             '/accumulate/tool/js事件循环机制',
             '/accumulate/tool/http缓存'
           ]
