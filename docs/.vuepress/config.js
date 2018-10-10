@@ -61,10 +61,10 @@ module.exports = {
         {
           title: '功能',
           children: [
+            '/accumulate/effect/复制粘贴系列',
             '/accumulate/effect/input的一些坑点分享',
             '/accumulate/effect/前端弹幕效果实现思路',
             '/accumulate/effect/正则表达式收集',
-            '/accumulate/effect/复制粘贴系列',
             '/accumulate/effect/判断用户浏览器',
             '/accumulate/effect/显示隐藏密码'
           ]
@@ -72,6 +72,7 @@ module.exports = {
         {
           title: '工具/浏览器/机制',
           children: [
+            '/accumulate/tool/Eslint自动修复格式错误',
             '/accumulate/tool/js垃圾回收机制',
             '/accumulate/tool/忍者秘籍定时器机制',
             '/accumulate/tool/js事件循环机制',
@@ -92,6 +93,7 @@ module.exports = {
         {
           title: '其他',
           children: [
+            '/accumulate/amateur/VuePress文档',
             '/accumulate/amateur/VsCode文件头部注释生成',
             '/accumulate/amateur/推箱子'
           ]
