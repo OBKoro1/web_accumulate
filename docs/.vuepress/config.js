@@ -42,7 +42,6 @@ module.exports = {
             '/accumulate/JS/函数防抖和函数节流',
             '/accumulate/JS/数组完全乱序',
             '/accumulate/JS/多维数组展开',
-            '/accumulate/JS/高性能js',
             '/accumulate/JS/cookie和storage的使用以及区别',
             '/accumulate/JS/随机数组成的数组'
           ]
@@ -95,6 +94,7 @@ module.exports = {
           children: [
             '/accumulate/amateur/VuePress文档',
             '/accumulate/amateur/VsCode文件头部注释生成',
+            '/accumulate/amateur/高性能js',
             '/accumulate/amateur/推箱子'
           ]
         }
@@ -113,6 +113,7 @@ module.exports = {
         {
           title: '简单',
           children: [
+            '/algorithm/simple/爬楼梯',
             '/algorithm/simple/落单的数',
             '/algorithm/simple/中位数',
             '/algorithm/simple/两数之和',
