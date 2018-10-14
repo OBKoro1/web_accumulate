@@ -25,6 +25,8 @@
 
 ### 最新更新：
 
+[爬楼梯](http://obkoro1.com/web_accumulate/algorithm/simple/%E7%88%AC%E6%A5%BC%E6%A2%AF.html)
+
 [落单的数](http://obkoro1.com/web_accumulate/algorithm/simple/%E8%90%BD%E5%8D%95%E7%9A%84%E6%95%B0.html)
 
 [中位数](http://obkoro1.com/web_accumulate/algorithm/simple/%E4%B8%AD%E4%BD%8D%E6%95%B0.html)

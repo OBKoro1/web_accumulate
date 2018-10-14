@@ -113,6 +113,8 @@ module.exports = {
         {
           title: '简单',
           children: [
+            '/algorithm/simple/子数组之和',
+            '/algorithm/simple/最长单词',
             '/algorithm/simple/爬楼梯',
             '/algorithm/simple/落单的数',
             '/algorithm/simple/中位数',
