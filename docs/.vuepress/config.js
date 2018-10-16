@@ -71,6 +71,7 @@ module.exports = {
         {
           title: '工具/浏览器/机制',
           children: [
+            '/accumulate/tool/koroFileHeader',
             '/accumulate/tool/Eslint自动修复格式错误',
             '/accumulate/tool/js垃圾回收机制',
             '/accumulate/tool/忍者秘籍定时器机制',
@@ -93,7 +94,6 @@ module.exports = {
           title: '其他',
           children: [
             '/accumulate/amateur/VuePress文档',
-            '/accumulate/amateur/VsCode文件头部注释生成',
             '/accumulate/amateur/高性能js',
             '/accumulate/amateur/推箱子'
           ]

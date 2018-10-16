@@ -25,6 +25,10 @@
 
 ### 最新更新：
 
+[找到和为零的子数组](http://obkoro1.com/web_accumulate/algorithm/simple/%E5%AD%90%E6%95%B0%E7%BB%84%E4%B9%8B%E5%92%8C.html)
+
+[数组中的最长单词](http://obkoro1.com/web_accumulate/algorithm/simple/%E6%9C%80%E9%95%BF%E5%8D%95%E8%AF%8D.html)
+
 [爬楼梯](http://obkoro1.com/web_accumulate/algorithm/simple/%E7%88%AC%E6%A5%BC%E6%A2%AF.html)
 
 [落单的数](http://obkoro1.com/web_accumulate/algorithm/simple/%E8%90%BD%E5%8D%95%E7%9A%84%E6%95%B0.html)
