@@ -19,6 +19,8 @@
 
 ### 最新更新：
 
+[VsCode添加文件头部注释和函数注释](http://obkoro1.com/web_accumulate/accumulate/tool/koroFileHeader.html)
+
 [数组API解析合集](http://obkoro1.com/web_accumulate/accumulate/JS/%E6%95%B0%E7%BB%84API%E8%A7%A3%E6%9E%90%E5%90%88%E9%9B%86.html)
 
 [一次弄懂 Object.defineProperty](http://obkoro1.com/web_accumulate/accumulate/JS/Object.defineProperty.html)
@@ -76,7 +78,5 @@
 [CSS 概念-BFC 深入浅出](http://obkoro1.com/web_accumulate/accumulate/CSS/CSS%E6%A6%82%E5%BF%B5-BFC%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA.html)
 
 [如何搭建本文档](http://obkoro1.com/web_accumulate/accumulate/amateur/VuePress%E6%96%87%E6%A1%A3.html)
-
-[VsCode文件头部注释生成](http://obkoro1.com/web_accumulate/accumulate/amateur/VsCode%E6%96%87%E4%BB%B6%E5%A4%B4%E9%83%A8%E6%B3%A8%E9%87%8A%E7%94%9F%E6%88%90.html)
 
 [推箱子](http://obkoro1.com/web_accumulate/accumulate/amateur/%E6%8E%A8%E7%AE%B1%E5%AD%90.html)

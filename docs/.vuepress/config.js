@@ -113,6 +113,8 @@ module.exports = {
         {
           title: '简单',
           children: [
+            '/algorithm/simple/两个字符串是变位词',
+            '/algorithm/simple/检测2的幂次',
             '/algorithm/simple/子数组之和',
             '/algorithm/simple/最长单词',
             '/algorithm/simple/爬楼梯',
