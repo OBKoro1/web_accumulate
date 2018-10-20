@@ -325,6 +325,36 @@
             return newArr
         }
         console.log(listToTree(oldArr), '树结构数组');
+
+
+        // new 
+        function getNewArr() {
+
+            function fn(arr, obj, id) {
+                var objLen = Object.keys(obj).length/2
+                var rtItem = arr.find(i => {
+                    return i.value == obj[`${id}_id`]
+                })
+                if (!rtItem) {
+                    rtItem = {}
+                    rtItem.value = obj[`${id}_id`]
+                    rtItem.lable = obj[`${id}_class`]
+                    rtItem.children = []
+                    arr.push(rtItem)
+                }
+                id++
+                if(id > objLen) return
+                fn(rtItem.children, obj, id)
+            }
+
+            var resultArr = []
+            for (let item of oldArr) {
+                var id = 1
+                fn(resultArr, item, id)
+            }
+            return resultArr
+        }
+        console.log(getNewArr(), 'new')
     </script>
 
 </body>
