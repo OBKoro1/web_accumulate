@@ -14,7 +14,9 @@ cd docs/.vuepress/dist
 
 git init
 git add -A
-git commit -m 'deploy'
+echo $1
+# npm run d 'commit值'
+git commit -m $1
 
 # 如果发布到 https://<USERNAME>.github.io
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
@@ -23,5 +25,13 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
 
 git push -f git@github.com:OBKoro1/web_accumulate.git master:gh-pages
+
+cd -
+
+git add .
+
+git commit -m $1
+
+git push
 
 cd -
