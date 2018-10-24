@@ -25,6 +25,8 @@
 
 ### 最新更新：
 
+[原地删除数组元素](http://obkoro1.com/web_accumulate/algorithm/simple/%E5%88%A0%E9%99%A4%E5%85%83%E7%B4%A0.html)
+
 [两个字符串是变位词](http://obkoro1.com/web_accumulate/algorithm/simple/%E4%B8%A4%E4%B8%AA%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%98%AF%E5%8F%98%E4%BD%8D%E8%AF%8D.html)
 
 [检测2的幂次](http://obkoro1.com/web_accumulate/algorithm/simple/%E6%A3%80%E6%B5%8B2%E7%9A%84%E5%B9%82%E6%AC%A1.html)
