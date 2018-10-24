@@ -41,6 +41,7 @@ module.exports = {
             '/accumulate/JS/时间差与时区转换',
             '/accumulate/JS/Object.defineProperty',
             '/accumulate/JS/函数防抖和函数节流',
+            '/accumulate/JS/数组交集差集',
             '/accumulate/JS/数组完全乱序',
             '/accumulate/JS/多维数组展开',
             '/accumulate/JS/cookie和storage的使用以及区别',
@@ -114,6 +115,7 @@ module.exports = {
         {
           title: '简单',
           children: [
+            '/algorithm/simple/删除元素',
             '/algorithm/simple/两个字符串是变位词',
             '/algorithm/simple/检测2的幂次',
             '/algorithm/simple/子数组之和',

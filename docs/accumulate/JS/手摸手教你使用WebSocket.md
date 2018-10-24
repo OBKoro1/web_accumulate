@@ -9,7 +9,7 @@
 
 ### `WebSocket`解决了什么问题：
 
-客户端(浏览器)和服务器端进行通信，只能由客户端发起`ajax`请求，才能进行通信，服务器端无法主动向客户端推送信息。
+客户端(浏览器)和服务器端进行通信，只能由客户端发起`ajax`请求，才能进行通信，服务器端无法主动向客户端推送信息。 
 
 当出现类似体育赛事、聊天室、实时位置之类的场景时，客户端要获取服务器端的变化，就只能通过轮询(定时请求)来了解服务器端有没有新的信息变化。
 
@@ -194,48 +194,60 @@ WebSocket并不稳定，在使用一段时间后，可能会断开连接，貌�
 * 2: 表示连接正在关闭
 * 3: 表示连接已经关闭，或者打开连接失败
 
+我们可以利用当前状态来做一些事情，比如上面栗子中当WebSocket链接成功后，才允许客户端发送`ping`。
+
+```js
+if (this.ws.readyState === 1) {
+    // 检查ws为链接状态 才可发送
+    this.ws.send('ping'); // 客户端发送ping
+}
+```
+
 ### `WebSocket`还可以发送/接收 二进制数据
 
 这里我也没有试过，我是看阮一峰老师的[WebSocket教程](http://www.ruanyifeng.com/blog/2017/05/websocket.html)才知道有这么个东西，有兴趣的可以再去谷歌，大家知道一下就可以。
 
 二进制数据包括：`blob`对象和`Arraybuffer`对象，所以我们需要分开来处理。
 
-     // 接收数据
-    ws.onmessage = function(event){
-      if(event.data instanceof ArrayBuffer){
-         // 判断 ArrayBuffer 对象
-      }
-      
-      if(event.data instanceof Blob){
-         // 判断 Blob 对象
-      }
+```js
+    // 接收数据
+ws.onmessage = function(event){
+    if(event.data instanceof ArrayBuffer){
+        // 判断 ArrayBuffer 对象
     }
     
-    // 发送 Blob 对象的例子
-    let file = document.querySelector('input[type="file"]').files[0];
-    ws.send(file);
-    
-    // 发送 ArrayBuffer 对象的例子
-    var img = canvas_context.getImageData(0, 0, 400, 320);
-    var binary = new Uint8Array(img.data.length);
-    for (var i = 0; i < img.data.length; i++) {
-      binary[i] = img.data[i];
+    if(event.data instanceof Blob){
+        // 判断 Blob 对象
     }
-    ws.send(binary.buffer);
+}
+
+// 发送 Blob 对象的例子
+let file = document.querySelector('input[type="file"]').files[0];
+ws.send(file);
+
+// 发送 ArrayBuffer 对象的例子
+var img = canvas_context.getImageData(0, 0, 400, 320);
+var binary = new Uint8Array(img.data.length);
+for (var i = 0; i < img.data.length; i++) {
+    binary[i] = img.data[i];
+}
+ws.send(binary.buffer);
+```
 
 
 **如果你要发送的二进制数据很大的话，如何判断发送完毕：**
 
 `webSocket.bufferedAmount`属性，表示还有多少字节的二进制数据没有发送出去：
 
-    var data = new ArrayBuffer(10000000);
-    socket.send(data);
-    if (socket.bufferedAmount === 0) {
-      // 发送完毕
-    } else {
-      // 发送还没结束
-    }
-
+```js
+var data = new ArrayBuffer(10000000);
+socket.send(data);
+if (socket.bufferedAmount === 0) {
+    // 发送完毕
+} else {
+    // 发送还没结束
+}
+```
 上述栗子出自阮一峰老师的[WebSocket教程](http://www.ruanyifeng.com/blog/2017/05/websocket.html)
 
 ### WebSocket的优点：
@@ -256,7 +268,7 @@ WebSocket并不稳定，在使用一段时间后，可能会断开连接，貌�
 
 ## 结语
 
-以上就是本文的内容了，如有错误，欢迎鞭策！
+看了本文之后，如果还是有点迷糊的话，一定要把文中的两个栗子，新建个html文件跑起来，自己鼓捣鼓捣一下。不然读多少博客/教程都没有用，实践才出真知，切勿纸上谈兵。
 
 ### 希望看完的朋友可以点个喜欢/关注，您的支持是对我最大的鼓励。
 
@@ -271,9 +283,3 @@ WebSocket并不稳定，在使用一段时间后，可能会断开连接，貌�
  [理解WebSocket心跳及重连机制](https://www.cnblogs.com/tugenhua0707/p/8648044.html)
  
  [WebSocket协议：5分钟从入门到精通](https://www.cnblogs.com/chyingp/p/websocket-deep-in.html)
-
-### 鼓励我一下：
-
-觉得还不错的话，给我的点个[star](https://github.com/OBKoro1/Brush_algorithm)吧
-
-游泳、健身了解一下：[博客](http://obkoro1.com/)、[前端算法](https://github.com/OBKoro1/Brush_algorithm)、[公众号](https://user-gold-cdn.xitu.io/2018/5/1/1631b6f52f7e7015?w=344&h=344&f=jpeg&s=8317)
