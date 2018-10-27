@@ -115,6 +115,8 @@ module.exports = {
         {
           title: '简单',
           children: [
+            '/algorithm/simple/字符串压缩',
+            '/algorithm/simple/第一个只出现一次的字符',
             '/algorithm/simple/删除元素',
             '/algorithm/simple/两个字符串是变位词',
             '/algorithm/simple/检测2的幂次',
