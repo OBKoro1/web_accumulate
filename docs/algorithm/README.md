@@ -25,6 +25,10 @@
 
 ### 最新更新：
 
+[字符串压缩](http://obkoro1.com/web_accumulate/algorithm/simple/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8E%8B%E7%BC%A9.html)
+
+[第一个只出现一次的字符](http://obkoro1.com/web_accumulate/algorithm/simple/%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8F%AA%E5%87%BA%E7%8E%B0%E4%B8%80%E6%AC%A1%E7%9A%84%E5%AD%97%E7%AC%A6.html)
+
 [原地删除数组元素](http://obkoro1.com/web_accumulate/algorithm/simple/%E5%88%A0%E9%99%A4%E5%85%83%E7%B4%A0.html)
 
 [两个字符串是变位词](http://obkoro1.com/web_accumulate/algorithm/simple/%E4%B8%A4%E4%B8%AA%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%98%AF%E5%8F%98%E4%BD%8D%E8%AF%8D.html)
