@@ -45,7 +45,8 @@ module.exports = {
             '/accumulate/JS/数组完全乱序',
             '/accumulate/JS/多维数组展开',
             '/accumulate/JS/cookie和storage的使用以及区别',
-            '/accumulate/JS/随机数组成的数组'
+            '/accumulate/JS/随机数组成的数组',
+            '/accumulate/JS/字符串绑定点击事件'
           ]
         },
         {
@@ -78,7 +79,8 @@ module.exports = {
             '/accumulate/tool/js垃圾回收机制',
             '/accumulate/tool/忍者秘籍定时器机制',
             '/accumulate/tool/js事件循环机制',
-            '/accumulate/tool/http缓存'
+            '/accumulate/tool/http缓存',
+            '/accumulate/tool/浏览器自动识别数字成电话号码'
           ]
         },
         {

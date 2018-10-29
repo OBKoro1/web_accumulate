@@ -1,4 +1,4 @@
-## 手摸手教你使用WebSocket[其实WebSocket也不难]
+## 手摸手教你使用WebSocket
 
 ![](http://ww1.sinaimg.cn/large/005Y4rColy1fwhfykkrenj30w00k075m.jpg)
 
