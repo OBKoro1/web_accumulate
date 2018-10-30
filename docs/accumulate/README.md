@@ -19,6 +19,10 @@
 
 ### 最新更新：
 
+[浏览器自动识别数字成电话号码](http://obkoro1.com/web_accumulate/accumulate/tool/%E6%B5%8F%E8%A7%88%E5%99%A8%E8%87%AA%E5%8A%A8%E8%AF%86%E5%88%AB%E6%95%B0%E5%AD%97%E6%88%90%E7%94%B5%E8%AF%9D%E5%8F%B7%E7%A0%81.html)
+
+[html字符串绑定点击事件](http://obkoro1.com/web_accumulate/accumulate/JS/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%91%E5%AE%9A%E7%82%B9%E5%87%BB%E4%BA%8B%E4%BB%B6.html)
+
 [数组交集差集并集](http://obkoro1.com/web_accumulate/accumulate/JS/%E6%95%B0%E7%BB%84%E4%BA%A4%E9%9B%86%E5%B7%AE%E9%9B%86.html)
 
 [手摸手教你使用WebSocket[其实WebSocket也不难]](http://obkoro1.com/web_accumulate/accumulate/JS/%E6%89%8B%E6%91%B8%E6%89%8B%E6%95%99%E4%BD%A0%E4%BD%BF%E7%94%A8WebSocket.html#%E6%89%8B%E6%91%B8%E6%89%8B%E6%95%99%E4%BD%A0%E4%BD%BF%E7%94%A8websocket-%E5%85%B6%E5%AE%9Ewebsocket%E4%B9%9F%E4%B8%8D%E9%9A%BE)
