@@ -117,6 +117,11 @@ module.exports = {
         {
           title: '简单',
           children: [
+            '/algorithm/simple/奇偶分割数组',
+            '/algorithm/simple/爬楼梯2',
+            '/algorithm/simple/相亲数',
+            '/algorithm/simple/丢失的数',
+            '/algorithm/simple/判断字符串的循环移动',
             '/algorithm/simple/字符串压缩',
             '/algorithm/simple/第一个只出现一次的字符',
             '/algorithm/simple/删除元素',
