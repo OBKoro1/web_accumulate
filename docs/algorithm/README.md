@@ -25,6 +25,16 @@
 
 ### 最新更新：
 
+[奇偶分割数组](http://obkoro1.com/web_accumulate/algorithm/simple/%E5%A5%87%E5%81%B6%E5%88%86%E5%89%B2%E6%95%B0%E7%BB%84.html)
+
+[爬楼梯 2](http://obkoro1.com/web_accumulate/algorithm/simple/%E7%88%AC%E6%A5%BC%E6%A2%AF2.html)
+
+[相亲数](http://obkoro1.com/web_accumulate/algorithm/simple/%E7%9B%B8%E4%BA%B2%E6%95%B0.html)
+
+[丢失的数](http://obkoro1.com/web_accumulate/algorithm/simple/%E4%B8%A2%E5%A4%B1%E7%9A%84%E6%95%B0.html)
+
+[判断字符串的循环移动](http://obkoro1.com/web_accumulate/algorithm/simple/%E5%88%A4%E6%96%AD%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E5%BE%AA%E7%8E%AF%E7%A7%BB%E5%8A%A8.html)
+
 [字符串压缩](http://obkoro1.com/web_accumulate/algorithm/simple/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8E%8B%E7%BC%A9.html)
 
 [第一个只出现一次的字符](http://obkoro1.com/web_accumulate/algorithm/simple/%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8F%AA%E5%87%BA%E7%8E%B0%E4%B8%80%E6%AC%A1%E7%9A%84%E5%AD%97%E7%AC%A6.html)
