@@ -68,9 +68,11 @@ module.exports = {
             '/accumulate/effect/前端弹幕效果实现思路',
             '/accumulate/effect/正则表达式收集',
             '/accumulate/effect/判断用户浏览器',
+            '/accumulate/effect/网页标题闪烁',
             '/accumulate/effect/显示隐藏密码'
           ]
         },
+        // TODO: 网页标题闪烁
         {
           title: '工具/浏览器/机制',
           children: [
