@@ -3,7 +3,7 @@ module.exports = {
   description: '种一棵树最好的时间是十年前，其次就是现在。',
   base: '/web_accumulate/',
   markdown: {
-    lineNumbers: true
+    lineNumbers: true // 代码行数
   },
   themeConfig: {
     repo: 'OBKoro1/web_accumulate',
@@ -11,9 +11,12 @@ module.exports = {
     docsDir: 'docs', // 仓库下的文件夹
     editLinks: true, // 编辑链接
     editLinkText: '帮助我改善这个页面', // 链接字段
-    serviceWorker:{
-      updatePopup:{
-        message:'就在刚刚,OBKoro1更新了内容',
+    sidebarDepth: 3,
+    lastUpdated: 'Last Updated', // 最后更新时间
+    serviceWorker: {
+      updatePopup: {
+        // 刷新内容的弹窗
+        message: '就在刚刚,OBKoro1更新了内容',
         buttonText: '点这里'
       }
     },
@@ -41,6 +44,8 @@ module.exports = {
         '/accumulate/',
         {
           title: 'JS',
+          // TODO: 取消折叠
+          // collapsable: false,
           children: [
             '/accumulate/JS/手摸手教你使用WebSocket',
             '/accumulate/JS/数组API解析合集',
@@ -152,8 +157,6 @@ module.exports = {
           ]
         }
       ]
-    },
-    sidebarDepth: 2,
-    lastUpdated: 'Last Updated'
+    }
   }
 };
