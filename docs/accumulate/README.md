@@ -19,7 +19,7 @@
 
 ### 最新更新：
 
-<!-- [网页标题闪烁]() -->
+[网页标题闪烁](http://obkoro1.com/web_accumulate/accumulate/effect/%E7%BD%91%E9%A1%B5%E6%A0%87%E9%A2%98%E9%97%AA%E7%83%81.html)
 
 [浏览器自动识别数字成电话号码](http://obkoro1.com/web_accumulate/accumulate/tool/%E6%B5%8F%E8%A7%88%E5%99%A8%E8%87%AA%E5%8A%A8%E8%AF%86%E5%88%AB%E6%95%B0%E5%AD%97%E6%88%90%E7%94%B5%E8%AF%9D%E5%8F%B7%E7%A0%81.html)
 
