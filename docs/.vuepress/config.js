@@ -7,7 +7,8 @@ module.exports = {
   },
   themeConfig: {
     repo: 'OBKoro1/web_accumulate',
-    docsBranch: 'gh-pages',
+    docsBranch: 'master',
+    docsDir: 'docs',
     editLinks: true,
     editLinkText: '帮助我改善这个页面',
     serviceWorker:{
