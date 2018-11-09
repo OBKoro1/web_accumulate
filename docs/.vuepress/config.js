@@ -6,6 +6,16 @@ module.exports = {
     lineNumbers: true
   },
   themeConfig: {
+    repo: 'OBKoro1/web_accumulate',
+    docsBranch: 'gh-pages',
+    editLinks: true,
+    editLinkText: '帮助我改善这个页面',
+    serviceWorker:{
+      updatePopup:{
+        message:'就在刚刚,OBKoro1更新了内容',
+        buttonText: '点这里'
+      }
+    },
     nav: [
       { text: '前端积累', link: '/accumulate/' },
       { text: '前端算法', link: '/algorithm/' },
@@ -72,7 +82,6 @@ module.exports = {
             '/accumulate/effect/显示隐藏密码'
           ]
         },
-        // TODO: 网页标题闪烁
         {
           title: '工具/浏览器/机制',
           children: [
