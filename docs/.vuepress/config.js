@@ -7,10 +7,10 @@ module.exports = {
   },
   themeConfig: {
     repo: 'OBKoro1/web_accumulate',
-    docsBranch: 'master',
-    docsDir: 'docs',
-    editLinks: true,
-    editLinkText: '帮助我改善这个页面',
+    docsBranch: 'master', // git 源仓库 仓库分支
+    docsDir: 'docs', // 仓库下的文件夹
+    editLinks: true, // 编辑链接
+    editLinkText: '帮助我改善这个页面', // 链接字段
     serviceWorker:{
       updatePopup:{
         message:'就在刚刚,OBKoro1更新了内容',
@@ -22,16 +22,11 @@ module.exports = {
       { text: '前端算法', link: '/algorithm/' },
       { text: '博客', link: 'http://obkoro1.com/' },
       {
-        text: 'GitHub',
+        text: '其他仓库',
         items: [
-          { text: 'GitHub地址', link: 'https://github.com/OBKoro1' },
           {
             text: '算法仓库',
             link: 'https://github.com/OBKoro1/Brush_algorithm'
-          },
-          {
-            text: '积累仓库',
-            link: 'https://github.com/OBKoro1/web_accumulate'
           },
           {
             text: 'VsCode插件仓库',
