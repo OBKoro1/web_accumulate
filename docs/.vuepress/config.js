@@ -157,7 +157,15 @@ module.exports = {
             '/algorithm/simple/反转整数',
             '/algorithm/simple/回文'
           ]
-        }
+        },
+        {
+          title: '中等',
+          children: [
+            '/algorithm/medium/统计数字',
+            '/algorithm/medium/丑数',
+            '/algorithm/medium/第k大元素',
+          ]
+        },
       ]
     }
   }
