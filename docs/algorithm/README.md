@@ -25,6 +25,12 @@
 
 ### 最新更新：
 
+[第k大元素](http://obkoro1.com/web_accumulate/algorithm/medium/%E7%AC%ACk%E5%A4%A7%E5%85%83%E7%B4%A0.html)
+
+[丑数](http://obkoro1.com/web_accumulate/algorithm/medium/%E4%B8%91%E6%95%B0.html)
+
+[统计数字](http://obkoro1.com/web_accumulate/algorithm/medium/%E7%BB%9F%E8%AE%A1%E6%95%B0%E5%AD%97.html)
+
 [奇偶分割数组](http://obkoro1.com/web_accumulate/algorithm/simple/%E5%A5%87%E5%81%B6%E5%88%86%E5%89%B2%E6%95%B0%E7%BB%84.html)
 
 [爬楼梯 2](http://obkoro1.com/web_accumulate/algorithm/simple/%E7%88%AC%E6%A5%BC%E6%A2%AF2.html)

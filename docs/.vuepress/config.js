@@ -161,11 +161,11 @@ module.exports = {
         {
           title: '中等',
           children: [
-            '/algorithm/medium/统计数字',
-            '/algorithm/medium/丑数',
             '/algorithm/medium/第k大元素',
+            '/algorithm/medium/丑数',
+            '/algorithm/medium/统计数字'
           ]
-        },
+        }
       ]
     }
   }
