@@ -1,5 +1,6 @@
 module.exports = {
   title: 'OBKoro1前端积累',
+  // TODO: 加到meta上
   description: '种一棵树最好的时间是十年前，其次就是现在。',
   base: '/web_accumulate/',
   markdown: {
@@ -86,12 +87,13 @@ module.exports = {
         {
           title: '工具/浏览器/机制',
           children: [
-            '/accumulate/tool/koroFileHeader',
-            '/accumulate/tool/Eslint自动修复格式错误',
-            '/accumulate/tool/js垃圾回收机制',
             '/accumulate/tool/忍者秘籍定时器机制',
             '/accumulate/tool/js事件循环机制',
+            '/accumulate/tool/js垃圾回收机制',
             '/accumulate/tool/http缓存',
+            '/accumulate/tool/koroFileHeader',
+            '/accumulate/tool/Eslint自动修复格式错误',
+            '/accumulate/tool/一份超级详细的Vue-cli3.0使用教程',
             '/accumulate/tool/浏览器自动识别数字成电话号码'
           ]
         },
