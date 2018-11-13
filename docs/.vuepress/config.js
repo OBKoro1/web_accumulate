@@ -12,8 +12,6 @@ module.exports = {
     docsDir: 'docs', // 仓库下的文件夹
     editLinks: true, // 编辑链接
     editLinkText: '帮助我改善这个页面', // 链接字段
-    sidebarDepth: 3,
-    lastUpdated: 'Last Updated', // 最后更新时间
     serviceWorker: {
       updatePopup: {
         // 刷新内容的弹窗
@@ -21,6 +19,8 @@ module.exports = {
         buttonText: '点这里'
       }
     },
+    lastUpdated: 'Last Updated', // 最后更新时间
+    sidebarDepth: 3,
     nav: [
       { text: '前端积累', link: '/accumulate/' },
       { text: '前端算法', link: '/algorithm/' },
