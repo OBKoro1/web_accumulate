@@ -19,6 +19,8 @@
 
 ### 最新更新：
 
+[前端er来学习一下webWorker吧](http://obkoro1.com/web_accumulate/accumulate/JS/webWorker%E4%B8%8A%E6%89%8B.html)
+
 [一份超级详细的Vue-cli3.0使用教程](http://obkoro1.com/web_accumulate/accumulate/tool/%E4%B8%80%E4%BB%BD%E8%B6%85%E7%BA%A7%E8%AF%A6%E7%BB%86%E7%9A%84Vue-cli3.0%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B.html)
 
 [网页标题闪烁](http://obkoro1.com/web_accumulate/accumulate/effect/%E7%BD%91%E9%A1%B5%E6%A0%87%E9%A2%98%E9%97%AA%E7%83%81.html)
