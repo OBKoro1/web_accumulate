@@ -35,7 +35,7 @@ module.exports = {
           {
             text: 'VsCode插件仓库',
             link:
-              'https://github.com/OBKoro1/koro1FileHeader/blob/b03ef6c8c5c61bd1276c45fe5f108ad92f3ee7b8/README_zh-cn.md'
+              'https://github.com/OBKoro1/koro1FileHeader'
           }
         ]
       }
@@ -48,6 +48,7 @@ module.exports = {
           // TODO: 取消折叠
           // collapsable: false,
           children: [
+            '/accumulate/JS/webWorker上手',
             '/accumulate/JS/手摸手教你使用WebSocket',
             '/accumulate/JS/数组API解析合集',
             '/accumulate/JS/时间差与时区转换',
