@@ -48,6 +48,7 @@ module.exports = {
           // TODO: 取消折叠
           // collapsable: false,
           children: [
+            '/accumulate/JS/网页全屏',
             '/accumulate/JS/webWorker上手',
             '/accumulate/JS/手摸手教你使用WebSocket',
             '/accumulate/JS/数组API解析合集',
