@@ -19,7 +19,7 @@
 
 ### 最新更新：
 
-[网页全屏模式轻松掌握[局部元素全屏展示]](http://obkoro1.com/web_accumulate/)
+[网页全屏模式轻松掌握[局部元素全屏展示]](http://obkoro1.com/web_accumulate/accumulate/JS/%E7%BD%91%E9%A1%B5%E5%85%A8%E5%B1%8F.html)
 
 [前端er来学习一下webWorker吧](http://obkoro1.com/web_accumulate/accumulate/JS/webWorker%E4%B8%8A%E6%89%8B.html)
 
