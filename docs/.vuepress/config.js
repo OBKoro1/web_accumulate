@@ -89,6 +89,7 @@ module.exports = {
         {
           title: '工具/浏览器/机制',
           children: [
+            '/accumulate/tool/浏览器重绘重排',
             '/accumulate/tool/忍者秘籍定时器机制',
             '/accumulate/tool/js事件循环机制',
             '/accumulate/tool/js垃圾回收机制',
