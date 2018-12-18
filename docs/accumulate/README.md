@@ -21,7 +21,7 @@
 
 [轻松掌握浏览器重绘重排原理](http://obkoro1.com/web_accumulate/accumulate/tool/%E6%B5%8F%E8%A7%88%E5%99%A8%E9%87%8D%E7%BB%98%E9%87%8D%E6%8E%92.html)
 
-[网页全屏模式轻松掌握[局部元素全屏展示]](http://obkoro1.com/web_accumulate/accumulate/JS/%E7%BD%91%E9%A1%B5%E5%85%A8%E5%B1%8F.html)
+[网页全屏模式轻松掌握[局部元素全屏展示]](http://obkoro1.com/web_accumulate/accumulate/effect/%E7%BD%91%E9%A1%B5%E5%85%A8%E5%B1%8F.html)
 
 [前端er来学习一下webWorker吧](http://obkoro1.com/web_accumulate/accumulate/JS/webWorker%E4%B8%8A%E6%89%8B.html)
 

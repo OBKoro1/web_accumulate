@@ -48,7 +48,6 @@ module.exports = {
           // TODO: 取消折叠
           // collapsable: false,
           children: [
-            '/accumulate/JS/网页全屏',
             '/accumulate/JS/webWorker上手',
             '/accumulate/JS/手摸手教你使用WebSocket',
             '/accumulate/JS/数组API解析合集',
@@ -77,6 +76,7 @@ module.exports = {
         {
           title: '功能',
           children: [
+            '/accumulate/effect/网页全屏',
             '/accumulate/effect/复制粘贴系列',
             '/accumulate/effect/input的一些坑点分享',
             '/accumulate/effect/前端弹幕效果实现思路',
