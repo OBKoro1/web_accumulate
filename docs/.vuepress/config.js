@@ -51,15 +51,12 @@ module.exports = {
             '/accumulate/JS/webWorker上手',
             '/accumulate/JS/手摸手教你使用WebSocket',
             '/accumulate/JS/数组API解析合集',
-            '/accumulate/JS/时间差与时区转换',
-            '/accumulate/JS/Object.defineProperty',
             '/accumulate/JS/函数防抖和函数节流',
+            '/accumulate/JS/Object.defineProperty',
             '/accumulate/JS/数组交集差集',
             '/accumulate/JS/数组完全乱序',
-            '/accumulate/JS/多维数组展开',
             '/accumulate/JS/cookie和storage的使用以及区别',
             '/accumulate/JS/随机数组成的数组',
-            '/accumulate/JS/字符串绑定点击事件'
           ]
         },
         {
@@ -82,6 +79,9 @@ module.exports = {
             '/accumulate/effect/前端弹幕效果实现思路',
             '/accumulate/effect/正则表达式收集',
             '/accumulate/effect/判断用户浏览器',
+            '/accumulate/effect/时间差与时区转换',
+            '/accumulate/effect/多维数组展开',
+            '/accumulate/effect/字符串绑定点击事件',
             '/accumulate/effect/网页标题闪烁',
             '/accumulate/effect/显示隐藏密码'
           ]
@@ -107,6 +107,7 @@ module.exports = {
         {
           title: 'CSS',
           children: [
+            '/accumulate/CSS/单行多行文本溢出',
             '/accumulate/CSS/CSS权重规则',
             '/accumulate/CSS/CSS概念-BFC深入浅出'
           ]

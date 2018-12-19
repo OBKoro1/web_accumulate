@@ -31,7 +31,7 @@
 
 [浏览器自动识别数字成电话号码](http://obkoro1.com/web_accumulate/accumulate/tool/%E6%B5%8F%E8%A7%88%E5%99%A8%E8%87%AA%E5%8A%A8%E8%AF%86%E5%88%AB%E6%95%B0%E5%AD%97%E6%88%90%E7%94%B5%E8%AF%9D%E5%8F%B7%E7%A0%81.html)
 
-[html字符串绑定点击事件](http://obkoro1.com/web_accumulate/accumulate/JS/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%91%E5%AE%9A%E7%82%B9%E5%87%BB%E4%BA%8B%E4%BB%B6.html)
+[html字符串绑定点击事件](http://obkoro1.com/web_accumulate/accumulate/effect/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%91%E5%AE%9A%E7%82%B9%E5%87%BB%E4%BA%8B%E4%BB%B6.html)
 
 [数组交集差集并集](http://obkoro1.com/web_accumulate/accumulate/JS/%E6%95%B0%E7%BB%84%E4%BA%A4%E9%9B%86%E5%B7%AE%E9%9B%86.html)
 
@@ -47,7 +47,7 @@
 
 [数组完全乱序](http://obkoro1.com/web_accumulate/accumulate/JS/%E6%95%B0%E7%BB%84%E5%AE%8C%E5%85%A8%E4%B9%B1%E5%BA%8F.html)
 
-[多维数组展开](http://obkoro1.com/web_accumulate/accumulate/JS/%E5%A4%9A%E7%BB%B4%E6%95%B0%E7%BB%84%E5%B1%95%E5%BC%80.html)
+[多维数组展开](http://obkoro1.com/web_accumulate/accumulate/effect/%E5%A4%9A%E7%BB%B4%E6%95%B0%E7%BB%84%E5%B1%95%E5%BC%80.html)
 
 [随机数数组](http://obkoro1.com/web_accumulate/accumulate/JS/%E9%9A%8F%E6%9C%BA%E6%95%B0%E7%BB%84%E6%88%90%E7%9A%84%E6%95%B0%E7%BB%84.html)
 
