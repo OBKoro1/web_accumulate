@@ -19,6 +19,8 @@
 
 ### 最新更新：
 
+[vue 点击事件自动传入 dom]()
+
 [css 单行、多行文本溢出](http://obkoro1.com/web_accumulate/accumulate/CSS/%E5%8D%95%E8%A1%8C%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA.html)
 
 [轻松掌握浏览器重绘重排原理](http://obkoro1.com/web_accumulate/accumulate/tool/%E6%B5%8F%E8%A7%88%E5%99%A8%E9%87%8D%E7%BB%98%E9%87%8D%E6%8E%92.html)

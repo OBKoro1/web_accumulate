@@ -44,6 +44,7 @@ module.exports = {
       '/accumulate/': [
         '/accumulate/',
         {
+          // TODO: 开一篇ES6相关的
           title: 'JS',
           // TODO: 取消折叠
           // collapsable: false,
@@ -63,6 +64,7 @@ module.exports = {
           title: 'Vue',
           children: [
             '/accumulate/Vue/vue钩子函数',
+            '/accumulate/Vue/vue小技巧3',
             '/accumulate/Vue/你或许不知道Vue的这些小技巧',
             '/accumulate/Vue/vue小技巧',
             '/accumulate/Vue/vue定义全局函数',
