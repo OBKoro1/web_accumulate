@@ -19,7 +19,7 @@
 
 ### 最新更新：
 
-[vue 点击事件自动传入 dom]()
+[vue 点击事件自动传入 dom](http://obkoro1.com/web_accumulate/accumulate/Vue/vue%E5%B0%8F%E6%8A%80%E5%B7%A73.html)
 
 [css 单行、多行文本溢出](http://obkoro1.com/web_accumulate/accumulate/CSS/%E5%8D%95%E8%A1%8C%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA.html)
 

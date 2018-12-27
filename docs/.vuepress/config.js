@@ -1,3 +1,11 @@
+/*
+ * @Author: OBKoro1
+ * @Github: https://github.com/OBKoro1
+ * @Date: 2018-08-28 18:29:08
+ * @LastEditors: OBKoro1
+ * @LastEditTime: 2018-12-26 16:19:45
+ * @Description: 
+ */
 module.exports = {
   title: 'OBKoro1前端积累',
   // TODO: 加到meta上
@@ -44,7 +52,6 @@ module.exports = {
       '/accumulate/': [
         '/accumulate/',
         {
-          // TODO: 开一篇ES6相关的
           title: 'JS',
           // TODO: 取消折叠
           // collapsable: false,
@@ -58,6 +65,13 @@ module.exports = {
             '/accumulate/JS/数组完全乱序',
             '/accumulate/JS/cookie和storage的使用以及区别',
             '/accumulate/JS/随机数组成的数组',
+          ]
+        },
+        {
+          title: 'ES6',
+          children:[
+            '/accumulate/ES6/',
+            '/accumulate/ES6/let和const命令',
           ]
         },
         {
@@ -77,6 +91,7 @@ module.exports = {
           children: [
             '/accumulate/effect/网页全屏',
             '/accumulate/effect/复制粘贴系列',
+            '/accumulate/effect/树状数组结构转化',
             '/accumulate/effect/input的一些坑点分享',
             '/accumulate/effect/前端弹幕效果实现思路',
             '/accumulate/effect/正则表达式收集',
@@ -101,10 +116,6 @@ module.exports = {
             '/accumulate/tool/一份超级详细的Vue-cli3.0使用教程',
             '/accumulate/tool/浏览器自动识别数字成电话号码'
           ]
-        },
-        {
-          title: '面试题',
-          children: ['/accumulate/interviewQuestion/树状数组结构转化']
         },
         {
           title: 'CSS',
