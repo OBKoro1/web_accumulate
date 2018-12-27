@@ -3,7 +3,7 @@
  * @Github: https://github.com/OBKoro1
  * @Date: 2018-08-28 18:29:08
  * @LastEditors: OBKoro1
- * @LastEditTime: 2018-12-26 16:19:45
+ * @LastEditTime: 2018-12-27 16:32:12
  * @Description: 
  */
 module.exports = {
@@ -98,6 +98,7 @@ module.exports = {
             '/accumulate/effect/判断用户浏览器',
             '/accumulate/effect/时间差与时区转换',
             '/accumulate/effect/多维数组展开',
+            '/accumulate/effect/滚动底部',
             '/accumulate/effect/字符串绑定点击事件',
             '/accumulate/effect/网页标题闪烁',
             '/accumulate/effect/显示隐藏密码'
