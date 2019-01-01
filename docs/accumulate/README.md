@@ -5,7 +5,7 @@
  * @Github: https://github.com/OBKoro1
  * @Date: 2018-09-01 17:41:33
  * @LastEditors: OBKoro1
- * @LastEditTime: 2018-12-27 16:38:57
+ * @LastEditTime: 2019-01-01 15:31:33
  * @Description: 
  -->
 当前模块是我平时的一些积累，用以记录一些上手即用的东西/知识点等内容，范围较广。
@@ -25,6 +25,8 @@
     有新的文章，算法题，面试题等都会第一时间发布与公众号上。
 
 ### 最新更新：
+
+[var和let/const的区别](http://obkoro1.com/web_accumulate/accumulate/ES6/let%E5%92%8Cconst%E5%91%BD%E4%BB%A4.html)
 
 [判断div滚动到底部](http://obkoro1.com/web_accumulate/accumulate/effect/%E6%BB%9A%E5%8A%A8%E5%BA%95%E9%83%A8.html)
 
