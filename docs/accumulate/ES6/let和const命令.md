@@ -1,10 +1,12 @@
-# let 和 const 命令
+# var和let/const的区别
 
-`let`和`const`是 ES6 新增的命令，同于声明变量，这两个命令跟 ES5 的`var`有许多不同...
+`let`和`const`是 ES6 新增的命令，用于声明变量，这两个命令跟 ES5 的`var`有许多不同，并且`let`和`const`也有一些细微的不同，再认真阅读了阮一峰老师的[文档](http://es6.ruanyifeng.com/#docs/let)后，发现还是有一些不知道的细节...
+
+> [博客](http://obkoro1.com/)、[前端积累文档](http://obkoro1.com/web_accumulate/accumulate/)、[公众号](https://user-gold-cdn.xitu.io/2018/5/1/1631b6f52f7e7015?w=344&h=344&f=jpeg&s=8317)、[GitHub](https://github.com/OBKoro1)
 
 ## 内容：
 
-**`let`、`const`的相同点**
+**`var`和`let`/`const`的区别**
 
 1. 块级作用域
 
@@ -16,11 +18,11 @@
 
 5. let、const声明的全局变量不会挂在顶层对象下面
 
-**`const`命令:**
+**`const`命令两个注意点:**
 
 1. const 声明之后必须马上赋值，否则会报错
 
-2. const 一旦声明就不能再更改(引用类型可以更改内部内容)。
+2. const 简单类型一旦声明就不能再更改，复杂类型(数组、对象等)指针指向的地址不能更改，内部数据可以更改。
 
 
 ### 为什么需要块级作用域?
@@ -221,6 +223,8 @@ window.b // undefined
 
 ## 总结:
 
+再总结一下，看到这些名词，脑子里应该会有对应的理解，如果没有的话，那可以再看看对应的内容。
+
 ### `var`和`let`/`const`的区别:
 
 1. 块级作用域
@@ -229,11 +233,11 @@ window.b // undefined
 4. 不可重复声明
 5. let、const声明的全局变量不会挂在顶层对象下面
 
-### `let`和`const`:
+### `const`命令两个注意点:
 
-1. const 声明之后必须马上赋值，否则会报错
+1. `let`可以先声明稍后再赋值,而`const`在 声明之后必须马上赋值，否则会报错
 
-2. const 一旦声明就不能再更改(引用类型可以更改内部内容)。
+2. const 简单类型一旦声明就不能再更改，复杂类型(数组、对象等)指针指向的地址不能更改，内部数据可以更改。
 
 ### let、const使用场景:
 
@@ -244,4 +248,9 @@ window.b // undefined
 
 觉得还不错的话，给我的项目点个[star](https://github.com/OBKoro1/Brush_algorithm)吧
 
-游泳、健身了解一下：[博客](http://obkoro1.com/)、[前端算法](https://github.com/OBKoro1/Brush_algorithm)、[公众号](https://user-gold-cdn.xitu.io/2018/5/1/1631b6f52f7e7015?w=344&h=344&f=jpeg&s=8317)
+[博客](http://obkoro1.com/)、[前端积累文档](http://obkoro1.com/web_accumulate/accumulate/)、[公众号](https://user-gold-cdn.xitu.io/2018/5/1/1631b6f52f7e7015?w=344&h=344&f=jpeg&s=8317)、[GitHub](https://github.com/OBKoro1)
+
+
+参考资料：
+
+[let 和 const 命令](http://es6.ruanyifeng.com/#docs/let)
