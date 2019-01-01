@@ -3,7 +3,7 @@
  * @Github: https://github.com/OBKoro1
  * @Date: 2018-08-28 18:29:08
  * @LastEditors: OBKoro1
- * @LastEditTime: 2018-12-27 16:32:12
+ * @LastEditTime: 2019-01-01 16:25:54
  * @Description: 
  */
 module.exports = {
@@ -81,6 +81,7 @@ module.exports = {
             '/accumulate/Vue/vue小技巧3',
             '/accumulate/Vue/你或许不知道Vue的这些小技巧',
             '/accumulate/Vue/vue小技巧',
+            '/accumulate/Vue/vuex三步',
             '/accumulate/Vue/vue定义全局函数',
             '/accumulate/Vue/极简双向绑定',
             '/accumulate/Vue/弹窗'
