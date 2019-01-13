@@ -5,7 +5,7 @@
  * @Github: https://github.com/OBKoro1
  * @Date: 2018-09-01 17:41:33
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-01-01 17:40:20
+ * @LastEditTime: 2019-01-13 19:07:45
  * @Description: 
  -->
 当前模块是我平时的一些积累，用以记录一些上手即用的东西/知识点等内容，范围较广。
@@ -25,6 +25,8 @@
     有新的文章，算法题，面试题等都会第一时间发布与公众号上。
 
 ### 最新更新：
+
+[刷新/关闭页面之前发送请求](http://obkoro1.com/web_accumulate/accumulate/effect/%E9%80%80%E5%87%BA%E9%A1%B5%E9%9D%A2%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82.html)
 
 [Vuex 的使用入门-极简使用](http://obkoro1.com/web_accumulate/accumulate/Vue/vuex%E4%B8%89%E6%AD%A5.html)
 
