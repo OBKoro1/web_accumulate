@@ -1,0 +1,159 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+function _core() {
+  const data = require("@babel/core");
+
+  _core = function _core() {
+    return data;
+  };
+
+  return data;
+}
+
+const buildClassDecorator = (0, _core().template)(`
+  DECORATOR(CLASS_REF = INNER) || CLASS_REF;
+`);
+const buildClassPrototype = (0, _core().template)(`
+  CLASS_REF.prototype;
+`);
+const buildGetDescriptor = (0, _core().template)(`
+    Object.getOwnPropertyDescriptor(TARGET, PROPERTY);
+`);
+const buildGetObjectInitializer = (0, _core().template)(`
+    (TEMP = Object.getOwnPropertyDescriptor(TARGET, PROPERTY), (TEMP = TEMP ? TEMP.value : undefined), {
+        enumerable: true,
+        configurable: true,
+        writable: true,
+        initializer: function(){
+            return TEMP;
+        }
+    })
+`);
+const WARNING_CALLS = new WeakSet();
+
+function applyEnsureOrdering(path) {
+  const decorators = (path.isClass() ? [path].concat(path.get("body.body")) : path.get("properties")).reduce((acc, prop) => acc.concat(prop.node.decorators || []), []);
+  const identDecorators = decorators.filter(decorator => !_core().types.isIdentifier(decorator.callee));
+  if (identDecorators.length === 0) return;
+  return _core().types.sequenceExpression(identDecorators.map(decorator => {
+    const callee = decorator.callee;
+    const id = decorator.callee = path.scope.generateDeclaredUidIdentifier("dec");
+    return _core().types.assignmentExpression("=", id, callee);
+  }).concat([path.node]));
+}
+
+function applyClassDecorators(classPath) {
+  if (!hasClassDecorators(classPath.node)) return;
+  const decorators = classPath.node.decorators || [];
+  classPath.node.decorators = null;
+  const name = classPath.scope.generateDeclaredUidIdentifier("class");
+  return decorators.map(dec => dec.callee).reverse().reduce(function (acc, decorator) {
+    return buildClassDecorator({
+      CLASS_REF: _core().types.cloneNode(name),
+      DECORATOR: _core().types.cloneNode(decorator),
+      INNER: acc
+    }).expression;
+  }, classPath.node);
+}
+
+function hasClassDecorators(classNode) {
+  return !!(classNode.decorators && classNode.decorators.length);
+}
+
+function applyMethodDecorators(path, state) {
+  if (!hasMethodDecorators(path.node.body.body)) return;
+  return applyTargetDecorators(path, state, path.node.body.body);
+}
+
+function hasMethodDecorators(body) {
+  return body.some(node => node.decorators && node.decorators.length);
+}
+
+function applyObjectDecorators(path, state) {
+  if (!hasMethodDecorators(path.node.properties)) return;
+  return applyTargetDecorators(path, state, path.node.properties);
+}
+
+function applyTargetDecorators(path, state, decoratedProps) {
+  const name = path.scope.generateDeclaredUidIdentifier(path.isClass() ? "class" : "obj");
+  const exprs = decoratedProps.reduce(function (acc, node) {
+    const decorators = node.decorators || [];
+    node.decorators = null;
+    if (decorators.length === 0) return acc;
+
+    if (node.computed) {
+      throw path.buildCodeFrameError("Computed method/property decorators are not yet supported.");
+    }
+
+    const property = _core().types.isLiteral(node.key) ? node.key : _core().types.stringLiteral(node.key.name);
+    const target = path.isClass() && !node.static ? buildClassPrototype({
+      CLASS_REF: name
+    }).expression : name;
+
+    if (_core().types.isClassProperty(node, {
+      static: false
+    })) {
+      const descriptor = path.scope.generateDeclaredUidIdentifier("descriptor");
+      const initializer = node.value ? _core().types.functionExpression(null, [], _core().types.blockStatement([_core().types.returnStatement(node.value)])) : _core().types.nullLiteral();
+      node.value = _core().types.callExpression(state.addHelper("initializerWarningHelper"), [descriptor, _core().types.thisExpression()]);
+      WARNING_CALLS.add(node.value);
+      acc = acc.concat([_core().types.assignmentExpression("=", descriptor, _core().types.callExpression(state.addHelper("applyDecoratedDescriptor"), [_core().types.cloneNode(target), _core().types.cloneNode(property), _core().types.arrayExpression(decorators.map(dec => _core().types.cloneNode(dec.callee))), _core().types.objectExpression([_core().types.objectProperty(_core().types.identifier("enumerable"), _core().types.booleanLiteral(true)), _core().types.objectProperty(_core().types.identifier("initializer"), initializer)])]))]);
+    } else {
+      acc = acc.concat(_core().types.callExpression(state.addHelper("applyDecoratedDescriptor"), [_core().types.cloneNode(target), _core().types.cloneNode(property), _core().types.arrayExpression(decorators.map(dec => _core().types.cloneNode(dec.callee))), _core().types.isObjectProperty(node) || _core().types.isClassProperty(node, {
+        static: true
+      }) ? buildGetObjectInitializer({
+        TEMP: path.scope.generateDeclaredUidIdentifier("init"),
+        TARGET: _core().types.cloneNode(target),
+        PROPERTY: _core().types.cloneNode(property)
+      }).expression : buildGetDescriptor({
+        TARGET: _core().types.cloneNode(target),
+        PROPERTY: _core().types.cloneNode(property)
+      }).expression, _core().types.cloneNode(target)]));
+    }
+
+    return acc;
+  }, []);
+  return _core().types.sequenceExpression([_core().types.assignmentExpression("=", _core().types.cloneNode(name), path.node), _core().types.sequenceExpression(exprs), _core().types.cloneNode(name)]);
+}
+
+var _default = {
+  ClassDeclaration(path) {
+    const node = path.node;
+
+    if (!hasClassDecorators(node) && !hasMethodDecorators(node.body.body)) {
+      return;
+    }
+
+    const ref = node.id ? _core().types.cloneNode(node.id) : path.scope.generateUidIdentifier("class");
+
+    const letDeclaration = _core().types.variableDeclaration("let", [_core().types.variableDeclarator(ref, _core().types.toExpression(node))]);
+
+    if (path.parentPath.isExportDefaultDeclaration()) {
+      path.parentPath.replaceWithMultiple([letDeclaration, _core().types.exportNamedDeclaration(null, [_core().types.exportSpecifier(_core().types.cloneNode(ref), _core().types.identifier("default"))])]);
+    } else {
+      path.replaceWith(letDeclaration);
+    }
+  },
+
+  ClassExpression(path, state) {
+    const decoratedClass = applyEnsureOrdering(path) || applyClassDecorators(path, state) || applyMethodDecorators(path, state);
+    if (decoratedClass) path.replaceWith(decoratedClass);
+  },
+
+  ObjectExpression(path, state) {
+    const decoratedObject = applyEnsureOrdering(path) || applyObjectDecorators(path, state);
+    if (decoratedObject) path.replaceWith(decoratedObject);
+  },
+
+  AssignmentExpression(path, state) {
+    if (!WARNING_CALLS.has(path.node.right)) return;
+    path.replaceWith(_core().types.callExpression(state.addHelper("initializerDefineProperty"), [_core().types.cloneNode(path.get("left.object").node), _core().types.stringLiteral(path.get("left.property").node.name), _core().types.cloneNode(path.get("right.arguments")[0].node), _core().types.cloneNode(path.get("right.arguments")[1].node)]));
+  }
+
+};
+exports.default = _default;

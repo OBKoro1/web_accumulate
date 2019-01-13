@@ -3,7 +3,7 @@
  * @Github: https://github.com/OBKoro1
  * @Date: 2018-08-28 18:29:08
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-01-03 16:02:05
+ * @LastEditTime: 2019-01-11 18:13:39
  * @Description: 
  */
 module.exports = {
@@ -97,9 +97,10 @@ module.exports = {
             '/accumulate/effect/前端弹幕效果实现思路',
             '/accumulate/effect/正则表达式收集',
             '/accumulate/effect/判断用户浏览器',
-            // '/accumulate/effect/退出页面发送请求',
+            '/accumulate/effect/退出页面发送请求',
             '/accumulate/effect/时间差与时区转换',
             '/accumulate/effect/多维数组展开',
+            '/accumulate/effect/浏览器桌面通知',
             '/accumulate/effect/滚动底部',
             '/accumulate/effect/字符串绑定点击事件',
             '/accumulate/effect/网页标题闪烁',
