@@ -3,7 +3,7 @@
  * @Github: https://github.com/OBKoro1
  * @Date: 2018-08-28 18:29:08
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-01-20 16:26:27
+ * @LastEditTime: 2019-01-24 15:13:31
  * @Description: 
  */
 module.exports = {
@@ -32,7 +32,7 @@ module.exports = {
     nav: [
       { text: '前端积累', link: '/accumulate/' },
       { text: '前端算法', link: '/algorithm/' },
-      { text: '博客', link: 'http://obkoro1.com/' },
+      { text: '关于', link: 'http://obkoro1.com/about/' },
       {
         text: '其他仓库',
         items: [

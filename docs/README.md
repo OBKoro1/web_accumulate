@@ -16,20 +16,16 @@ footer: MIT Licensed | Copyright © 2018-present OBKoro1
 
 * [GitHub](https://github.com/OBKoro1)
 
-* 社区求关注：
+* 项目:
+
+    [VsCode文件头部注释生成插件](https://github.com/OBKoro1/koro1FileHeader)
+
+* 社区：
 
     [掘金](https://juejin.im/user/58714f0eb123db4a2eb95372/posts)
  
     [segmentfault](https://segmentfault.com/u/obkoro1/articles)
 
-* VsCode插件了解一下:
-
-    [VsCode文件头部注释生成插件](https://github.com/OBKoro1/koro1FileHeader)
-
-* 扫描公众号二维码:[OBKoro1的学习分享](https://user-gold-cdn.xitu.io/2018/5/1/1631b6f52f7e7015?w=344&h=344&f=jpeg&s=8317)
-
-::: tip 最新更新都在公众号上
-本文档的最新更新，以及新的文章，算法题，面试题等都会第一时间发布在公众号上。
-:::
+* 微信公众号:[OBKoro1的学习分享](https://user-gold-cdn.xitu.io/2018/5/1/1631b6f52f7e7015?w=344&h=344&f=jpeg&s=8317)
 
 * [关于我](http://obkoro1.com/about/)
