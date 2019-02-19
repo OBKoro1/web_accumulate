@@ -19,6 +19,7 @@ footer: MIT Licensed | Copyright © 2018-present OBKoro1
 * 项目:
 
     [VsCode文件头部注释生成插件](https://github.com/OBKoro1/koro1FileHeader)
+    [H5 notification浏览器桌面通知](https://github.com/OBKoro1/notification-Koro1)
 
 * 社区：
 

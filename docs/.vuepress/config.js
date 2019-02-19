@@ -3,7 +3,7 @@
  * @Github: https://github.com/OBKoro1
  * @Date: 2018-08-28 18:29:08
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-01-24 15:13:31
+ * @LastEditTime: 2019-02-19 15:12:41
  * @Description: 
  */
 module.exports = {
@@ -41,9 +41,14 @@ module.exports = {
             link: 'https://github.com/OBKoro1/Brush_algorithm'
           },
           {
-            text: 'VsCode插件仓库',
+            text: 'VsCode头部注释插件',
             link:
               'https://github.com/OBKoro1/koro1FileHeader'
+          },
+          {
+            text: '浏览器桌面通知npm包',
+            link:
+              'https://github.com/OBKoro1/notification-Koro1'
           }
         ]
       }
