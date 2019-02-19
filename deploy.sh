@@ -32,6 +32,6 @@ git add .
 
 git commit -m $1
 
-git push # 推到码云上
-
 git push github # 推到github上
+
+git push # 推到码云上

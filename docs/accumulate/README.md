@@ -5,7 +5,7 @@
  * @Github: https://github.com/OBKoro1
  * @Date: 2018-09-01 17:41:33
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-01-13 19:07:45
+ * @LastEditTime: 2019-02-18 23:29:52
  * @Description: 
  -->
 当前模块是我平时的一些积累，用以记录一些上手即用的东西/知识点等内容，范围较广。
@@ -25,6 +25,8 @@
     有新的文章，算法题，面试题等都会第一时间发布与公众号上。
 
 ### 最新更新：
+
+[H5 notification浏览器桌面通知](http://obkoro1.com/web_accumulate/accumulate/effect/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%A1%8C%E9%9D%A2%E9%80%9A%E7%9F%A5.html)
 
 [刷新/关闭页面之前发送请求](http://obkoro1.com/web_accumulate/accumulate/effect/%E9%80%80%E5%87%BA%E9%A1%B5%E9%9D%A2%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82.html)
 
