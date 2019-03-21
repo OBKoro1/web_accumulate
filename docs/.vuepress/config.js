@@ -3,7 +3,7 @@
  * @Github: https://github.com/OBKoro1
  * @Date: 2018-08-28 18:29:08
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-02-19 15:12:41
+ * @LastEditTime: 2019-03-22 05:15:19
  * @Description: 
  */
 module.exports = {
@@ -76,6 +76,7 @@ module.exports = {
           title: 'ES6',
           children:[
             '/accumulate/ES6/',
+            '/accumulate/ES6/论普通函数和箭头函数的区别以及箭头函数的注意事项和不适用场景',
             '/accumulate/ES6/let和const命令',
           ]
         },
