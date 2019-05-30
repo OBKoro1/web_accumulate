@@ -1,6 +1,6 @@
 ## 手摸手教你使用WebSocket
 
-![](http://ww1.sinaimg.cn/large/005Y4rColy1fwhfykkrenj30w00k075m.jpg)
+![](https://github.com/OBKoro1/articleImg_src/blob/master/weibo_img_move/005Y4rColy1fwhfykkrenj30w00k075m.jpg?raw=true)
 
 在本篇文章之前，`WebSocket`很多人听说过，没见过，没用过，以为是个很高大上的技术，实际上这个技术并不神秘，可以说是个很容易就能掌握的技术，希望在看完本文之后，马上把文中的栗子拿出来自己试一试，实践出真知。
 

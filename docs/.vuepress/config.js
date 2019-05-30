@@ -3,7 +3,7 @@
  * @Github: https://github.com/OBKoro1
  * @Date: 2018-08-28 18:29:08
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-05-20 15:33:18
+ * @LastEditTime: 2019-05-30 10:52:13
  * @Description: 
  */
 module.exports = {
@@ -27,7 +27,7 @@ module.exports = {
         buttonText: '点这里'
       }
     },
-    lastUpdated: 'Last Updated', // 最后更新时间
+    lastUpdated: '最后更新时间', // 最后更新时间
     sidebarDepth: 3,
     nav: [
       { text: '前端积累', link: '/accumulate/' },

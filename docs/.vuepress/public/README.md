@@ -6,7 +6,7 @@
 
 **文档长这样：**
 
-![](http://ww1.sinaimg.cn/large/005Y4rCogy1fvicymvh7nj30s30eg3z8.jpg)
+![](https://github.com/OBKoro1/articleImg_src/blob/master/weibo_img_move/005Y4rCogy1fvicymvh7nj30s30eg3z8.jpg?raw=true)
 
 ### 前端算法：
 

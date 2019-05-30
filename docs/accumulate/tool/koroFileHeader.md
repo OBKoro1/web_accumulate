@@ -43,7 +43,7 @@
 
 1.  栗子：
 
-    ![](http://ww1.sinaimg.cn/large/005Y4rCogy1fx9zwdxcaeg30ie0kok39.gif)
+    ![](https://github.com/OBKoro1/articleImg_src/blob/master/weibo_img_move/005Y4rCogy1fx9zwdxcaeg30ie0kok39.gif?raw=true)
 
 2. 文件头部注释：
 

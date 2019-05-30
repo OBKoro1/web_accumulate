@@ -1,5 +1,8 @@
 !/usr/bin/env sh
 
+# localhost 8080
+# npm run dev
+
 # 确保脚本抛出遇到的错误
 set -e
 
