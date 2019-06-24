@@ -6,7 +6,7 @@
 
 我们实际上是在谈论下面这两种情况:
 
-![](https://user-gold-cdn.xitu.io/2018/6/9/163e32ac608a1146?w=1849&h=301&f=png&s=70428)
+![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/163e32ac608a1146?w=1849&h=301&f=png&s=70428?raw=true)
 
 
 如上图，浏览器对静态资源的HTTP缓存有两种情况，一种是强缓存(本地缓存)，另一种是弱缓存(协商缓存)。
@@ -18,13 +18,13 @@
 
 #### 浏览器第一次请求资源时：
 
-![图片出自网络](https://user-gold-cdn.xitu.io/2018/6/9/163e323d0879019f?w=686&h=382&f=png&s=25723)
+![图片出自网络](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/163e323d0879019f?w=686&h=382&f=png&s=25723?raw=true)
 
 浏览器**第一次请求资源时，必须下载所有的资源，然后根据响应的header内容来决定，如何缓存资源**。可能采用的是强缓存，也可能是弱缓存
 
 #### 浏览器后续请求资源时的匹配流程：
 
-![](https://user-gold-cdn.xitu.io/2018/6/9/163e33ba0484fb14?w=401&h=861&f=png&s=122643)
+![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/163e33ba0484fb14?w=401&h=861&f=png&s=122643?raw=true)
 
 
 由上图可以知道当浏览器请求一个静态资源时的HTTP流程：
@@ -172,7 +172,7 @@ If-None-Match: "8F759D4F67D66A7244638AD249675BE2" // 跟ETag的值一样
 
 同时使用这两个报文头，**两个都匹配才会命中弱缓存**，否则将重新请求资源。
 
-![](https://user-gold-cdn.xitu.io/2018/6/9/163e3d5d5e2119a5?w=975&h=583&f=png&s=74354)
+![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/163e3d5d5e2119a5?w=975&h=583&f=png&s=74354?raw=true)
 
 ### Etag 主要为了解决 Last-Modified 无法解决的一些问题：
 
@@ -188,7 +188,7 @@ F5刷新导致强缓存失效。
 
 ctrl+F5强制刷新页面强缓存，弱缓存都会失效。
 
-![图片出自网络](https://user-gold-cdn.xitu.io/2018/6/9/163e4019ed29d0ae?w=495&h=175&f=png&s=7693)
+![图片出自网络](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/163e4019ed29d0ae?w=495&h=175&f=png&s=7693?raw=true)
 
 
 ### 如何设置？

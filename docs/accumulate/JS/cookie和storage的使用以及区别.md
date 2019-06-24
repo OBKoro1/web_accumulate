@@ -132,7 +132,7 @@ localStorage和sessionStorage唯一的差别一个是永久保存在浏览器里
 
 localStorage和sessionStorage是html5才应用的新特性，可能有些浏览器并不支持，这里要注意。
 
-![](https://user-gold-cdn.xitu.io/2017/11/25/15ff2d54764e53af?w=861&h=113&f=png&s=9592)
+![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/15ff2d54764e53af?w=861&h=113&f=png&s=9592?raw=true)
 
 cookie的浏览器支持没有找到，可以通过下面这段代码来判断所使用的浏览器是否支持cookie：
 
@@ -143,7 +143,7 @@ cookie的浏览器支持没有找到，可以通过下面这段代码来判断�
 
 ### 数据存放处：
 
-![Cookie、localStorage、sessionStorage数据存放处](https://user-gold-cdn.xitu.io/2017/11/25/15ff2f727028f37b?w=1028&h=378&f=png&s=28065)
+![Cookie、localStorage、sessionStorage数据存放处](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/15ff2f727028f37b?w=1028&h=378&f=png&s=28065?raw=true)
 
 
 ### 番外：各浏览器Cookie大小、个数限制。

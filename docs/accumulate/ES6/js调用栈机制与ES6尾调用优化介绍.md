@@ -2,7 +2,7 @@
 
 调用栈的英文名叫做Call Stack，大家或多或少是有听过的，但是对于js调用栈的工作方式以及如何在工作中利用这一特性，大部分人可能没有进行过更深入的研究，这块内容可以说对我们前端来说就是所谓的基础知识，咋一看好像用处并没有很大，但掌握好这个知识点，就可以让我们在以后可以走的更远，走的更快！
 
-> [博客](http://obkoro1.com/)、[前端积累文档](http://obkoro1.com/web_accumulate/accumulate/)、[公众号](https://user-gold-cdn.xitu.io/2018/5/1/1631b6f52f7e7015?w=344&h=344&f=jpeg&s=8317)、[GitHub](https://github.com/OBKoro1)
+> [博客](http://obkoro1.com/)、[前端积累文档](http://obkoro1.com/web_accumulate/accumulate/)、[公众号](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/1631b6f52f7e7015?w=344&h=344&f=jpeg&s=8317?raw=true)、[GitHub](https://github.com/OBKoro1)
 
 ---
 
@@ -51,7 +51,7 @@ function multiply(x, y) {
 
 调用栈中的执行步骤如下(删除multiply的步骤被省略了)：
 
-![](https://user-gold-cdn.xitu.io/2019/5/18/16acb4a439190d49?w=1024&h=768&f=png&s=68010)
+![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/16acb4a439190d49?w=1024&h=768&f=png&s=68010?raw=true)
 
 **调用侦**：
 
@@ -61,7 +61,7 @@ function multiply(x, y) {
 
 找到一张图片，调用侦：
 
-![](https://user-gold-cdn.xitu.io/2019/5/19/16ace8030a36c8dd?w=326&h=440&f=png&s=50219)
+![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/16ace8030a36c8dd?w=326&h=440&f=png&s=50219?raw=true)
 
 ### 调用栈优化内存
 
@@ -159,11 +159,11 @@ function c() {
 ```
 如图所示,点击右侧还能查看代码位置：
 
-![](https://user-gold-cdn.xitu.io/2019/5/20/16ad3f508ab127a9?w=678&h=318&f=png&s=29341)
+![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/16ad3f508ab127a9?w=678&h=318&f=png&s=29341?raw=true)
 
 2. `bugger`打断点形式，这也是我最喜欢的调试方式：
 
-![](https://user-gold-cdn.xitu.io/2019/5/20/16ad3ff354f2dac3?w=2024&h=1240&f=png&s=339262)
+![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/16ad3ff354f2dac3?w=2024&h=1240&f=png&s=339262?raw=true)
 
 
 ## 结语
@@ -193,4 +193,4 @@ function c() {
 
 觉得还不错的话，给项目点个[star](https://github.com/OBKoro1/Brush_algorithm)吧
 
-[博客](http://obkoro1.com/)、[前端算法](https://github.com/OBKoro1/Brush_algorithm)、[公众号](https://user-gold-cdn.xitu.io/2018/5/1/1631b6f52f7e7015?w=344&h=344&f=jpeg&s=8317)
+[博客](http://obkoro1.com/)、[前端算法](https://github.com/OBKoro1/Brush_algorithm)、[公众号](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/1631b6f52f7e7015?w=344&h=344&f=jpeg&s=8317?raw=true)

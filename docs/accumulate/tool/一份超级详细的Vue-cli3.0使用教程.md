@@ -3,7 +3,7 @@
 在vue-cli 2.X的时候，也写过一篇类似的[文章](https://juejin.im/post/597eee92f265da3e2e56e37c)，在八月份的时候vue-cli已经更新到了3.X，新版本的脚手架，功能灰常强大，试用过后非常喜欢，写篇教程来帮助各位踩一下坑。
 
 
-> 游泳、健身了解一下：[博客](http://obkoro1.com/)、[前端积累文档](http://obkoro1.com/web_accumulate/accumulate/)、[公众号](https://user-gold-cdn.xitu.io/2018/5/1/1631b6f52f7e7015?w=344&h=344&f=jpeg&s=8317)、[GitHub](https://github.com/OBKoro1)
+> 游泳、健身了解一下：[博客](http://obkoro1.com/)、[前端积累文档](http://obkoro1.com/web_accumulate/accumulate/)、[公众号](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/1631b6f52f7e7015?w=344&h=344&f=jpeg&s=8317?raw=true)、[GitHub](https://github.com/OBKoro1)
 
 ### 主要内容：
 
@@ -66,7 +66,7 @@ mac下，更新版本的时候,如果提示你权限不够：
 
 这是个很棒的功能，用于**开发一个库、组件，做一些小demo等都是非常适合的**！
 
-![](https://user-gold-cdn.xitu.io/2018/11/10/166fc87173c427ea?w=1672&h=1754&f=png&s=344139)
+![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/166fc87173c427ea?w=1672&h=1754&f=png&s=344139?raw=true)
 
 ---
 
@@ -89,7 +89,7 @@ mac下，更新版本的时候,如果提示你权限不够：
 
 * 在每次选择手动配置之后，会询问你是否保存配置，也就是图片中的`koro`选项，这样以后我们在进行创建项目的时候**只需使用原先的配置**就可以了，而不用再进行配置。
 
-![](https://user-gold-cdn.xitu.io/2018/11/10/166fca9d5b691cc3?w=507&h=82&f=png&s=10124)
+![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/166fca9d5b691cc3?w=507&h=82&f=png&s=10124?raw=true)
 
 
 ### 3. 选择配置：
@@ -181,7 +181,7 @@ mac下，更新版本的时候,如果提示你权限不够：
 
 * 还有一些小变动像：static文件夹改为public了，router文件夹变成了单个文件之类的(我之前一直这么做,嘿嘿)。
 
-    ![](https://user-gold-cdn.xitu.io/2018/11/10/166fcd735ce563ba?w=214&h=520&f=png&s=33855)
+    ![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/166fcd735ce563ba?w=214&h=520&f=png&s=33855?raw=true)
 
 
 ### 13.启动项目：
@@ -191,7 +191,7 @@ mac下，更新版本的时候,如果提示你权限不够：
 
 *  打开`http://localhost:8080`：
     
-    ![](https://user-gold-cdn.xitu.io/2018/11/10/166fcd823cce157b?w=3352&h=1938&f=png&s=259698)
+    ![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/166fcd823cce157b?w=3352&h=1938&f=png&s=259698?raw=true)
 
 ---
 
@@ -203,22 +203,22 @@ mac下，更新版本的时候,如果提示你权限不够：
 * 这是个全局的命令 在哪个文件夹都可以打开
 * 界面(下图)，重要的项目可以收藏起来(置顶)：
     
-    ![](https://user-gold-cdn.xitu.io/2018/11/10/166fd034aae0942d?w=1918&h=999&f=png&s=86025)
+    ![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/166fd034aae0942d?w=1918&h=999&f=png&s=86025?raw=true)
 
 
 ### 创建项目和导入项目：
 
 1. 目录选中之后，导入项目点击下面的导入就可以了。
 
-    ![](https://user-gold-cdn.xitu.io/2018/11/10/166fd0f5359fc7ba?w=980&h=389&f=png&s=147646)
+    ![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/166fd0f5359fc7ba?w=980&h=389&f=png&s=147646?raw=true)
     
 2. 创建项目，填一个文件夹名字：
     
-    ![](https://user-gold-cdn.xitu.io/2018/11/10/166fd177edf662d3?w=651&h=591&f=png&s=61598)
+    ![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/166fd177edf662d3?w=651&h=591&f=png&s=61598?raw=true)
 
 3. 然后选一下预先保存好的设置就可以了，非常方便，建议采用图形界面来创建项目：
 
-    ![](https://user-gold-cdn.xitu.io/2018/11/10/166fd1a86f0e7bd5?w=1029&h=558&f=png&s=83704)
+    ![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/166fd1a86f0e7bd5?w=1029&h=558&f=png&s=83704?raw=true)
 
 
 ### 项目管理：
@@ -230,17 +230,17 @@ mac下，更新版本的时候,如果提示你权限不够：
 * 这个仪表盘，主要是为了我们操作方便而设置的
 * 可以点击右上角的按钮，来添加/移动这些功能选项。
 
-    ![](https://user-gold-cdn.xitu.io/2018/11/10/166fd276f5a4de8b?w=1918&h=999&f=png&s=214672)
+    ![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/166fd276f5a4de8b?w=1918&h=999&f=png&s=214672?raw=true)
     
 #### 2. vue-cli3.x插件：
 
 * vue-cli3的插件功能，详情了解[官方文档](https://cli.vuejs.org/zh/guide/plugins-and-presets.html#%E6%8F%92%E4%BB%B6)
 
-    ![](https://user-gold-cdn.xitu.io/2018/11/10/166fd344e9e5edc0?w=1916&h=998&f=png&s=150720)
+    ![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/166fd344e9e5edc0?w=1916&h=998&f=png&s=150720?raw=true)
 
 * cli3插件安装的过程：
 
-    ![cli3插件安装的过程](https://user-gold-cdn.xitu.io/2018/11/10/166fd3595b37e06a?w=1535&h=972&f=png&s=223096)
+    ![cli3插件安装的过程](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/166fd3595b37e06a?w=1535&h=972&f=png&s=223096?raw=true)
 
 
 #### 3. 项目依赖
@@ -248,14 +248,14 @@ mac下，更新版本的时候,如果提示你权限不够：
 * 直接在图形界面管理依赖很舒服了！
 * 安装依赖的时候，要记得选择开发依赖/运行依赖！
 
-    ![](https://user-gold-cdn.xitu.io/2018/11/10/166fd391835d2edb?w=1915&h=996&f=png&s=287780)
+    ![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/166fd391835d2edb?w=1915&h=996&f=png&s=287780?raw=true)
 
 
 #### 4. 项目配置
 
 * 可以对cli进行一些配置、Eslint规则修改：
 
-    ![](https://user-gold-cdn.xitu.io/2018/11/10/166fd3c81be26fd0?w=1911&h=990&f=png&s=248696)
+    ![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/166fd3c81be26fd0?w=1911&h=990&f=png&s=248696?raw=true)
 
 #### 5. 任务：
 
@@ -263,11 +263,11 @@ mac下，更新版本的时候,如果提示你权限不够：
 * 可以清楚的看到各个模块用了多久，方便我们**针对性的进行优化**：
 
 
-    ![](https://user-gold-cdn.xitu.io/2018/11/10/166fd41bde538496?w=1913&h=996&f=png&s=223258)
+    ![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/166fd41bde538496?w=1913&h=996&f=png&s=223258?raw=true)
 
 * build 打包项目：这里**主要展示了图表的功能**，比以前2.x生成报告更加直观，超级棒！
 
-    ![](https://user-gold-cdn.xitu.io/2018/11/10/166fd42dae770e0d?w=1731&h=906&f=png&s=121200)
+    ![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/166fd42dae770e0d?w=1731&h=906&f=png&s=121200?raw=true)
 
 #### 6. 其他
 
@@ -275,7 +275,7 @@ mac下，更新版本的时候,如果提示你权限不够：
 * 直接打开编辑器,很棒了！
 * 还有一些乱七八糟的按钮
 
-    ![](https://user-gold-cdn.xitu.io/2018/11/10/166fd4f37d2fd567?w=1913&h=994&f=png&s=145551)
+    ![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/166fd4f37d2fd567?w=1913&h=994&f=png&s=145551?raw=true)
 
 ---
 
@@ -285,7 +285,7 @@ mac下，更新版本的时候,如果提示你权限不够：
 
 ### 希望看完的朋友可以点个喜欢/关注，您的支持是对我最大的鼓励。
 
-[博客](http://obkoro1.com/)、[前端积累文档](http://obkoro1.com/web_accumulate/accumulate/)、[公众号](https://user-gold-cdn.xitu.io/2018/5/1/1631b6f52f7e7015?w=344&h=344&f=jpeg&s=8317)、[GitHub](https://github.com/OBKoro1)
+[博客](http://obkoro1.com/)、[前端积累文档](http://obkoro1.com/web_accumulate/accumulate/)、[公众号](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/1631b6f52f7e7015?w=344&h=344&f=jpeg&s=8317?raw=true)、[GitHub](https://github.com/OBKoro1)
  
  以上2018.11.10
  

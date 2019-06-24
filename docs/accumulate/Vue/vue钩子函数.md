@@ -387,7 +387,7 @@ router.afterEach((to, from) => {
 
 关于组件的生命周期，是时候放出这张图片了：
 
-![](https://user-gold-cdn.xitu.io/2018/7/21/164bbf610b61f3cd?w=1200&h=2800&f=jpeg&s=946212)
+![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/164bbf610b61f3cd?w=1200&h=2800&f=jpeg&s=946212?raw=true)
 
 这张图片已经讲得很清楚了，很多人这部分也很清楚了，大部分生命周期并不会用到，这里提一下几点：
 
@@ -439,4 +439,4 @@ Vue提供了很多钩子，但很多钩子我们几乎不会用到，只有清�
 
 觉得还不错的话，给我的项目点个[star](https://github.com/OBKoro1/Brush_algorithm)吧
 
-游泳、健身了解一下：[博客](http://obkoro1.com/)、[前端算法](https://github.com/OBKoro1/Brush_algorithm)、[公众号](https://user-gold-cdn.xitu.io/2018/5/1/1631b6f52f7e7015?w=344&h=344&f=jpeg&s=8317)
+游泳、健身了解一下：[博客](http://obkoro1.com/)、[前端算法](https://github.com/OBKoro1/Brush_algorithm)、[公众号](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/1631b6f52f7e7015?w=344&h=344&f=jpeg&s=8317?raw=true)

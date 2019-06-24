@@ -4,7 +4,7 @@
 
 在本篇文章之前，`WebSocket`很多人听说过，没见过，没用过，以为是个很高大上的技术，实际上这个技术并不神秘，可以说是个很容易就能掌握的技术，希望在看完本文之后，马上把文中的栗子拿出来自己试一试，实践出真知。
 
-> 游泳、健身了解一下：[博客](http://obkoro1.com/)、[前端积累文档](http://obkoro1.com/web_accumulate/accumulate/)、[公众号](https://user-gold-cdn.xitu.io/2018/5/1/1631b6f52f7e7015?w=344&h=344&f=jpeg&s=8317)、[GitHub](https://github.com/OBKoro1)
+> 游泳、健身了解一下：[博客](http://obkoro1.com/)、[前端积累文档](http://obkoro1.com/web_accumulate/accumulate/)、[公众号](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/1631b6f52f7e7015?w=344&h=344&f=jpeg&s=8317?raw=true)、[GitHub](https://github.com/OBKoro1)
 
 
 ### `WebSocket`解决了什么问题：
@@ -272,7 +272,7 @@ if (socket.bufferedAmount === 0) {
 
 ### 希望看完的朋友可以点个喜欢/关注，您的支持是对我最大的鼓励。
 
-[博客](http://obkoro1.com/)、[前端积累文档](http://obkoro1.com/web_accumulate/accumulate/)、[公众号](https://user-gold-cdn.xitu.io/2018/5/1/1631b6f52f7e7015?w=344&h=344&f=jpeg&s=8317)、[GitHub](https://github.com/OBKoro1)
+[博客](http://obkoro1.com/)、[前端积累文档](http://obkoro1.com/web_accumulate/accumulate/)、[公众号](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/1631b6f52f7e7015?w=344&h=344&f=jpeg&s=8317?raw=true)、[GitHub](https://github.com/OBKoro1)
  
  以上2018.10.22
  

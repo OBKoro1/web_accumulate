@@ -417,7 +417,7 @@ export default new Router({
 
 在chrome开发者工具中会看一个vue的一栏，如下对我们网页应用内数据变化，组件层级等信息能够有更准确快速的了解。
 
-![](https://user-gold-cdn.xitu.io/2018/6/3/163c50e5198f6b8c?w=1917&h=324&f=png&s=45776)
+![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/163c50e5198f6b8c?w=1917&h=324&f=png&s=45776?raw=true)
 
 ---
 

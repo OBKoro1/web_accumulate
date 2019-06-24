@@ -2,7 +2,7 @@
 
 `let`和`const`是 ES6 新增的命令，用于声明变量，这两个命令跟 ES5 的`var`有许多不同，并且`let`和`const`也有一些细微的不同，再认真阅读了阮一峰老师的[文档](http://es6.ruanyifeng.com/#docs/let)后，发现还是有一些不知道的细节...
 
-> [博客](http://obkoro1.com/)、[前端积累文档](http://obkoro1.com/web_accumulate/accumulate/)、[公众号](https://user-gold-cdn.xitu.io/2018/5/1/1631b6f52f7e7015?w=344&h=344&f=jpeg&s=8317)、[GitHub](https://github.com/OBKoro1)
+> [博客](http://obkoro1.com/)、[前端积累文档](http://obkoro1.com/web_accumulate/accumulate/)、[公众号](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/1631b6f52f7e7015?w=344&h=344&f=jpeg&s=8317?raw=true)、[GitHub](https://github.com/OBKoro1)
 
 ## 内容：
 
@@ -248,7 +248,7 @@ window.b // undefined
 
 觉得还不错的话，给我的项目点个[star](https://github.com/OBKoro1/Brush_algorithm)吧
 
-[博客](http://obkoro1.com/)、[前端积累文档](http://obkoro1.com/web_accumulate/accumulate/)、[公众号](https://user-gold-cdn.xitu.io/2018/5/1/1631b6f52f7e7015?w=344&h=344&f=jpeg&s=8317)、[GitHub](https://github.com/OBKoro1)
+[博客](http://obkoro1.com/)、[前端积累文档](http://obkoro1.com/web_accumulate/accumulate/)、[公众号](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/1631b6f52f7e7015?w=344&h=344&f=jpeg&s=8317?raw=true)、[GitHub](https://github.com/OBKoro1)
 
 
 参考资料：

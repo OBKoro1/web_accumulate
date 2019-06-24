@@ -20,7 +20,7 @@
 
 ### 公众号：
 
-* 扫描公众号二维码:[OBKoro1的学习分享](https://user-gold-cdn.xitu.io/2018/5/1/1631b6f52f7e7015?w=344&h=344&f=jpeg&s=8317)
+* 扫描公众号二维码:[OBKoro1的学习分享](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/1631b6f52f7e7015?w=344&h=344&f=jpeg&s=8317?raw=true)
 
     有新的文章，算法题，面试题等都会第一时间发布与公众号上。
 
