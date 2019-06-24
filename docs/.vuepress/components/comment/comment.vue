@@ -3,7 +3,7 @@
  * @Author: OBKoro1
  * @Created_time: 2019-06-23 14:48:30
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-06-24 18:49:59
+ * @LastEditTime: 2019-06-24 18:52:33
  * @Description: gitalk评论组件
  * 文章：https://juejin.im/post/5c9e30fb6fb9a05e1c4cecf6
  -->
@@ -42,7 +42,7 @@ export default {
           res = `${articleTile} | ${obj[pathArr[3]]}`;
         } else {
           // 文章
-          res = `${articleTile} | ${obj[pathArr[3]]}`;
+          res = `${articleTile} | ${pathArr[3]}`;
         }
       } else if (pathArr[2]) {
         // 第二层主目录是否创建issue
@@ -103,7 +103,7 @@ export default {
           id: articleTile, // issue title
           title,
           body,
-          // labels: labels,
+          labels: labels,
           distractionFreeMode: false
         };
         const gitalk = new Gitalk(commentConfig);
