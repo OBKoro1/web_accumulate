@@ -3,7 +3,11 @@
  # @Author: OBKoro1
  # @Created_time: 2019-06-24 09:47:03
  # @LastEditors: OBKoro1
+<<<<<<< HEAD
  # @LastEditTime: 2019-06-24 10:49:10
+=======
+ # @LastEditTime: 2019-06-24 11:45:24
+>>>>>>> f974065bd9fa8a831e45195595901055a6da2da8
  # @Description: 部署 
 ###
 
@@ -44,6 +48,6 @@ git add .
 
 git commit -m $1
 
-git push github  master:master # 推到github上
+git push github master:master # 推到github上1222
 
 git push # 推到码云上
