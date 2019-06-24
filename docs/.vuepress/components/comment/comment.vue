@@ -3,7 +3,7 @@
  * @Author: OBKoro1
  * @Created_time: 2019-06-23 14:48:30
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-06-24 14:18:14
+ * @LastEditTime: 2019-06-24 15:02:23
  * @Description: gitalk评论组件
  * 文章：https://juejin.im/post/5c9e30fb6fb9a05e1c4cecf6
  -->
@@ -15,7 +15,6 @@
 </template>
 <script>
 import file2 from "../../../README.md";
-console.log("file", file2);
 
 export default {
   name: "comment",
@@ -24,6 +23,7 @@ export default {
   },
   methods: {
     issueTitle() {
+      window.file2 = file2;
       console.log("this", this, window);
       const title = location.pathname;
       const pathArr = title.split("/");

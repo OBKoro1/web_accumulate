@@ -1,7 +1,7 @@
 {
   "name": "web_accumulate",
   "version": "1.0.0",
-  "description": "前端实践",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "vuepress dev docs",
