@@ -3,7 +3,7 @@
  * @Author: OBKoro1
  * @Created_time: 2019-06-23 14:48:30
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-06-24 10:34:27
+ * @LastEditTime: 2019-06-24 13:51:01
  * @Description: gitalk评论组件
  * 文章：https://juejin.im/post/5c9e30fb6fb9a05e1c4cecf6
  -->
@@ -15,6 +15,9 @@
 </template>
 <script>
 import { setTimeout } from "timers";
+import fs from 'fs'
+console.log('node',fs)
+
 export default {
   name: "comment",
   data() {
@@ -25,9 +28,10 @@ export default {
       console.log("this", this, window);
       const title = location.pathname;
       const pathArr = title.split("/");
-      const fileName = pathArr[pathArr.length - 1];
-      const fileNameArr = fileName.split(".");
       let res;
+      // "js 调用栈机制与ES6尾调用优化介绍"
+      // "OBKoro1前端积累"
+      let articleTile = this.$page.title;
       if (pathArr[3]) {
         // 文章页面创建issue
         if (pathArr[2] === "algorithm") {
@@ -37,24 +41,29 @@ export default {
             simple: "简单级-算法",
             medium: "中等级-算法"
           };
-          res = `${fileNameArr[0]} | ${obj[pathArr[3]]}`;
+          res = `${articleTile} | ${obj[pathArr[3]]}`;
         } else {
           // 文章
-          res = `${fileNameArr[0]} | ${pathArr[3]}`;
+          res = `${articleTile} | ${pathArr[3]}`;
         }
       } else if (pathArr[2]) {
         // 第二层主目录是否创建issue
         let agreeArr = ["accumulate", "algorithm"];
         if (agreeArr.includes(pathArr[2])) {
           let obj = {
-            accumulate: "前端博客积累",
+            accumulate: "OBKoro1博客",
             algorithm: "前端算法"
           };
           res = obj[pathArr[2]];
         }
       }
-      console.log("pathArr", pathArr, fileName, fileNameArr, res);
-      return res;
+      console.log("pathArr", pathArr, res);
+      return [res, articleTile];
+    },
+    issueLabels() {
+      return this.$page.headers.map(item => {
+        return item.title;
+      });
     }
   },
   mounted() {
@@ -63,7 +72,8 @@ export default {
     script.src = "https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js";
     body.appendChild(script);
     script.onload = () => {
-      const title = this.issueTitle();
+      const [title, articleTile] = this.issueTitle();
+
       // 创建issue TODO: false
       if (false) {
         const commentConfig = {
@@ -76,10 +86,10 @@ export default {
           // id 用于当前页面的唯一标识，一般来讲 pathname 足够了，
 
           // 但是如果你的 pathname 超过 50 个字符，GitHub 将不会成功创建 issue，此情况可以考虑给每个页面生成 hash 值的方法.
-          id: title, // issue title
+          id: articleTile, // issue title
           title,
-          //   TODO: 配置：https://github.com/gitalk/gitalk/blob/master/readme-cn.md
-          //   labels: [ 'Default']
+          // body:,
+          labels: this.issueLabels(),
           distractionFreeMode: false,
           // 如果当前页面没有相应的 isssue 且登录的用户属于 admin，则会自动创建 issue。如果设置为 true，则显示一个初始化页面，创建 issue 需要点击 init 按钮
           createIssueManually: true
@@ -88,17 +98,8 @@ export default {
         gitalk.render("gitalk-container");
         console.log(
           'document.querySelector(".gt-copyright")',
-          document.querySelector(".gt-copyright")
+          commentConfig,
         );
-        // 删除gitalk dom
-        setTimeout(() => {
-          let dom = document.querySelector(".gt-copyright");
-          console.log("document", dom);
-          if (dom) {
-            dom.remove();
-            dom = null;
-          }
-        }, 2000);
       }
     };
   }
