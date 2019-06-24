@@ -3,7 +3,7 @@
  * @Author: OBKoro1
  * @Created_time: 2019-06-23 14:48:30
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-06-24 19:19:43
+ * @LastEditTime: 2019-06-24 19:30:28
  * @Description: gitalk评论组件
  * 文章：https://juejin.im/post/5c9e30fb6fb9a05e1c4cecf6
  -->
@@ -60,18 +60,16 @@ export default {
     },
     issueLabels() {
       let labels = this.$page.headers.map(item => {
+        if (item.title.length > 50) {
+          item.title = item.title.slice(0, 48);
+        }
         return item.title;
       });
       // 增加meta
       document.querySelector("meta[name=description]").content = labels.join(
         ","
       );
-      labels.length = 10;
-      // 'js'
-      let newArr = [
-        ...labels
-      ];
-      return newArr;
+      return labels;
     }
   },
   mounted() {
@@ -84,7 +82,7 @@ export default {
       const labels = this.issueLabels();
       // 创建issue TODO: false
       // let body = "# 哈哈哈";
-       let body = "<h2>h2h2 哈哈哈</h2>";
+      let body = "<h2>h2h2 哈哈哈</h2>";
       if (title) {
         const commentConfig = {
           clientID: "8fbce2735aa4b865e9df",
@@ -99,8 +97,7 @@ export default {
           id: articleTile, // issue title
           title,
           body,
-          labels: ['documentdocumentdocumentdocumentdocumentd', 'documentdo', 'c2d2947de913af238dc5a22b1db8de0d9e834096'],
-          // labels: labels,
+          labels: labels,
           distractionFreeMode: false
         };
         const gitalk = new Gitalk(commentConfig);
