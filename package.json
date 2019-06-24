@@ -1,14 +1,16 @@
 {
   "name": "web_accumulate",
   "version": "1.0.0",
-  "description": "",
+  "description": "前端实践",
   "main": "index.js",
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "node ./builds/addComponents.js && vuepress build docs && node ./builds/delComponents.js",
     "d": "bash deploy.sh"
   },
-  "keywords": [],
+  "keywords": [
+    "OBKoro1"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {

@@ -3,7 +3,7 @@
  * @Author: OBKoro1
  * @Created_time: 2019-06-23 14:48:30
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-06-24 13:51:01
+ * @LastEditTime: 2019-06-24 14:18:14
  * @Description: gitalk评论组件
  * 文章：https://juejin.im/post/5c9e30fb6fb9a05e1c4cecf6
  -->
@@ -14,9 +14,8 @@
   </div>
 </template>
 <script>
-import { setTimeout } from "timers";
-import fs from 'fs'
-console.log('node',fs)
+import file2 from "../../../README.md";
+console.log("file", file2);
 
 export default {
   name: "comment",
@@ -61,9 +60,14 @@ export default {
       return [res, articleTile];
     },
     issueLabels() {
-      return this.$page.headers.map(item => {
+      let labels = this.$page.headers.map(item => {
         return item.title;
       });
+      // 增加meta
+      document.querySelector("meta[name=description]").content = labels.join(
+        ","
+      );
+      return labels;
     }
   },
   mounted() {
@@ -73,7 +77,7 @@ export default {
     body.appendChild(script);
     script.onload = () => {
       const [title, articleTile] = this.issueTitle();
-
+      const labels = this.issueLabels();
       // 创建issue TODO: false
       if (false) {
         const commentConfig = {
@@ -89,17 +93,14 @@ export default {
           id: articleTile, // issue title
           title,
           // body:,
-          labels: this.issueLabels(),
+          labels: labels,
           distractionFreeMode: false,
           // 如果当前页面没有相应的 isssue 且登录的用户属于 admin，则会自动创建 issue。如果设置为 true，则显示一个初始化页面，创建 issue 需要点击 init 按钮
           createIssueManually: true
         };
         const gitalk = new Gitalk(commentConfig);
         gitalk.render("gitalk-container");
-        console.log(
-          'document.querySelector(".gt-copyright")',
-          commentConfig,
-        );
+        console.log('document.querySelector(".gt-copyright")', commentConfig);
       }
     };
   }
