@@ -3,7 +3,7 @@
  * @Author: OBKoro1
  * @Created_time: 2019-06-23 14:48:30
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-06-24 18:29:28
+ * @LastEditTime: 2019-06-24 18:45:02
  * @Description: gitalk评论组件
  * 文章：https://juejin.im/post/5c9e30fb6fb9a05e1c4cecf6
  -->
@@ -23,7 +23,7 @@ export default {
   },
   methods: {
     issueTitle() {
-      console.log("this", this, window,file2);
+      console.log("this", this, window, file2);
       const title = location.pathname;
       const pathArr = title.split("/");
       let res;
@@ -66,6 +66,11 @@ export default {
       document.querySelector("meta[name=description]").content = labels.join(
         ","
       );
+      labels.length = 10;
+      labels = [
+        "labelslabelslabelslabelslabelslabelslabelslabelslabelslabelslabelslabelslabelslabelslabelslabelslabelslabelslabelslabelslabelslabelslabelslabelslabelslabelslabelslabelslabelslabelslabelslabelslabelslabelslabelslabelslabels",
+        ...labels
+      ];
       return labels;
     }
   },
@@ -80,9 +85,9 @@ export default {
       // 创建issue TODO: false
       window.num = 0;
       window.num++;
-      let body = "# 哈哈哈"
-      if(window.num === 2){
-        body = '<h2>h2h2 哈哈哈</h2>'
+      let body = "# 哈哈哈";
+      if (window.num === 2) {
+        body = "<h2>h2h2 哈哈哈</h2>";
       }
       if (title) {
         const commentConfig = {
@@ -99,7 +104,7 @@ export default {
           title,
           body,
           // labels: labels,
-          distractionFreeMode: false,
+          distractionFreeMode: false
         };
         const gitalk = new Gitalk(commentConfig);
         gitalk.render("gitalk-container");
