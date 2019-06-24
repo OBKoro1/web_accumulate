@@ -3,7 +3,7 @@
  * @Author: OBKoro1
  * @Created_time: 2019-06-23 14:48:30
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-06-24 19:16:10
+ * @LastEditTime: 2019-06-24 19:18:08
  * @Description: gitalk评论组件
  * 文章：https://juejin.im/post/5c9e30fb6fb9a05e1c4cecf6
  -->
@@ -99,7 +99,7 @@ export default {
           id: articleTile, // issue title
           title,
           body,
-          labels: ['documentdocumentdocumentdocumentdocumentd'],
+          labels: ['documentdocumentdocumentdocumentdocumentd', 'documentdo'],
           // labels: labels,
           distractionFreeMode: false
         };
