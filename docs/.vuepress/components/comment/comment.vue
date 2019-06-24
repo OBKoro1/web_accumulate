@@ -3,7 +3,7 @@
  * @Author: OBKoro1
  * @Created_time: 2019-06-23 14:48:30
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-06-24 18:17:12
+ * @LastEditTime: 2019-06-24 18:21:46
  * @Description: gitalk评论组件
  * 文章：https://juejin.im/post/5c9e30fb6fb9a05e1c4cecf6
  -->
@@ -100,8 +100,6 @@ export default {
           body,
           labels: labels,
           distractionFreeMode: false,
-          // 如果当前页面没有相应的 isssue 且登录的用户属于 admin，则会自动创建 issue。如果设置为 true，则显示一个初始化页面，创建 issue 需要点击 init 按钮
-          createIssueManually: true
         };
         const gitalk = new Gitalk(commentConfig);
         gitalk.render("gitalk-container");
