@@ -3,7 +3,7 @@
  * @Author: OBKoro1
  * @Created_time: 2019-06-23 14:48:30
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-06-24 15:02:23
+ * @LastEditTime: 2019-06-24 18:17:12
  * @Description: gitalk评论组件
  * 文章：https://juejin.im/post/5c9e30fb6fb9a05e1c4cecf6
  -->
@@ -23,8 +23,7 @@ export default {
   },
   methods: {
     issueTitle() {
-      window.file2 = file2;
-      console.log("this", this, window);
+      console.log("this", this, window,file2);
       const title = location.pathname;
       const pathArr = title.split("/");
       let res;
@@ -79,7 +78,13 @@ export default {
       const [title, articleTile] = this.issueTitle();
       const labels = this.issueLabels();
       // 创建issue TODO: false
-      if (false) {
+      window.num = 0;
+      window.num++;
+      let body = "# 哈哈哈"
+      if(window.num === 2){
+        body = '<h2>h2h2 哈哈哈</h2>'
+      }
+      if (title) {
         const commentConfig = {
           clientID: "8fbce2735aa4b865e9df",
           clientSecret: "c2d2947de913af238dc5a22b1db8de0d9e834096",
@@ -92,7 +97,7 @@ export default {
           // 但是如果你的 pathname 超过 50 个字符，GitHub 将不会成功创建 issue，此情况可以考虑给每个页面生成 hash 值的方法.
           id: articleTile, // issue title
           title,
-          // body:,
+          body,
           labels: labels,
           distractionFreeMode: false,
           // 如果当前页面没有相应的 isssue 且登录的用户属于 admin，则会自动创建 issue。如果设置为 true，则显示一个初始化页面，创建 issue 需要点击 init 按钮
