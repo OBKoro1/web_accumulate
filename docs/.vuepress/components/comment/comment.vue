@@ -3,7 +3,7 @@
  * @Author: OBKoro1
  * @Created_time: 2019-06-23 14:48:30
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-06-24 18:54:24
+ * @LastEditTime: 2019-06-24 19:11:40
  * @Description: gitalk评论组件
  * 文章：https://juejin.im/post/5c9e30fb6fb9a05e1c4cecf6
  -->
@@ -67,6 +67,7 @@ export default {
         ","
       );
       labels.length = 10;
+      // 'js'
       let newArr = [
         ...labels
       ];
@@ -98,7 +99,8 @@ export default {
           id: articleTile, // issue title
           title,
           body,
-          labels: labels,
+          labels: ['documentdocumentdocumentdocumentdocumentdocumentdocument'],
+          // labels: labels,
           distractionFreeMode: false
         };
         const gitalk = new Gitalk(commentConfig);
