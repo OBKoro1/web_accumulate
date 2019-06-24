@@ -1,0 +1,700 @@
+<!--
+ * @Github: https://github.com/OBKoro1
+ * @Author: OBKoro1
+ * @Created_time: 2019-06-23 14:48:30
+ * @LastEditors: OBKoro1
+ * @LastEditTime: 2019-06-24 10:34:27
+ * @Description: gitalk评论组件
+ * 文章：https://juejin.im/post/5c9e30fb6fb9a05e1c4cecf6
+ -->
+
+<template>
+  <div class="gitalk-container">
+    <div id="gitalk-container"></div>
+  </div>
+</template>
+<script>
+import { setTimeout } from "timers";
+export default {
+  name: "comment",
+  data() {
+    return {};
+  },
+  methods: {
+    issueTitle() {
+      console.log("this", this, window);
+      const title = location.pathname;
+      const pathArr = title.split("/");
+      const fileName = pathArr[pathArr.length - 1];
+      const fileNameArr = fileName.split(".");
+      let res;
+      if (pathArr[3]) {
+        // 文章页面创建issue
+        if (pathArr[2] === "algorithm") {
+          // 算法
+          let obj = {
+            induction: "入门级-算法",
+            simple: "简单级-算法",
+            medium: "中等级-算法"
+          };
+          res = `${fileNameArr[0]} | ${obj[pathArr[3]]}`;
+        } else {
+          // 文章
+          res = `${fileNameArr[0]} | ${pathArr[3]}`;
+        }
+      } else if (pathArr[2]) {
+        // 第二层主目录是否创建issue
+        let agreeArr = ["accumulate", "algorithm"];
+        if (agreeArr.includes(pathArr[2])) {
+          let obj = {
+            accumulate: "前端博客积累",
+            algorithm: "前端算法"
+          };
+          res = obj[pathArr[2]];
+        }
+      }
+      console.log("pathArr", pathArr, fileName, fileNameArr, res);
+      return res;
+    }
+  },
+  mounted() {
+    let body = document.querySelector(".gitalk-container");
+    let script = document.createElement("script");
+    script.src = "https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js";
+    body.appendChild(script);
+    script.onload = () => {
+      const title = this.issueTitle();
+      // 创建issue TODO: false
+      if (false) {
+        const commentConfig = {
+          clientID: "8fbce2735aa4b865e9df",
+          clientSecret: "c2d2947de913af238dc5a22b1db8de0d9e834096",
+          repo: "web_accumulate",
+          owner: "OBKoro1",
+          // 这里接受一个数组，可以添加多个管理员
+          admin: ["OBKoro1"],
+          // id 用于当前页面的唯一标识，一般来讲 pathname 足够了，
+
+          // 但是如果你的 pathname 超过 50 个字符，GitHub 将不会成功创建 issue，此情况可以考虑给每个页面生成 hash 值的方法.
+          id: title, // issue title
+          title,
+          //   TODO: 配置：https://github.com/gitalk/gitalk/blob/master/readme-cn.md
+          //   labels: [ 'Default']
+          distractionFreeMode: false,
+          // 如果当前页面没有相应的 isssue 且登录的用户属于 admin，则会自动创建 issue。如果设置为 true，则显示一个初始化页面，创建 issue 需要点击 init 按钮
+          createIssueManually: true
+        };
+        const gitalk = new Gitalk(commentConfig);
+        gitalk.render("gitalk-container");
+        console.log(
+          'document.querySelector(".gt-copyright")',
+          document.querySelector(".gt-copyright")
+        );
+        // 删除gitalk dom
+        setTimeout(() => {
+          let dom = document.querySelector(".gt-copyright");
+          console.log("document", dom);
+          if (dom) {
+            dom.remove();
+            dom = null;
+          }
+        }, 2000);
+      }
+    };
+  }
+};
+</script>
+<style lang="stylus" rel="stylesheet/stylus">
+/* variables */
+$gt-color-main = #00adb5;
+$gt-color-sub = #a1a1a1;
+$gt-color-loader = #999999;
+$gt-color-error = #ff3860;
+$gt-color-hr = #E9E9E9;
+$gt-color-input-border = rgba(0, 0, 0, 0.1);
+$gt-color-input-bg = #f6f6f6;
+$gt-color-comment-bg = #f9f9f9;
+$gt-color-comment-adminbg = #f6f9fe;
+$gt-color-comment-txt = #222831;
+$gt-color-link-active = #222831;
+$gt-color-btn = #ffffff;
+$gt-color-popbg = #ffffff;
+$gt-size-base = 16px; // default font-size
+$gt-size-border-radius = 5px;
+$gt-breakpoint-mobile = 479px;
+$gt-mask-z-index = 9999;
+
+/* functions & mixins */
+clearfix() {
+  &:before, &:after {
+    content: ' ';
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+em($px, $base-size = $gt-size-base) {
+  u = unit($px);
+
+  if (u == 'px') {
+    unit(($px / $base-size), 'em');
+  } else {
+    unit($px, u);
+  }
+}
+
+mobile() {
+  @media (max-width: $gt-breakpoint-mobile) {
+    {block};
+  }
+}
+
+/* variables - calculated */
+$gt-size-loader-dot = em(6px);
+$gt-size-loader = em(28px);
+$gt-size-avatar = em(50px);
+$gt-size-avatar-mobi = em(32px);
+
+/* styles */
+.gt-container {
+  box-sizing: border-box;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  font-size: $gt-size-base;
+
+  // common
+  a {
+    color: $gt-color-main;
+
+    &:hover {
+      color: lighten($gt-color-main, 20%);
+      border-color: lighten($gt-color-main, 20%);
+    }
+
+    &.is--active {
+      color: $gt-color-link-active;
+      cursor: default !important;
+
+      &:hover {
+        color: $gt-color-link-active;
+      }
+    }
+  }
+
+  .hide {
+    display: none !important;
+  }
+
+  // icons
+  .gt-svg {
+    display: inline-block;
+    width: em(16px);
+    height: em(16px);
+    vertical-align: sub;
+
+    svg {
+      width: 100%;
+      height: 100%;
+      fill: $gt-color-main;
+    }
+  }
+
+  .gt-ico {
+    display: inline-block;
+
+    &-text {
+      margin-left: em(5px);
+    }
+
+    &-github {
+      .gt-svg {
+        width: 100%;
+        height: 100%;
+      }
+
+      svg {
+        fill: inherit;
+      }
+    }
+  }
+
+  /* loader */
+  .gt-spinner {
+    position: relative;
+
+    &::before {
+      content: '';
+      box-sizing: border-box;
+      position: absolute;
+      top: 3px;
+      width: em(12px);
+      height: em(12px);
+      margin-top: em(-3px);
+      margin-left: em(-6px);
+      border-radius: 50%;
+      border: 1px solid $gt-color-btn;
+      border-top-color: $gt-color-main;
+      animation: gt-kf-rotate 0.6s linear infinite;
+    }
+  }
+
+  .gt-loader {
+    position: relative;
+    border: 1px solid $gt-color-loader;
+    animation: ease gt-kf-rotate 1.5s infinite;
+    display: inline-block;
+    font-style: normal;
+    width: $gt-size-loader;
+    height: $gt-size-loader;
+    // font-size: $gt-size-loader
+    line-height: $gt-size-loader;
+    border-radius: 50%;
+
+    &:before {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 50%;
+      margin-top: -($gt-size-loader-dot / 2);
+      margin-left: -($gt-size-loader-dot / 2);
+      width: $gt-size-loader-dot;
+      height: $gt-size-loader-dot;
+      background-color: $gt-color-loader;
+      border-radius: 50%;
+    }
+  }
+
+  // avatar
+  .gt-avatar {
+    display: inline-block;
+    width: $gt-size-avatar;
+    height: $gt-size-avatar;
+
+    +mobile() {
+      width: $gt-size-avatar-mobi;
+      height: $gt-size-avatar-mobi;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 3px;
+    }
+
+    &-github {
+      width: $gt-size-avatar - em(2px);
+      height: $gt-size-avatar - em(2px);
+
+      +mobile() {
+        width: $gt-size-avatar-mobi - em(2px);
+        height: $gt-size-avatar-mobi - em(2px);
+      }
+    }
+  }
+
+  // button
+  .gt-btn {
+    padding: em(12px) em(20px);
+    display: inline-block;
+    line-height: 1;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    border: 1px solid $gt-color-main;
+    border-radius: $gt-size-border-radius;
+    background-color: $gt-color-main;
+    color: $gt-color-btn;
+    outline: none;
+    font-size: em(12px);
+
+    &-text {
+      font-weight: 400;
+    }
+
+    &-loading {
+      position: relative;
+      margin-left: em(8px);
+      display: inline-block;
+      width: em(12px);
+      height: em(16px);
+      vertical-align: top;
+    }
+
+    &.is--disable {
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
+
+    &-login {
+      margin-right: 0;
+    }
+
+    &-preview {
+      background-color: $gt-color-btn;
+      color: $gt-color-main;
+
+      &:hover {
+        background-color: darken($gt-color-btn, 5%);
+        border-color: lighten($gt-color-main, 20%);
+      }
+    }
+
+    &-public {
+      &:hover {
+        background-color: lighten($gt-color-main, 20%);
+        border-color: lighten($gt-color-main, 20%);
+      }
+    }
+
+    &-loadmore {
+      // loadmore
+    }
+  }
+
+  /* error */
+  .gt-error {
+    text-align: center;
+    margin: em(10px);
+    color: $gt-color-error;
+  }
+
+  /* initing */
+  .gt-initing {
+    padding: em(20px) 0;
+    text-align: center;
+
+    &-text {
+      margin: em(10px) auto;
+      font-size: 92%;
+    }
+  }
+
+  /* no int */
+  .gt-no-init {
+    padding: em(20px) 0;
+    text-align: center;
+  }
+
+  /* link */
+  .gt-link {
+    border-bottom: 1px dotted $gt-color-main;
+
+    &-counts, &-project {
+      text-decoration: none;
+    }
+  }
+
+  /* meta */
+  .gt-meta {
+    margin: em(20px) 0;
+    padding: em(16px) 0;
+    position: relative;
+    border-bottom: 1px solid $gt-color-hr;
+    font-size: em(16px);
+    position: relative;
+    z-index: 9;
+    clearfix();
+  }
+
+  .gt-counts {
+    margin: 0 em(10px) 0 0;
+  }
+
+  .gt-user {
+    float: right;
+    margin: 0;
+    font-size: 92%;
+
+    &-pic {
+      width: 16px;
+      height: 16px;
+      vertical-align: top;
+      margin-right: em(8px);
+    }
+
+    &-inner {
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .gt-ico {
+      margin: 0 0 0 em(5px);
+
+      svg {
+        fill: inherit;
+      }
+    }
+
+    .is--poping {
+      .gt-ico {
+        svg {
+          fill: $gt-color-main;
+        }
+      }
+    }
+  }
+
+  .gt-version {
+    color: $gt-color-sub;
+    margin-left: em(6px);
+  }
+
+  .gt-copyright {
+    margin: 0 em(15px) em(8px);
+    border-top: 1px solid $gt-color-hr;
+    padding-top: em(8px);
+  }
+
+  /* popup */
+  .gt-popup {
+    position: absolute;
+    right: 0;
+    top: em(38px);
+    background: $gt-color-popbg;
+    display: inline-block;
+    border: 1px solid $gt-color-hr;
+    padding: em(10px) 0;
+    font-size: em(14px);
+    letter-spacing: 0.5px;
+
+    .gt-action {
+      cursor: pointer;
+      display: block;
+      margin: em(8px) 0;
+      padding: 0 em(18px);
+      position: relative;
+      text-decoration: none;
+
+      &.is--active {
+        &:before {
+          content: '';
+          width: em(4px);
+          height: em(4px);
+          background: $gt-color-main;
+          position: absolute;
+          left: em(8px);
+          top: em(7px);
+        }
+      }
+    }
+  }
+
+  /* header */
+  .gt-header {
+    position: relative;
+    display: flex;
+
+    &-comment {
+      flex: 1;
+      margin-left: em(20px);
+
+      +mobile() {
+        margin-left: em(14px);
+      }
+    }
+
+    &-textarea {
+      padding: em(12px);
+      display: block;
+      box-sizing: border-box;
+      width: 100%;
+      min-height: em(82px);
+      max-height: em(240px);
+      border-radius: $gt-size-border-radius;
+      border: 1px solid $gt-color-input-border;
+      font-size: em(14px);
+      word-wrap: break-word;
+      resize: vertical;
+      background-color: $gt-color-input-bg;
+      outline: none;
+      transition: all 0.25s ease;
+
+      &:hover {
+        background-color: lighten($gt-color-input-bg, 50%);
+        // box-shadow: 0 em(10px) em(60px) 0 $gt-color-input-bg
+      }
+    }
+
+    &-preview {
+      padding: em(12px);
+      border-radius: $gt-size-border-radius;
+      border: 1px solid $gt-color-input-border;
+      background-color: $gt-color-input-bg;
+    }
+
+    &-controls {
+      position: relative;
+      margin: em(12px) 0 0;
+      clearfix();
+
+      +mobile() {
+        margin: 0;
+      }
+
+      &-tip {
+        font-size: em(14px);
+        color: $gt-color-main;
+        text-decoration: none;
+        vertical-align: sub;
+
+        +mobile() {
+          display: none;
+        }
+      }
+
+      .gt-btn {
+        float: right;
+        margin-left: em(20px);
+
+        +mobile() {
+          float: none;
+          width: 100%;
+          margin: em(12px) 0 0;
+        }
+      }
+    }
+  }
+
+  &:after {
+    content: '';
+    position: fixed;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    opacity: 0;
+  }
+
+  &.gt-input-focused {
+    position: relative;
+
+    &:after {
+      content: '';
+      position: fixed;
+      bottom: 0%;
+      left: 0;
+      right: 0;
+      top: 0;
+      background: #000;
+      opacity: 0.6;
+      transition: opacity 0.3s, bottom 0s;
+      z-index: $gt-mask-z-index;
+    }
+
+    .gt-header-comment {
+      z-index: $gt-mask-z-index + 1;
+    }
+  }
+
+  /* comments */
+  .gt-comments {
+    padding-top: em(20px);
+
+    &-null {
+      text-align: center;
+    }
+
+    &-controls {
+      margin: em(20px) 0;
+      text-align: center;
+    }
+  }
+
+  /* comment */
+  .gt-comment {
+    position: relative;
+    padding: em(10px) 0;
+    display: flex;
+
+    &-content {
+      flex: 1;
+      margin-left: em(20px);
+      padding: em(12px) em(16px);
+      background-color: $gt-color-comment-bg;
+      overflow: auto;
+      transition: all ease 0.25s;
+
+      &:hover {
+        box-shadow: 0 em(10px) em(60px) 0 darken($gt-color-comment-bg, 2%);
+      }
+
+      +mobile() {
+        margin-left: em(14px);
+        padding: em(10px) em(12px);
+      }
+    }
+
+    &-header {
+      margin-bottom: em(8px);
+      font-size: em(14px);
+      position: relative;
+    }
+
+    &-username {
+      font-weight: 500;
+      color: $gt-color-main;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &-text {
+      margin-left: em(8px);
+      color: $gt-color-sub;
+    }
+
+    &-date {
+      margin-left: em(8px);
+      color: $gt-color-sub;
+    }
+
+    &-like, &-edit, &-reply {
+      position: absolute;
+      height: em(22px);
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &-like {
+      top: 0;
+      right: em(32px);
+    }
+
+    &-edit, &-reply {
+      top: 0;
+      right: 0;
+    }
+
+    &-body {
+      color: $gt-color-comment-txt !important;
+    }
+
+    &-admin {
+      .gt-comment-content {
+        background-color: $gt-color-comment-adminbg;
+      }
+    }
+  }
+}
+
+@keyframes gt-kf-rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+</style>

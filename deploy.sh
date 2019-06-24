@@ -1,3 +1,12 @@
+###
+ # @Github: https://github.com/OBKoro1
+ # @Author: OBKoro1
+ # @Created_time: 2019-06-24 09:47:03
+ # @LastEditors: OBKoro1
+ # @LastEditTime: 2019-06-24 10:49:10
+ # @Description: 部署 
+###
+
 !/usr/bin/env sh
 
 # localhost 8080
@@ -35,6 +44,6 @@ git add .
 
 git commit -m $1
 
-git push github # 推到github上
+git push github  master:master # 推到github上
 
 git push # 推到码云上
