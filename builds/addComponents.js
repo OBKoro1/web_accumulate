@@ -3,7 +3,7 @@
  * @Author: OBKoro1
  * @Created_time: 2019-06-24 10:13:25
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-06-25 20:00:23
+ * @LastEditTime: 2019-06-25 20:03:45
  * @Description: 查找markdown 添加特殊字符以及评论组件
  */
 const fs = require('fs')
@@ -18,7 +18,7 @@ findMarkdown.findMarkdown(findMarkdown.source, writeComponents)
 function writeComponents(dir) {
   let content = fs.readFileSync(dir, 'utf8');
   content = content.trim() // 清除首尾空白字符
-  fs.writeFile(dir, `${content}\n\n${findMarkdown.specialString}\n<!-- more -->\n<comment-comment articleString=` + `${content}` + `/> \n`, (err) => {
+  fs.writeFile(dir, `${content}\n\n${findMarkdown.specialString}\n<!-- more -->\n<comment-comment articleString=` + '`' + content + '`' + `/> \n`, (err) => {
     if (err) throw err
     console.log(`添加组件：${dir}`)
   })
