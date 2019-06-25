@@ -3,7 +3,7 @@
  * @Author: OBKoro1
  * @Created_time: 2019-06-23 14:48:30
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-06-25 19:07:37
+ * @LastEditTime: 2019-06-25 19:46:56
  * @Description: gitalk评论组件
  * 文章：https://juejin.im/post/5c9e30fb6fb9a05e1c4cecf6
  -->
@@ -21,6 +21,11 @@
 <script>
 export default {
   name: "comment",
+  articleString: {
+    type: String,
+    required: true,
+    default: ""
+  },
   methods: {
     issueTitle() {
       const title = location.pathname;
@@ -88,6 +93,7 @@ export default {
       let body = `### [博客链接](${location.href})\n${
         this.$page.excerpt
       }\n [博客链接](${location.href})`;
+      console.log("body11", this.articleString);
       console.log("body", body, this);
       if (false) {
         const commentConfig = {
