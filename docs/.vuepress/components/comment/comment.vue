@@ -3,7 +3,7 @@
  * @Author: OBKoro1
  * @Created_time: 2019-06-23 14:48:30
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-06-24 19:51:07
+ * @LastEditTime: 2019-06-25 14:47:21
  * @Description: gitalk评论组件
  * 文章：https://juejin.im/post/5c9e30fb6fb9a05e1c4cecf6
  -->
@@ -14,16 +14,18 @@
   </div>
 </template>
 <script>
-import file2 from "../../../README.md";
 
 export default {
   name: "comment",
-  data() {
-    return {};
+  props: {
+    articleString: {
+      type: String,
+      required: true,
+      default: ""
+    }
   },
   methods: {
     issueTitle() {
-      console.log("this", this, window, file2);
       const title = location.pathname;
       const pathArr = title.split("/");
       let res;
@@ -59,13 +61,18 @@ export default {
       return [res, articleTile];
     },
     issueLabels() {
+      // 切割超过50个字符的标签 避免创建不了issue
       let labels = this.$page.headers.map(item => {
         if (item.title.length > 50) {
           item.title = item.title.slice(0, 48);
         }
         return item.title;
       });
-      // 增加meta
+      // 过滤一些标签
+      labels = labels.filter(item => {
+        return !["鼓励我一下：", "小结"].includes(item);
+      });
+      // 修改头部的meta
       document.querySelector("meta[name=description]").content = labels.join(
         ","
       );
@@ -80,29 +87,31 @@ export default {
     script.onload = () => {
       const [title, articleTile] = this.issueTitle();
       const labels = this.issueLabels();
-      // 创建issue TODO: false
-      // let body = "# 哈哈哈";
-      let body = "<h2>h2h2 哈哈哈</h2>";
-      if (title) {
+      // 创建issue TODO: false markdown 使用fs操作。
+      let body = `### [博客链接](${location.href})\n${
+        this.articleString
+      }\n [博客链接](${location.href})`;
+      console.log("body", body);
+      if (false) {
         const commentConfig = {
           clientID: "8fbce2735aa4b865e9df",
           clientSecret: "c2d2947de913af238dc5a22b1db8de0d9e834096",
-          repo: "web_accumulate",
+          repo: "web_accumulate", // github项目名
           owner: "OBKoro1",
           // 这里接受一个数组，可以添加多个管理员
           admin: ["OBKoro1"],
-          // id 用于当前页面的唯一标识，一般来讲 pathname 足够了，
+          // id 需要用pathname否则将会重复创建。
 
           // 但是如果你的 pathname 超过 50 个字符，GitHub 将不会成功创建 issue，此情况可以考虑给每个页面生成 hash 值的方法.
-          id: location.pathname.slice(0, 48), // issue title
-          title,
-          body,
-          labels: labels,
+          id: decodeURI(location.pathname).slice(0, 48), // issue title
+          title, // issue标题
+          body, // issue内容
+          labels: labels, // issue标签
           distractionFreeMode: false
         };
         const gitalk = new Gitalk(commentConfig);
         gitalk.render("gitalk-container");
-        console.log('document.querySelector(".gt-copyright")', commentConfig);
+        console.log("commentConfig", commentConfig);
       }
     };
   }
