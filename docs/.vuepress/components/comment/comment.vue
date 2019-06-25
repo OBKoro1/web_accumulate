@@ -3,18 +3,22 @@
  * @Author: OBKoro1
  * @Created_time: 2019-06-23 14:48:30
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-06-25 14:47:21
+ * @LastEditTime: 2019-06-25 18:58:17
  * @Description: gitalk评论组件
  * 文章：https://juejin.im/post/5c9e30fb6fb9a05e1c4cecf6
  -->
 
 <template>
   <div class="gitalk-container">
-    <div id="gitalk-container"></div>
+    <div id="gitalk-container">
+      <Content
+        ref="Content"
+        v-if="false"
+      />
+    </div>
   </div>
 </template>
 <script>
-
 export default {
   name: "comment",
   props: {
@@ -89,7 +93,7 @@ export default {
       const labels = this.issueLabels();
       // 创建issue TODO: false markdown 使用fs操作。
       let body = `### [博客链接](${location.href})\n${
-        this.articleString
+        this.$page.excerpt
       }\n [博客链接](${location.href})`;
       console.log("body", body);
       if (false) {
