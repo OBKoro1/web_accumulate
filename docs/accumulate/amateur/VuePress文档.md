@@ -54,16 +54,16 @@ VuePress是尤大为了支持 Vue 及其子项目的文档需求而写的一个�
 
 ```js
     {
-      "name": "project",
-      "version": "1.0.0",
-      "description": "",
-      "main": "index.js",
-      "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+      'name': 'project',
+      'version': '1.0.0',
+      'description': '',
+      'main': 'index.js',
+      'scripts': {
+        'test': 'echo \'Error: no test specified\' && exit 1'
       },
-      "keywords": [],
-      "author": "",
-      "license": "ISC"
+      'keywords': [],
+      'author': '',
+      'license': 'ISC'
     }
 ```
 
@@ -149,9 +149,9 @@ ps：你需要放一张图片到public文件夹中。
 
 ```json
     {
-      "scripts": {
-        "docs:dev": "vuepress dev docs",
-        "docs:build": "vuepress build docs"
+      'scripts': {
+        'docs:dev': 'vuepress dev docs',
+        'docs:build': 'vuepress build docs'
       }
     }
 ```
@@ -311,9 +311,9 @@ build生成静态的HTML文件,默认会在 `.vuepress/dist` 文件夹下
 
 ### 在 `docs/.vuepress/config.js` 中设置正确的 base:
 
-如果你打算发布到 `https://<USERNAME>.github.io/`，则可以省略这一步，因为 base 默认即是 `"/"`。
+如果你打算发布到 `https://<USERNAME>.github.io/`，则可以省略这一步，因为 base 默认即是 `'/'`。
 
-如果你打算发布到 `https://<USERNAME>.github.io/<REPO>/`（也就是说你的仓库在 `https://github.com/<USERNAME>/<REPO>`），则将 base 设置为 `"/<REPO>/"`。
+如果你打算发布到 `https://<USERNAME>.github.io/<REPO>/`（也就是说你的仓库在 `https://github.com/<USERNAME>/<REPO>`），则将 base 设置为 `'/<REPO>/'`。
 
 ```js
 module.exports = {
@@ -357,8 +357,8 @@ cd -
 
 ```json
 {
-    "scripts": {
-    "d": "bash deploy.sh"
+    'scripts': {
+    'd': 'bash deploy.sh'
     }
 }
 ```
@@ -374,10 +374,10 @@ npm run d
 如果你对运行项目和构建项目的命令行觉得很烦，你也可以像我这么做：
 
 ```json
-"scripts": {
-    "dev": "vuepress dev docs", // 本地运行项目 npm run dev
-    "build": "vuepress build docs", // 构建项目 nom run build
-    "d": "bash deploy.sh" // 部署项目 npm run d
+'scripts': {
+    'dev': 'vuepress dev docs', // 本地运行项目 npm run dev
+    'build': 'vuepress build docs', // 构建项目 nom run build
+    'd': 'bash deploy.sh' // 部署项目 npm run d
 },
 ```
 

@@ -3,7 +3,7 @@
  * @Author: OBKoro1
  * @Created_time: 2019-06-23 14:48:30
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-06-25 19:46:56
+ * @LastEditTime: 2019-06-25 20:10:22
  * @Description: gitalk评论组件
  * 文章：https://juejin.im/post/5c9e30fb6fb9a05e1c4cecf6
  -->
@@ -21,11 +21,14 @@
 <script>
 export default {
   name: "comment",
-  articleString: {
-    type: String,
-    required: true,
-    default: ""
+  props: {
+    articleString: {
+      type: String,
+      required: true,
+      default: ""
+    }
   },
+
   methods: {
     issueTitle() {
       const title = location.pathname;
