@@ -3,19 +3,22 @@
  * @Author: OBKoro1
  * @Created_time: 2019-06-24 10:13:25
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-06-24 10:13:27
- * @Description: 
+ * @LastEditTime: 2019-06-25 16:59:35
+ * @Description: 查找markdown 添加特殊字符以及评论组件
  */
 const fs = require('fs')
 const findMarkdown = require('./findMarkdown')
-const rootDir = './docs'
 
-findMarkdown(rootDir, writeComponents)
+// 查找markdown
+findMarkdown.findMarkdown(findMarkdown.source, writeComponents)
 
+// markdown文件回调 添加特殊字符以及评论组件
 function writeComponents(dir) {
-  fs.appendFile(dir, `\n \n <comment-comment/> \n `, (err) => {
+  let content = fs.readFileSync(dir, 'utf8');
+  content = content.trim() // 清除首尾空白字符
+  fs.writeFile(dir, `${content}\n\n${findMarkdown.specialString}\n<comment-comment articleString="${content}"/> \n`, (err) => {
     if (err) throw err
-    console.log(`add components to ${dir}`)
+    console.log(`添加组件：${dir}`)
   })
 }
 

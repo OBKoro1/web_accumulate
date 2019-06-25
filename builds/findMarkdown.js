@@ -3,11 +3,12 @@
  * @Author: OBKoro1
  * @Created_time: 2019-06-24 10:13:04
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-06-24 10:13:06
- * @Description: 
+ * @LastEditTime: 2019-06-25 17:06:09
+ * @Description: 查找markdown+定义公共变量
  */
 const fs = require('fs')
 
+// 递归查找markdown
 function findMarkdown(dir, callback) {
   fs.readdir(dir, function (err, files) {
     if (err) throw err
@@ -30,5 +31,10 @@ function findMarkdown(dir, callback) {
   })
 }
 
-module.exports = findMarkdown
+module.exports = {
+  // source: './docs', // 查找入口
+  source: './docs/accumulate/amateur', // 查找入口
+  findMarkdown,
+  specialString: `<!-- '特殊字符串：用于删除编译后的issue组件-OBKoro1 -->`
+}
 
