@@ -3,7 +3,7 @@
  * @Author: OBKoro1
  * @Created_time: 2019-06-23 14:48:30
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-06-26 15:41:00
+ * @LastEditTime: 2019-06-26 15:57:12
  * @Description: gitalk评论组件
  * 文章：https://juejin.im/post/5c9e30fb6fb9a05e1c4cecf6
  -->
@@ -33,8 +33,10 @@ export default {
     },
     // 使用油候初始化issue
     initIssue() {
+        console.log("window", window.initIssue);
       if (window.initIssue) {
         let val = sessionStorage.pageArray;
+        console.log("val", val);
         if (!val) {
           let pageArray = this.$site.pages;
           pageArray = pageArray.map(item => {
