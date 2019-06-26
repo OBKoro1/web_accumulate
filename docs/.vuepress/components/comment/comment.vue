@@ -3,7 +3,7 @@
  * @Author: OBKoro1
  * @Created_time: 2019-06-23 14:48:30
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-06-26 14:10:44
+ * @LastEditTime: 2019-06-26 15:41:00
  * @Description: gitalk评论组件
  * 文章：https://juejin.im/post/5c9e30fb6fb9a05e1c4cecf6
  -->
@@ -22,7 +22,29 @@ export default {
       gitalk: null
     };
   },
+  mounted() {
+    this.pageInit();
+  },
   methods: {
+    pageInit() {
+      console.log("this", this);
+      this.initGitalk();
+      this.initIssue();
+    },
+    // 使用油候初始化issue
+    initIssue() {
+      if (window.initIssue) {
+        let val = sessionStorage.pageArray;
+        if (!val) {
+          let pageArray = this.$site.pages;
+          pageArray = pageArray.map(item => {
+            return `${location.origin}/web_accumulate${decodeURI(item.path)}`;
+          });
+          sessionStorage.setItem("pageArray", JSON.stringify(pageArray));
+          console.log("存pageArray", sessionStorage.pageArray);
+        }
+      }
+    },
     issueTitle() {
       const title = location.pathname;
       const pathArr = title.split("/");
@@ -55,7 +77,6 @@ export default {
           res = obj[pathArr[2]];
         }
       }
-      console.log("pathArr", pathArr, res);
       return [res, articleTile];
     },
     issueLabels() {
@@ -128,10 +149,9 @@ export default {
         var log = console.log;
         let self = this;
         console.log = function(msg, data) {
-          // 拦截issue抛出的错误 labels改值
+          // 拦截issue抛出的错误 刷新页面 labels改值
           if (msg === "err:") {
             if (data.config.baseURL === "https://api.github.com") {
-              console.log("重新请求");
               self.newGitalk(false);
             }
           }
@@ -148,9 +168,6 @@ export default {
         }
       }
     }
-  },
-  mounted() {
-    this.initGitalk();
   }
 };
 </script>
