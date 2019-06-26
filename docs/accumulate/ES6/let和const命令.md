@@ -254,3 +254,4 @@ window.b // undefined
 参考资料：
 
 [let 和 const 命令](http://es6.ruanyifeng.com/#docs/let)
+

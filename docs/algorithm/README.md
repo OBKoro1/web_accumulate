@@ -1,4 +1,3 @@
-
 ## 前端算法
 
 可以跟着本文档的栗子来慢慢学习一下算法，对于提高自身的编程和逻辑能力也是相当有效的一个途径。
@@ -91,3 +90,4 @@
 [水仙花数](http://obkoro1.com/web_accumulate/algorithm/induction/%E6%B0%B4%E4%BB%99%E8%8A%B1%E6%95%B0.html)
 
 [反转一个 3 位整数](http://obkoro1.com/web_accumulate/algorithm/induction/%E5%8F%8D%E8%BD%AC3%E4%BD%8D%E6%95%B4%E6%95%B0.html)
+

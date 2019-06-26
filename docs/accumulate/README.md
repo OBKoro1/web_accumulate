@@ -123,3 +123,4 @@
 [如何搭建本文档](http://obkoro1.com/web_accumulate/accumulate/amateur/VuePress%E6%96%87%E6%A1%A3.html)
 
 [推箱子](http://obkoro1.com/web_accumulate/accumulate/amateur/%E6%8E%A8%E7%AE%B1%E5%AD%90.html)
+

@@ -149,3 +149,4 @@ cookie的浏览器支持没有找到，可以通过下面这段代码来判断�
 ### 番外：各浏览器Cookie大小、个数限制。
 
 cookie 使用起来还是需要小心一点，有兴趣的可以看一下这个[链接](https://www.cnblogs.com/henryhappier/archive/2011/03/03/1969564.html)。
+

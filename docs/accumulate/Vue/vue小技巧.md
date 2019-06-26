@@ -142,3 +142,4 @@ beforeDestroy(){
 vue 框架还有一个[风格指南](https://cn.vuejs.org/v2/style-guide/)推荐，如下图所示，大家也可以学习一波。
 
 ![vue风格指南](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/160fff0ec0147156?w=1578&h=811&f=png&s=174542?raw=true)
+

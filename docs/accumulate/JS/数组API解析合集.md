@@ -935,3 +935,4 @@ keys()浏览器兼容性(MDN):Chrome 38, Firefox 28,Opera 25,Safari 8,
 ### 鼓励我一下：
 
 觉得还不错的话，给我的项目点个[star](https://github.com/OBKoro1/Brush_algorithm)吧
+
