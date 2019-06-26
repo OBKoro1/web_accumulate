@@ -3,7 +3,7 @@
  * @Author: OBKoro1
  * @Created_time: 2019-06-23 14:48:30
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-06-26 11:18:35
+ * @LastEditTime: 2019-06-26 11:26:09
  * @Description: gitalk评论组件
  * 文章：https://juejin.im/post/5c9e30fb6fb9a05e1c4cecf6
  -->
@@ -110,17 +110,22 @@ export default {
           distractionFreeMode: false
         };
         var log = console.log;
-        console.log = function() {
-          log.call("拦截console", this);
-          debugger
+        console.log = function(...arr) {
+          log.call("拦截console", this, arr);
           log.apply(this, Array.prototype.slice.call(arguments));
         };
         window.onerror = (...arr) => {
           console.log("报错：", arr);
-          debugger
+          debugger;
         };
         window.gitalk = new Gitalk(commentConfig);
-        window.gitalk.render("gitalk-container");
+        window.gitalk.render("gitalk-container", (...arr) => {
+          console.log("回调", arr);
+        });
+        gitalk.onerror = (...arr) => {
+          console.log("报错2：", arr);
+          debugger;
+        };
         console.log("commentConfig", commentConfig);
       }
     };
