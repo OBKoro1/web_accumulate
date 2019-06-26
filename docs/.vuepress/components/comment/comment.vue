@@ -3,7 +3,7 @@
  * @Author: OBKoro1
  * @Created_time: 2019-06-23 14:48:30
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-06-26 13:35:07
+ * @LastEditTime: 2019-06-26 13:38:11
  * @Description: gitalk评论组件
  * 文章：https://juejin.im/post/5c9e30fb6fb9a05e1c4cecf6
  -->
@@ -136,7 +136,7 @@ export default {
         if (this.gitalk) {
           // 更新配置并重新请求
           console.log("this.gitalk.option", this.gitalk.option);
-          this.gitalk.option = commentConfig;
+          this.gitalk.options = commentConfig;
           this.gitalk.render("gitalk-container");
           console.log(
             "this.gitalk1",
