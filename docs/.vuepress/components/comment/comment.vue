@@ -3,7 +3,7 @@
  * @Author: OBKoro1
  * @Created_time: 2019-06-23 14:48:30
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-06-26 10:11:17
+ * @LastEditTime: 2019-06-26 10:41:36
  * @Description: gitalk评论组件
  * 文章：https://juejin.im/post/5c9e30fb6fb9a05e1c4cecf6
  -->
@@ -11,24 +11,12 @@
 <template>
   <div class="gitalk-container">
     <div id="gitalk-container">
-      <Content
-        ref="Content"
-        v-if="false"
-      />
     </div>
   </div>
 </template>
 <script>
 export default {
   name: "comment",
-  // props: {
-  //   articleString: {
-  //     type: String,
-  //     required: true,
-  //     default: ""
-  //   }
-  // },
-
   methods: {
     issueTitle() {
       const title = location.pathname;
@@ -92,7 +80,6 @@ export default {
     script.onload = () => {
       const [title, articleTile] = this.issueTitle();
       const labels = this.issueLabels();
-      // 创建issue TODO: false markdown 使用fs操作。
       let article = this.$page.excerpt.replace(
         new RegExp('<div class="line-numbers-wrapper">.*?<\\/div>', "g"),
         ""
@@ -100,8 +87,7 @@ export default {
       let body = `### [博客链接](${location.href})\n${article}\n [博客链接](${
         location.href
       })`;
-      console.log("body", body);
-      if (false) {
+      if (title) {
         const commentConfig = {
           clientID: "8fbce2735aa4b865e9df",
           clientSecret: "c2d2947de913af238dc5a22b1db8de0d9e834096",
