@@ -3,7 +3,7 @@
  * @Author: OBKoro1
  * @Created_time: 2019-06-23 14:48:30
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-06-26 10:41:36
+ * @LastEditTime: 2019-06-26 11:12:35
  * @Description: gitalk评论组件
  * 文章：https://juejin.im/post/5c9e30fb6fb9a05e1c4cecf6
  -->
@@ -65,6 +65,10 @@ export default {
       labels = labels.filter(item => {
         return !["鼓励我一下：", "小结"].includes(item);
       });
+      // 限制标签数
+      if (labels.length > 10) {
+        labels.length = 10;
+      }
       // 修改头部的meta
       document.querySelector("meta[name=description]").content = labels.join(
         ","
@@ -87,6 +91,7 @@ export default {
       let body = `### [博客链接](${location.href})\n${article}\n [博客链接](${
         location.href
       })`;
+      console.log("this", this);
       if (title) {
         const commentConfig = {
           clientID: "8fbce2735aa4b865e9df",
@@ -104,8 +109,13 @@ export default {
           labels: labels, // issue标签
           distractionFreeMode: false
         };
-        const gitalk = new Gitalk(commentConfig);
-        gitalk.render("gitalk-container");
+        var log = console.log;
+        console.log = function() {
+          log.call(this, "My Console!!!");
+          log.apply(this, Array.prototype.slice.call(arguments));
+        };
+        window.gitalk = new Gitalk(commentConfig);
+        window.gitalk.render("gitalk-container");
         console.log("commentConfig", commentConfig);
       }
     };
