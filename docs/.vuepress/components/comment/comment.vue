@@ -3,7 +3,7 @@
  * @Author: OBKoro1
  * @Created_time: 2019-06-23 14:48:30
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-06-26 11:26:09
+ * @LastEditTime: 2019-06-26 11:52:28
  * @Description: gitalk评论组件
  * 文章：https://juejin.im/post/5c9e30fb6fb9a05e1c4cecf6
  -->
@@ -17,6 +17,11 @@
 <script>
 export default {
   name: "comment",
+  data() {
+    return {
+      gitalk: null
+    };
+  },
   methods: {
     issueTitle() {
       const title = location.pathname;
@@ -74,16 +79,22 @@ export default {
         ","
       );
       return labels;
-    }
-  },
-  mounted() {
-    let body = document.querySelector(".gitalk-container");
-    let script = document.createElement("script");
-    script.src = "https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js";
-    body.appendChild(script);
-    script.onload = () => {
+    },
+    initGitalk() {
+      let body = document.querySelector(".gitalk-container");
+      let script = document.createElement("script");
+      script.src = "https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js";
+      body.appendChild(script);
+      script.onload = () => {
+        this.newGitalk();
+      };
+    },
+    newGitalk(createLabels = true) {
       const [title, articleTile] = this.issueTitle();
-      const labels = this.issueLabels();
+      let labels = [articleTile];
+      if (createLabels) {
+        labels = this.issueLabels();
+      }
       let article = this.$page.excerpt.replace(
         new RegExp('<div class="line-numbers-wrapper">.*?<\\/div>', "g"),
         ""
@@ -91,7 +102,6 @@ export default {
       let body = `### [博客链接](${location.href})\n${article}\n [博客链接](${
         location.href
       })`;
-      console.log("this", this);
       if (title) {
         const commentConfig = {
           clientID: "8fbce2735aa4b865e9df",
@@ -109,26 +119,26 @@ export default {
           labels: labels, // issue标签
           distractionFreeMode: false
         };
+        // 全局拦截console
         var log = console.log;
-        console.log = function(...arr) {
-          log.call("拦截console", this, arr);
+        let self = this;
+        console.log = function(msg, data) {
+          // 拦截issue抛出的错误 labels改值
+          if (msg === "err") {
+            if (data.config.baseURL === "https://api.github.com") {
+              self.newGitalk(false);
+            }
+          }
           log.apply(this, Array.prototype.slice.call(arguments));
         };
-        window.onerror = (...arr) => {
-          console.log("报错：", arr);
-          debugger;
-        };
-        window.gitalk = new Gitalk(commentConfig);
-        window.gitalk.render("gitalk-container", (...arr) => {
-          console.log("回调", arr);
-        });
-        gitalk.onerror = (...arr) => {
-          console.log("报错2：", arr);
-          debugger;
-        };
-        console.log("commentConfig", commentConfig);
+        this.gitalk = new Gitalk(commentConfig);
+        gitalk.render("gitalk-container");
+        console.log("gitalk", gitalk);
       }
-    };
+    }
+  },
+  mounted() {
+    this.initGitalk();
   }
 };
 </script>
