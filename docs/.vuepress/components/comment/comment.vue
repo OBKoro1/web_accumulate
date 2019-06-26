@@ -3,7 +3,7 @@
  * @Author: OBKoro1
  * @Created_time: 2019-06-23 14:48:30
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-06-26 13:38:11
+ * @LastEditTime: 2019-06-26 14:10:44
  * @Description: gitalk评论组件
  * 文章：https://juejin.im/post/5c9e30fb6fb9a05e1c4cecf6
  -->
@@ -86,7 +86,12 @@ export default {
       script.src = "https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js";
       body.appendChild(script);
       script.onload = () => {
-        this.newGitalk();
+        let val = sessionStorage.gitalkOBKoro1;
+        if (val && val === "issue失败") {
+          this.newGitalk(false);
+        } else {
+          this.newGitalk();
+        }
       };
     },
     newGitalk(createLabels = true) {
@@ -126,29 +131,20 @@ export default {
           // 拦截issue抛出的错误 labels改值
           if (msg === "err:") {
             if (data.config.baseURL === "https://api.github.com") {
-              console.log('重新请求')
+              console.log("重新请求");
               self.newGitalk(false);
             }
           }
           log.apply(this, Array.prototype.slice.call(arguments));
         };
-        console.log("gitalk", this.gitalk, commentConfig);
         if (this.gitalk) {
           // 更新配置并重新请求
-          console.log("this.gitalk.option", this.gitalk.option);
-          this.gitalk.options = commentConfig;
-          this.gitalk.render("gitalk-container");
-          console.log(
-            "this.gitalk1",
-            document.querySelector("#gitalk-container")
-          );
+          sessionStorage.setItem("gitalkOBKoro1", "issue失败");
+          location.reload();
         } else {
           this.gitalk = new Gitalk(commentConfig);
           this.gitalk.render("gitalk-container");
-          console.log(
-            "this.gitalk2",
-            document.querySelector("#gitalk-container")
-          );
+          sessionStorage.setItem("gitalkOBKoro1", "issue成功");
         }
       }
     }
