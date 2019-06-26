@@ -3,7 +3,7 @@
  * @Author: OBKoro1
  * @Created_time: 2019-06-23 14:48:30
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-06-26 11:52:28
+ * @LastEditTime: 2019-06-26 11:54:02
  * @Description: gitalk评论组件
  * 文章：https://juejin.im/post/5c9e30fb6fb9a05e1c4cecf6
  -->
@@ -132,8 +132,8 @@ export default {
           log.apply(this, Array.prototype.slice.call(arguments));
         };
         this.gitalk = new Gitalk(commentConfig);
-        gitalk.render("gitalk-container");
-        console.log("gitalk", gitalk);
+        this.gitalk.render("gitalk-container");
+        console.log("gitalk", this.gitalk);
       }
     }
   },
