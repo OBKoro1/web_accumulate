@@ -20,9 +20,9 @@ VuePress是尤大为了支持 Vue 及其子项目的文档需求而写的一个�
 
 可能你会搭建出一个类似这样的[文档](http://obkoro1.com/web_accumulate/)：
 
-![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/165b88bde5ddd420?w=3334&h=1740&f=jpeg&s=358566?raw=true)
+![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/165b88bde5ddd420?raw=true)
 
-![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/165b88b39960911b?w=3328&h=1888&f=jpeg&s=434392?raw=true)
+![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/165b88b39960911b?raw=true)
 
 ---
 
@@ -54,16 +54,16 @@ VuePress是尤大为了支持 Vue 及其子项目的文档需求而写的一个�
 
 ```js
     {
-      'name': 'project',
-      'version': '1.0.0',
-      'description': '',
-      'main': 'index.js',
-      'scripts': {
-        'test': 'echo \'Error: no test specified\' && exit 1'
+      "name": "project",
+      "version": "1.0.0",
+      "description": "",
+      "main": "index.js",
+      "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
       },
-      'keywords': [],
-      'author': '',
-      'license': 'ISC'
+      "keywords": [],
+      "author": "",
+      "license": "ISC"
     }
 ```
 
@@ -149,9 +149,9 @@ ps：你需要放一张图片到public文件夹中。
 
 ```json
     {
-      'scripts': {
-        'docs:dev': 'vuepress dev docs',
-        'docs:build': 'vuepress build docs'
+      "scripts": {
+        "docs:dev": "vuepress dev docs",
+        "docs:build": "vuepress build docs"
       }
     }
 ```
@@ -201,7 +201,7 @@ build生成静态的HTML文件,默认会在 `.vuepress/dist` 文件夹下
 
 ### 导航栏配置：
 
-![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/165bd71b0c38b87f?w=1246&h=346&f=jpeg&s=40945?raw=true)
+![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/165bd71b0c38b87f?raw=true)
 
 ```js
     module.exports = {
@@ -283,12 +283,12 @@ build生成静态的HTML文件,默认会在 `.vuepress/dist` 文件夹下
 
 并且这样也会让我们的代码高亮显示(下图第一个没有高亮，第二个有高亮)，阅读体验更好：
 
-![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/165bd98ebe2f65b3?w=1740&h=746&f=png&s=139253?raw=true)
+![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/165bd98ebe2f65b3?raw=true)
 
 ### 自定义容器了解一下：
 
 
-![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/165bda20ddcbd209?w=1566&h=700&f=png&s=47920?raw=true)
+![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/165bda20ddcbd209?raw=true)
 
 **更改标题：**
 
@@ -302,7 +302,7 @@ build生成静态的HTML文件,默认会在 `.vuepress/dist` 文件夹下
 
 ### 支持Emoji
 
-![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/165bdaa634c0839d?w=1604&h=506&f=png&s=33035?raw=true)
+![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/165bdaa634c0839d?raw=true)
 
 文档中只提了支持Emoji,我在GitHub上找到了Emoji的[列表](https://gist.github.com/rxaviers/7360908)，分享一下。
 
@@ -311,9 +311,9 @@ build生成静态的HTML文件,默认会在 `.vuepress/dist` 文件夹下
 
 ### 在 `docs/.vuepress/config.js` 中设置正确的 base:
 
-如果你打算发布到 `https://<USERNAME>.github.io/`，则可以省略这一步，因为 base 默认即是 `'/'`。
+如果你打算发布到 `https://<USERNAME>.github.io/`，则可以省略这一步，因为 base 默认即是 `"/"`。
 
-如果你打算发布到 `https://<USERNAME>.github.io/<REPO>/`（也就是说你的仓库在 `https://github.com/<USERNAME>/<REPO>`），则将 base 设置为 `'/<REPO>/'`。
+如果你打算发布到 `https://<USERNAME>.github.io/<REPO>/`（也就是说你的仓库在 `https://github.com/<USERNAME>/<REPO>`），则将 base 设置为 `"/<REPO>/"`。
 
 ```js
 module.exports = {
@@ -357,8 +357,8 @@ cd -
 
 ```json
 {
-    'scripts': {
-    'd': 'bash deploy.sh'
+    "scripts": {
+    "d": "bash deploy.sh"
     }
 }
 ```
@@ -374,10 +374,10 @@ npm run d
 如果你对运行项目和构建项目的命令行觉得很烦，你也可以像我这么做：
 
 ```json
-'scripts': {
-    'dev': 'vuepress dev docs', // 本地运行项目 npm run dev
-    'build': 'vuepress build docs', // 构建项目 nom run build
-    'd': 'bash deploy.sh' // 部署项目 npm run d
+"scripts": {
+    "dev": "vuepress dev docs", // 本地运行项目 npm run dev
+    "build": "vuepress build docs", // 构建项目 nom run build
+    "d": "bash deploy.sh" // 部署项目 npm run d
 },
 ```
 
@@ -395,5 +395,5 @@ npm run d
 
 觉得还不错的话，给我的项目点个[star](https://github.com/OBKoro1/Brush_algorithm)吧
 
-游泳、健身了解一下：[博客](http://obkoro1.com/)、[前端算法](https://github.com/OBKoro1/Brush_algorithm)、[公众号](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/1631b6f52f7e7015?w=344&h=344&f=jpeg&s=8317?raw=true)
+游泳、健身了解一下：[博客](http://obkoro1.com/)、[前端算法](https://github.com/OBKoro1/Brush_algorithm)、[公众号](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/1631b6f52f7e7015?raw=true)
 

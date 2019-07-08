@@ -20,6 +20,7 @@ footer: MIT Licensed | Copyright © 2018-present OBKoro1
 
     [VsCode文件头部注释生成插件](https://github.com/OBKoro1/koro1FileHeader)
     [H5 notification浏览器桌面通知](https://github.com/OBKoro1/notification-Koro1)
+    [下载/替换 markdown中的图片](https://github.com/OBKoro1/markdown-img-down-site-change): 用于处理外链失效的情况
 
 * 社区：
 
@@ -27,7 +28,7 @@ footer: MIT Licensed | Copyright © 2018-present OBKoro1
  
     [segmentfault](https://segmentfault.com/u/obkoro1/articles)
 
-* 微信公众号:[OBKoro1的学习分享](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/1631b6f52f7e7015?w=344&h=344&f=jpeg&s=8317?raw=true)
+* 微信公众号:[OBKoro1的学习分享](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/1631b6f52f7e7015?raw=true)
 
 * [关于我](http://obkoro1.com/about/)
 

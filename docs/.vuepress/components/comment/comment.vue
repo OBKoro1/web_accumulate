@@ -3,7 +3,7 @@
  * @Author: OBKoro1
  * @Created_time: 2019-06-23 14:48:30
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-06-26 18:40:31
+ * @LastEditTime: 2019-06-29 13:23:10
  * @Description: gitalk评论组件
  * 文章：https://juejin.im/post/5c9e30fb6fb9a05e1c4cecf6
  -->
@@ -115,6 +115,7 @@ export default {
     },
     newGitalk(createLabels = true) {
       const [title, articleTile] = this.issueTitle();
+      // TODO: 分类 + 标题，
       let labels = [articleTile];
       if (createLabels) {
         labels = this.issueLabels();

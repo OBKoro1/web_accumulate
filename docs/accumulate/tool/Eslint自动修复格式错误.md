@@ -2,7 +2,7 @@
 
 同一个项目，保持代码风格的一致，是非常重要的一个规范。但事实上项目小组成员的代码校验规则、格式化工具通常都不一致，为了避免项目到后期出现无法维护的问题，项目成员使用同一套校验规则，同一个格式化方式是相当好的步骤之一。
 
-> 游泳、健身了解一下：[博客](http://obkoro1.com/)、[前端积累文档](http://obkoro1.com/web_accumulate/accumulate/)、[公众号](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/1631b6f52f7e7015?w=344&h=344&f=jpeg&s=8317?raw=true)
+> 游泳、健身了解一下：[博客](http://obkoro1.com/)、[前端积累文档](http://obkoro1.com/web_accumulate/accumulate/)、[公众号](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/1631b6f52f7e7015?raw=true)
 
 ## 保存时自动统一代码风格：
 
@@ -20,11 +20,11 @@
 
 如图安装`EsLint`插件：
 
-![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/165e132647eca15f?w=1132&h=559&f=png&s=205082?raw=true)
+![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/165e132647eca15f?raw=true)
 
 ### 2.为项目安装`EsLint`包：
 
-![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/165e136abe3b1feb?w=479&h=423&f=png&s=95954?raw=true)
+![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/165e136abe3b1feb?raw=true)
 
 注意要安装在开发环境上，还有就是如果你使用的是脚手架的话，选了Eslint选项，会自带这些包。
 
@@ -63,7 +63,7 @@ module.exports = {
 
 点开文件，你可能会看到如下报错，无需一个一个去改，只要保存一下文件，就可以自动修复这些代码格式上的问题了。
 
-![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/165e151df42747c4?w=474&h=335&f=gif&s=22430?raw=true)
+![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/165e151df42747c4?raw=true)
 
 **注意：**
 
@@ -82,7 +82,7 @@ module.exports = {
 "lint": "eslint --ext .js,.vue src --fix"
 ```
 
-![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/165e1561a9b92866?w=694&h=111&f=png&s=33155?raw=true)
+![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/165e1561a9b92866?raw=true)
 
 `--ext`后面跟上的`.js`、`.vue`是你要检测文件的后缀，`.vue`后面的`src`是要检测的哪个目录下面的文件。
 
@@ -136,5 +136,5 @@ module.exports = {
 
 觉得还不错的话，给我的项目点个[star](https://github.com/OBKoro1/Brush_algorithm)吧
 
-游泳、健身了解一下：[博客](http://obkoro1.com/)、[前端算法](https://github.com/OBKoro1/Brush_algorithm)、[公众号](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/1631b6f52f7e7015?w=344&h=344&f=jpeg&s=8317?raw=true)
+游泳、健身了解一下：[博客](http://obkoro1.com/)、[前端算法](https://github.com/OBKoro1/Brush_algorithm)、[公众号](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/1631b6f52f7e7015?raw=true)
 

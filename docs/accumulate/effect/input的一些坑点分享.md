@@ -17,7 +17,7 @@ input 输入框是通过`position:fixed`一直放在页面底部，当点击 inp
 
 当时这个问题是去年在 ios 中遇到的，在最新版的 ios 系统中，貌似解决了这个 bug，但是为了向下兼容以及防止其他其他机型也出现这个问题，大家可以稍微记一下这个解决方法。
 
-![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/16353072dcc21218?w=586&h=1038&f=jpeg&s=48097?raw=true)
+![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/16353072dcc21218?raw=true)
 
 在解决这个问题的时候，有试过下面这种方法:
 
@@ -74,19 +74,19 @@ ps:之前拿微信用户名的时候，有些人可能在微信昵称上面就�
 
 在使用`textarea`标签输入多行文本的时候，如果没有对多行文本显示处理，会导致没有换行的情况,就比如下面这种情况，用户在`textarea`是有换行的。
 
-![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/1635388bf4dca899?w=420&h=531&f=jpeg&s=223202?raw=true)
+![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/1635388bf4dca899?raw=true)
 
 #### Css 属性:[white-space](http://www.w3school.com.cn/cssref/pr_text_white-space.asp)
 
 white-space 属性用于设置如何处理元素内的空白，其中包括空白符和换行符。
 
-![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/16353927aec80539?w=613&h=240&f=jpeg&s=103831?raw=true)
+![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/16353927aec80539?raw=true)
 
 只要在**显示内容的地方将该属性设置为`white-space: pre-line`或者`white-space:pre-wrap`，多行文本就可以换行了**。
 
 #### 设置之后，显示效果：
 
-![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/1635d9d75136f6d8?w=419&h=506&f=png&s=128663?raw=true)
+![](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/1635d9d75136f6d8?raw=true)
 
 ---
 
