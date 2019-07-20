@@ -3,7 +3,7 @@
 在vue-cli 2.X的时候，也写过一篇类似的[文章](https://juejin.im/post/597eee92f265da3e2e56e37c)，在八月份的时候vue-cli已经更新到了3.X，新版本的脚手架，功能灰常强大，试用过后非常喜欢，写篇教程来帮助各位踩一下坑。
 
 
-> 游泳、健身了解一下：[博客](http://obkoro1.com/)、[前端积累文档](http://obkoro1.com/web_accumulate/accumulate/)、[公众号](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/1631b6f52f7e7015?raw=true)、[GitHub](https://github.com/OBKoro1)
+> 游泳、健身了解一下：[博客](http://obkoro1.com/)、[前端积累文档](http://obkoro1.com/web_accumulate/accumulate/)、[公众号](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/1631b6f52f7e7015.jpeg?raw=true)、[GitHub](https://github.com/OBKoro1)
 
 ### 主要内容：
 
@@ -285,7 +285,7 @@ mac下，更新版本的时候,如果提示你权限不够：
 
 ### 希望看完的朋友可以点个喜欢/关注，您的支持是对我最大的鼓励。
 
-[博客](http://obkoro1.com/)、[前端积累文档](http://obkoro1.com/web_accumulate/accumulate/)、[公众号](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/1631b6f52f7e7015?raw=true)、[GitHub](https://github.com/OBKoro1)
+[博客](http://obkoro1.com/)、[前端积累文档](http://obkoro1.com/web_accumulate/accumulate/)、[公众号](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/1631b6f52f7e7015.jpeg?raw=true)、[GitHub](https://github.com/OBKoro1)
  
  以上2018.11.10
  
