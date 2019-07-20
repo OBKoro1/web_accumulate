@@ -3,7 +3,7 @@
  * @Github: https://github.com/OBKoro1
  * @Date: 2018-08-28 18:29:08
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-05-30 10:52:13
+ * @LastEditTime: 2019-07-20 15:05:35
  * @Description: 
  */
 module.exports = {
@@ -122,6 +122,7 @@ module.exports = {
             '/accumulate/tool/js事件循环机制',
             '/accumulate/tool/js垃圾回收机制',
             '/accumulate/tool/http缓存',
+            '/accumulate/tool/博客外链失效一键替换',
             '/accumulate/tool/koroFileHeader',
             '/accumulate/tool/Eslint自动修复格式错误',
             '/accumulate/tool/一份超级详细的Vue-cli3.0使用教程',
