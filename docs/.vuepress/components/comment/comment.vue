@@ -3,7 +3,7 @@
  * @Author: OBKoro1
  * @Created_time: 2019-06-23 14:48:30
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-06-29 13:23:10
+ * @LastEditTime: 2019-07-28 18:30:32
  * @Description: gitalk评论组件
  * 文章：https://juejin.im/post/5c9e30fb6fb9a05e1c4cecf6
  -->
@@ -28,8 +28,13 @@ export default {
   methods: {
     pageInit() {
       console.log("this", this);
-      this.initGitalk();
-      this.initIssue();
+      const url = location.href;
+      let arr = ["http://obkoro1.com/web_accumulate/about.html"];
+      // 过滤某些页面
+      if (!arr.includes(url)) {
+        this.initGitalk();
+        this.initIssue();
+      }
     },
     // 使用油候初始化issue
     initIssue() {
@@ -124,9 +129,7 @@ export default {
         new RegExp('<div class="line-numbers-wrapper">.*?<\\/div>', "g"),
         ""
       );
-      let body = `### [博客链接](${location.href})\n${article}\n [博客链接](${
-        location.href
-      })`;
+      let body = `### [博客链接](${location.href})\n${article}\n [博客链接](${location.href})`;
       if (title) {
         const commentConfig = {
           clientID: "8fbce2735aa4b865e9df",

@@ -3,12 +3,12 @@
  * @Github: https://github.com/OBKoro1
  * @Date: 2018-08-28 18:29:08
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-07-20 15:05:35
- * @Description: 
+ * @LastEditTime: 2019-07-28 16:02:24
+ * @Description: vuepress文档配置
  */
+
 module.exports = {
-  title: 'OBKoro1前端积累',
-  // TODO: 加到meta上
+  title: '前端进阶积累',
   description: '种一棵树最好的时间是十年前，其次就是现在。',
   base: '/web_accumulate/',
   markdown: {
@@ -23,8 +23,8 @@ module.exports = {
     serviceWorker: {
       updatePopup: {
         // 刷新内容的弹窗
-        message: '就在刚刚,OBKoro1更新了内容',
-        buttonText: '点这里'
+        message: '发现新内容',
+        buttonText: '刷新'
       }
     },
     lastUpdated: '最后更新时间', // 最后更新时间
@@ -32,24 +32,29 @@ module.exports = {
     nav: [
       { text: '前端积累', link: '/accumulate/' },
       { text: '前端算法', link: '/algorithm/' },
-      { text: '关于', link: 'http://obkoro1.com/about/' },
+      { text: '关于', link: '/about' },
       {
-        text: '其他仓库',
+        text: '开源项目',
         items: [
-          {
-            text: '算法仓库',
-            link: 'https://github.com/OBKoro1/Brush_algorithm'
-          },
+
           {
             text: 'VsCode头部注释插件',
             link:
               'https://github.com/OBKoro1/koro1FileHeader'
           },
           {
+            text: '一键替换markdown失效图片外链',
+            link: 'https://github.com/OBKoro1/markdown-img-down-site-change',
+          },
+          {
             text: '浏览器桌面通知npm包',
             link:
               'https://github.com/OBKoro1/notification-Koro1'
-          }
+          },
+          {
+            text: '算法仓库',
+            link: 'https://github.com/OBKoro1/Brush_algorithm'
+          },
         ]
       }
     ],
@@ -74,7 +79,7 @@ module.exports = {
         },
         {
           title: 'ES6',
-          children:[
+          children: [
             '/accumulate/ES6/',
             '/accumulate/ES6/js调用栈机制与ES6尾调用优化介绍',
             '/accumulate/ES6/论普通函数和箭头函数的区别以及箭头函数的注意事项和不适用场景',
@@ -132,9 +137,9 @@ module.exports = {
         {
           title: 'CSS',
           children: [
+            '/accumulate/CSS/CSS概念-BFC深入浅出',
             '/accumulate/CSS/单行多行文本溢出',
             '/accumulate/CSS/CSS权重规则',
-            '/accumulate/CSS/CSS概念-BFC深入浅出'
           ]
         },
         {
