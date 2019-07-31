@@ -3,7 +3,7 @@
  * @Author: OBKoro1
  * @Created_time: 2019-06-23 14:48:30
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-07-28 18:30:32
+ * @LastEditTime: 2019-07-31 14:55:13
  * @Description: gitalk评论组件
  * 文章：https://juejin.im/post/5c9e30fb6fb9a05e1c4cecf6
  -->
@@ -118,9 +118,25 @@ export default {
         }
       };
     },
+    // 根据链接获取仓库
+    getRepo() {
+      const url = location.href;
+      const obj = {
+        "/web_accumulate/algorithm/": "Brush_algorithm", // 算法仓库
+        "/web_accumulate/accumulate/": "web_accumulate", // 博客仓库
+        "/web_accumulate/codeBlack/": "codeBlack"
+      };
+      let repoName = obj["/web_accumulate/accumulate/"]; // 默认博客仓库
+      for (const key in obj) {
+        const index = url.indexOf(key);
+        if (index !== -1) {
+          repoName = obj[key];
+        }
+      }
+      return repoName;
+    },
     newGitalk(createLabels = true) {
       const [title, articleTile] = this.issueTitle();
-      // TODO: 分类 + 标题，
       let labels = [articleTile];
       if (createLabels) {
         labels = this.issueLabels();
@@ -134,7 +150,7 @@ export default {
         const commentConfig = {
           clientID: "8fbce2735aa4b865e9df",
           clientSecret: "c2d2947de913af238dc5a22b1db8de0d9e834096",
-          repo: "web_accumulate", // github项目名
+          repo: this.getRepo(), // github项目名 TODO: 算法分开、小代码块、bug
           owner: "OBKoro1",
           // 这里接受一个数组，可以添加多个管理员
           admin: ["OBKoro1"],
@@ -147,18 +163,7 @@ export default {
           labels: labels, // issue标签
           distractionFreeMode: false
         };
-        // 全局拦截console
-        var log = console.log;
-        let self = this;
-        console.log = function(msg, data) {
-          // 拦截issue抛出的错误 刷新页面 labels改值
-          if (msg === "err:") {
-            if (data.config.baseURL === "https://api.github.com") {
-              self.newGitalk(false);
-            }
-          }
-          log.apply(this, Array.prototype.slice.call(arguments));
-        };
+        this.errCatch();
         if (this.gitalk) {
           // 更新配置并重新请求
           sessionStorage.setItem("gitalkOBKoro1", "issue失败");
@@ -169,6 +174,20 @@ export default {
           sessionStorage.setItem("gitalkOBKoro1", "issue成功");
         }
       }
+    },
+    // 创建失败
+    errCatch() {
+      var log = console.log;
+      let self = this;
+      console.log = function(msg, data) {
+        // 拦截issue抛出的错误 刷新页面 labels改值
+        if (msg === "err:") {
+          if (data.config.baseURL === "https://api.github.com") {
+            self.newGitalk(false);
+          }
+        }
+        log.apply(this, Array.prototype.slice.call(arguments));
+      };
     }
   }
 };

@@ -2,7 +2,10 @@
 
 ![](https://github.com/OBKoro1/articleImg_src/blob/master/weibo_img_move/005Y4rCogy1frhyu07uofj31hc0u0ah3.jpg?raw=true)
 
-### 联系方式:
+### 作者信息
+
+* [掘金年度作者](https://juejin.im/user/58714f0eb123db4a2eb95372/posts)
+* [Github](https://github.com/OBKoro1)
 
 邮箱：obkoro1@foxmail.com
 
@@ -69,6 +72,8 @@ lol：游戏一般跟朋友玩lol,没人一起玩，就不玩(这游戏不开黑
 
 能站在对方的角度考虑问题，懂得包容/体量对方。
 
+人生已经很难了，希望我们能够相互依靠，尝尽人生百态，快乐的生活~
+
 #### 我希望你：
 
 * 在上海工作(如果是福建的话,那就更好的啦！)：这样就可以经常一起出来玩耍了！
@@ -82,4 +87,26 @@ lol：游戏一般跟朋友玩lol,没人一起玩，就不玩(这游戏不开黑
 * 不端着：放得开，不端着，能一起愉快的开玩笑、唠嗑，这样相处起来才舒服。
 
 * 有自己的爱好不粘人：现在年轻，重心是放在事业上，在工作日可能没有那么多精力聊天陪伴之类的，希望你能有自己的爱好，不会因为我在忙，觉得无聊，生闷气。
+
+### 照片
+
+#### 19年 2月：
+
+除夕刚喝了一点酒 哈哈~
+
+![](https://github.com/OBKoro1/articleImg_src/blob/master/weibo_img_move/005Y4rCogy1g0bshji1g7j30a80dm3za.jpg?raw=true)
+
+#### 18 年 12月
+
+刚剪完头发，烫了一下，谁知道根本没效果！
+
+![](https://github.com/OBKoro1/articleImg_src/blob/master/weibo_img_move/005Y4rCogy1g0bsikxjkxj30a70dkgm4.jpg?raw=true)
+
+#### 18 年 4 月:
+
+![](https://github.com/OBKoro1/articleImg_src/blob/master/weibo_img_move/005Y4rCogy1fsnsrp7sg9j30af0iigmv.jpg?raw=true)
+
+#### 17 年 12 月:
+
+![](https://github.com/OBKoro1/articleImg_src/blob/master/weibo_img_move/005Y4rCogy1fsnsxa6lnlj30a70dldld.jpg?raw=true)
 
