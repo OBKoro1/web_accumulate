@@ -3,7 +3,7 @@
  * @Author: OBKoro1
  * @Created_time: 2019-06-23 14:48:30
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-07-31 15:35:24
+ * @LastEditTime: 2019-07-31 15:46:02
  * @Description: gitalk评论组件
  * 文章：https://juejin.im/post/5c9e30fb6fb9a05e1c4cecf6
  -->
@@ -158,7 +158,8 @@ export default {
           // id 需要用pathname否则将会重复创建。
 
           // 但是如果你的 pathname 超过 50 个字符，GitHub 将不会成功创建 issue，此情况可以考虑给每个页面生成 hash 值的方法.
-          id: decodeURI(location.pathname).slice(0, 48), // issue title
+          // id: decodeURI(location.pathname).slice(0, 48), // issue title
+          id: title,
           title, // issue标题
           body, // issue内容
           labels: labels, // issue标签
