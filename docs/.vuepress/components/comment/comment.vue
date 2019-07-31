@@ -3,7 +3,7 @@
  * @Author: OBKoro1
  * @Created_time: 2019-06-23 14:48:30
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-07-31 14:55:13
+ * @LastEditTime: 2019-07-31 15:17:37
  * @Description: gitalk评论组件
  * 文章：https://juejin.im/post/5c9e30fb6fb9a05e1c4cecf6
  -->
@@ -49,8 +49,8 @@ export default {
       console.log("存pageArray", sessionStorage.pageArray);
     },
     issueTitle() {
-      const title = location.pathname;
-      const pathArr = title.split("/");
+      const title = '前端进阶积累';
+      const pathArr = location.pathname.split("/");
       let res;
       // "js 调用栈机制与ES6尾调用优化介绍"
       // "OBKoro1前端积累"
@@ -65,17 +65,20 @@ export default {
             medium: "中等级-算法"
           };
           res = `${articleTile} | ${obj[pathArr[3]]}`;
-        } else {
+        } else if(pathArr[2] === 'codeBlack'){
+          res = `${articleTile} | 开箱即用的代码块`;
+        }else {
           // 文章
           res = `${articleTile} | ${pathArr[3]}`;
         }
       } else if (pathArr[2]) {
         // 第二层主目录是否创建issue
-        let agreeArr = ["accumulate", "algorithm"];
+        let agreeArr = ["accumulate", "algorithm", 'codeBlack'];
         if (agreeArr.includes(pathArr[2])) {
           let obj = {
-            accumulate: "OBKoro1博客",
-            algorithm: "前端算法"
+            accumulate: "前端进阶积累",
+            algorithm: "前端算法",
+            codeBlack: '开箱即用的代码块'
           };
           res = obj[pathArr[2]];
         }
