@@ -3,7 +3,7 @@
  * @Author: OBKoro1
  * @Created_time: 2019-06-24 10:13:04
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-08-01 20:05:05
+ * @LastEditTime: 2019-08-01 20:12:52
  * @Description: 查找markdown+定义公共变量
  */
 const fs = require('fs')
@@ -34,7 +34,9 @@ function findMarkdown(dir, callback) {
 
 // 过滤文件
 function filterFile(dir) {
-  const arr = ['about.md', 'template.md']
+  // dir: ./docs/accumulate/CSS/CSS权重规则.md
+
+  const arr = ['about.md', 'template.md', './docs/README.md']
   const index = arr.findIndex(item => {
     return dir.indexOf(item) !== -1 // 找出含有过滤的
   })

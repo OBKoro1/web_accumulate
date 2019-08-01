@@ -30,6 +30,4 @@ footer: MIT Licensed | Copyright © 2018-present OBKoro1
 
     [H5 notification浏览器桌面通知](https://github.com/OBKoro1/notification-Koro1): 浏览器桌面弹窗
 * [关于](/about.html)
-<!-- 特殊字符串：用于修改/删除markdown的结尾提示语-OBKoro1 -->
-### 点个[Star](https://github.com/OBKoro1/accumulate)支持我一下~
 
