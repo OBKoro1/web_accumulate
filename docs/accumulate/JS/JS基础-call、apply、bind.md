@@ -515,9 +515,7 @@ Function.prototype.myBind = function (objThis, ...params) {
 
 本来以为这篇会写的很快，结果断断续续的写了好几天，终于把这三个API相关知识介绍清楚了，希望大家看完之后，面试的时候再遇到这个问题，就可以海陆空全方位的装逼了^_^
 
-#### 觉得我的博客对你有帮助的话，就给我点个[Star](https://github.com/OBKoro1/web_accumulate)吧！
-
-[前端进阶积累文档](http://obkoro1.com/web_accumulate/)、[公众号](https://user-gold-cdn.xitu.io/2018/5/1/1631b6f52f7e7015?w=344&h=344&f=jpeg&s=8317)、[GitHub](https://github.com/OBKoro1)、wx:OBkoro1、邮箱：obkoro1@foxmail.com
- 
  以上2019/8/30
+<!-- 特殊字符串：用于修改/删除markdown的结尾提示语-OBKoro1 -->
+### 点个[Star](https://github.com/OBKoro1/web_accumulate)支持我一下~
 

@@ -70,8 +70,6 @@ console.log(
   kthLargestElement(1, [1, 3, 4, 2])
 );
 ```
-
-### 鼓励我一下：
-
-觉得还不错的话，给我的项目点个[star](https://github.com/OBKoro1/Brush_algorithm)吧
+<!-- 特殊字符串：用于修改/删除markdown的结尾提示语-OBKoro1 -->
+### 点个[Star](https://github.com/OBKoro1/Brush_algorithm)支持我一下~
 

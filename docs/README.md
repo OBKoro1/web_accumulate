@@ -8,8 +8,8 @@ features:
   details: 在纷乱的前端娱乐圈，专注js基础，打磨核心竞争力，一通百通，无惧工具/框架变迁。
 - title: 算法
   details: 算法文档按照难度分级，代码中都有详细注释，且会提供多种解法，用以提升编程能力和逻辑能力比较有效的一种方式。
-- title: 持续更新
-  details: 本博客将持续更新，是一个长期项目来维护，期望这个文档在不久以后能够给大家带来帮助。
+- title: 代码块
+  details: 比较小的代码块/知识点，一段话，一段代码就能说清楚, 开箱即用！
 footer: MIT Licensed | Copyright © 2018-present OBKoro1
 ---
 ### 其他：
@@ -30,4 +30,6 @@ footer: MIT Licensed | Copyright © 2018-present OBKoro1
 
     [H5 notification浏览器桌面通知](https://github.com/OBKoro1/notification-Koro1): 浏览器桌面弹窗
 * [关于](/about.html)
+<!-- 特殊字符串：用于修改/删除markdown的结尾提示语-OBKoro1 -->
+### 点个[Star](https://github.com/OBKoro1/accumulate)支持我一下~
 

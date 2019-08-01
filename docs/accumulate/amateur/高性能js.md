@@ -253,4 +253,6 @@ setTimeout(‘代码’,100)和setInterval(‘代码’,100)
 书不太厚，如果对里面的内容感兴趣，还是建议买一本回家看一看。
 
 以上 2018.1.9
+<!-- 特殊字符串：用于修改/删除markdown的结尾提示语-OBKoro1 -->
+### 点个[Star](https://github.com/OBKoro1/web_accumulate)支持我一下~
 

@@ -244,14 +244,9 @@ window.b // undefined
 1. `let`使用场景：变量，用以替代`var`。
 2. `const`使用场景：常量、声明匿名函数、箭头函数的时候。
 
-### 鼓励我一下：
-
-觉得还不错的话，给我的项目点个[star](https://github.com/OBKoro1/Brush_algorithm)吧
-
-[博客](http://obkoro1.com/)、[前端积累文档](http://obkoro1.com/web_accumulate/accumulate/)、[公众号](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/1631b6f52f7e7015.jpeg?raw=true)、[GitHub](https://github.com/OBKoro1)
-
-
 参考资料：
 
 [let 和 const 命令](http://es6.ruanyifeng.com/#docs/let)
+<!-- 特殊字符串：用于修改/删除markdown的结尾提示语-OBKoro1 -->
+### 点个[Star](https://github.com/OBKoro1/web_accumulate)支持我一下~
 

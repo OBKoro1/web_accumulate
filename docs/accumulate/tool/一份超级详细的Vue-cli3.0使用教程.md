@@ -283,10 +283,6 @@ mac下，更新版本的时候,如果提示你权限不够：
 
 可以说很认真了，希望大家看完能够有些收获，**赶紧试试新版的vue-cli吧**！
 
-### 希望看完的朋友可以点个喜欢/关注，您的支持是对我最大的鼓励。
-
-[博客](http://obkoro1.com/)、[前端积累文档](http://obkoro1.com/web_accumulate/accumulate/)、[公众号](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/1631b6f52f7e7015.jpeg?raw=true)、[GitHub](https://github.com/OBKoro1)
- 
  以上2018.11.10
  
  参考资料：
@@ -294,4 +290,6 @@ mac下，更新版本的时候,如果提示你权限不够：
  [vue-cli3官方文档](https://cli.vuejs.org/zh/guide/)
 
  [vue-cli3.0搭建与配置](https://gitee.com/hjm100/codes/rjch7b31l4f59gt8suidn63)
+<!-- 特殊字符串：用于修改/删除markdown的结尾提示语-OBKoro1 -->
+### 点个[Star](https://github.com/OBKoro1/web_accumulate)支持我一下~
 

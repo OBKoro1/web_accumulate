@@ -50,4 +50,6 @@ Vue.use(base); //将全局函数当做插件来进行注册
 this.text1();
 this.text2();
 ```
+<!-- 特殊字符串：用于修改/删除markdown的结尾提示语-OBKoro1 -->
+### 点个[Star](https://github.com/OBKoro1/web_accumulate)支持我一下~
 

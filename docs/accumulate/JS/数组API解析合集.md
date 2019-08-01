@@ -931,8 +931,6 @@ console.log(entries.next().value); // [2, 'c']
 entries()浏览器兼容性(MDN):Chrome 38, Firefox 28,Opera 25,Safari 7.1
 
 keys()浏览器兼容性(MDN):Chrome 38, Firefox 28,Opera 25,Safari 8,
-
-### 鼓励我一下：
-
-觉得还不错的话，给我的项目点个[star](https://github.com/OBKoro1/Brush_algorithm)吧
+<!-- 特殊字符串：用于修改/删除markdown的结尾提示语-OBKoro1 -->
+### 点个[Star](https://github.com/OBKoro1/web_accumulate)支持我一下~
 

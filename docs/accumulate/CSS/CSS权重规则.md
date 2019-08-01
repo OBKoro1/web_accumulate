@@ -120,8 +120,6 @@ codepen 的[demo](https://codepen.io/OBKoro1/pen/ZoVxgQ);
 1. 避免使用`!important`;
 2. 利用 id 增加选择器权重;
 3. 减少选择器的个数（避免层层嵌套）;
-
-### 鼓励我一下：
-
-觉得还不错的话，给我的项目点个[star](https://github.com/OBKoro1/Brush_algorithm)吧
+<!-- 特殊字符串：用于修改/删除markdown的结尾提示语-OBKoro1 -->
+### 点个[Star](https://github.com/OBKoro1/web_accumulate)支持我一下~
 

@@ -90,4 +90,6 @@ const fibonacci = n => {
 ### [代码地址](https://github.com/OBKoro1/Brush_algorithm/blob/master/codeSource/FibonacciSequence.html)
 
 2018.8.5
+<!-- 特殊字符串：用于修改/删除markdown的结尾提示语-OBKoro1 -->
+### 点个[Star](https://github.com/OBKoro1/Brush_algorithm)支持我一下~
 

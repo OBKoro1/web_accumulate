@@ -187,11 +187,7 @@ function c() {
 
 [JavaScript 如何工作：对引擎、运行时、调用堆栈的概述](https://juejin.im/post/5a05b4576fb9a04519690d42)
  
-[浅析javascript调用栈](https://segmentfault.com/a/1190000010360316)  
-
-### 支持一下：
-
-觉得还不错的话，给项目点个[star](https://github.com/OBKoro1/Brush_algorithm)吧
-
-[博客](http://obkoro1.com/)、[前端算法](https://github.com/OBKoro1/Brush_algorithm)、[公众号](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/1631b6f52f7e7015.jpeg?raw=true)
+[浅析javascript调用栈](https://segmentfault.com/a/1190000010360316)
+<!-- 特殊字符串：用于修改/删除markdown的结尾提示语-OBKoro1 -->
+### 点个[Star](https://github.com/OBKoro1/web_accumulate)支持我一下~
 

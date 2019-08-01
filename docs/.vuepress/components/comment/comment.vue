@@ -3,7 +3,7 @@
  * @Author: OBKoro1
  * @Created_time: 2019-06-23 14:48:30
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-07-31 15:55:38
+ * @LastEditTime: 2019-08-01 14:44:22
  * @Description: gitalk评论组件
  * 文章：https://juejin.im/post/5c9e30fb6fb9a05e1c4cecf6
  -->
@@ -29,7 +29,10 @@ export default {
     pageInit() {
       console.log("this", this);
       const url = location.href;
-      let arr = ["http://obkoro1.com/web_accumulate/about.html"];
+      let arr = [
+        "http://obkoro1.com/web_accumulate/about.html",
+        "http://obkoro1.com/web_accumulate/"
+      ];
       // 过滤某些页面
       if (!arr.includes(url)) {
         this.initGitalk();
@@ -48,7 +51,7 @@ export default {
       }
     },
     issueTitle() {
-      const title = '前端进阶积累';
+      const title = "前端进阶积累";
       const pathArr = location.pathname.split("/");
       let res;
       let articleTile = this.$page.title;
@@ -62,20 +65,20 @@ export default {
             medium: "中等级-算法"
           };
           res = `${articleTile} | ${obj[pathArr[3]]}`;
-        } else if(pathArr[2] === 'codeBlack'){
+        } else if (pathArr[2] === "codeBlack") {
           res = `${articleTile} | 开箱即用的代码块`;
-        }else {
+        } else {
           // 文章
           res = `${articleTile} | ${pathArr[3]}`;
         }
       } else if (pathArr[2]) {
         // 第二层主目录是否创建issue
-        let agreeArr = ["accumulate", "algorithm", 'codeBlack'];
+        let agreeArr = ["accumulate", "algorithm", "codeBlack"];
         if (agreeArr.includes(pathArr[2])) {
           let obj = {
             accumulate: "前端进阶积累",
             algorithm: "前端算法",
-            codeBlack: '开箱即用的代码块'
+            codeBlack: "开箱即用的代码块"
           };
           res = obj[pathArr[2]];
         }
@@ -141,7 +144,7 @@ export default {
       if (createLabels) {
         labels = this.issueLabels();
       }
-      console.log('labels',labels)
+      console.log("labels", labels);
       let article = this.$page.excerpt.replace(
         new RegExp('<div class="line-numbers-wrapper">.*?<\\/div>', "g"),
         ""

@@ -66,4 +66,6 @@ for (let key in obj) {
 ```
 
 这个`Object.defineProperty`的用法就是上面两个栗子中所展示的那样，可以将栗子`copy`到本地自己玩一下。
+<!-- 特殊字符串：用于修改/删除markdown的结尾提示语-OBKoro1 -->
+### 点个[Star](https://github.com/OBKoro1/web_accumulate)支持我一下~
 
