@@ -3,7 +3,7 @@
  * @Author: OBKoro1
  * @Date: 2019-07-29 15:24:40
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-08-01 15:32:04
+ * @LastEditTime: 2019-08-01 20:34:58
  * @Description: 
  */
 module.exports = {
@@ -68,7 +68,7 @@ module.exports = {
     ],
     sidebar: {
       '/accumulate/': [
-        '/accumulate/JS/JS基础-call、apply、bind',
+        '/accumulate/JS/JS基础-call和apply还有bind.md',
         '/accumulate/tool/博客外链失效一键替换',
         '/accumulate/tool/koroFileHeader',
         '/accumulate/ES6/js调用栈机制与ES6尾调用优化介绍',
