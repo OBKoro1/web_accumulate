@@ -6,21 +6,30 @@
 
 * [掘金年度作者](https://juejin.im/user/58714f0eb123db4a2eb95372/posts)
 * [Github](https://github.com/OBKoro1)
+* 开源项目:
 
-邮箱：obkoro1@foxmail.com
+    [VsCode文件头部注释生成插件](https://github.com/OBKoro1/koro1FileHeader): 自动添加文件头部注释, 养成规范好习惯。
 
-微信：OBkoro1
+    [下载/替换 markdown中的图片](https://github.com/OBKoro1/markdown-img-down-site-change): 用于处理图片外链失效的情况
 
-![](https://github.com/OBKoro1/articleImg_src/blob/master/weibo_img_move/005Y4rCogy1fsnslyz5pnj309j0cdgm6.jpg?raw=true)
+    [H5 notification浏览器桌面通知](https://github.com/OBKoro1/notification-Koro1): 浏览器桌面弹窗
 
-微信公众号：OBKoro1前端进阶积累
+* 联系方式：
 
-![微信公众号](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/1631b6f52f7e7015.jpeg?raw=true)
+    邮箱：obkoro1@foxmail.com
+
+    微信：OBkoro1
+
+    ![](https://github.com/OBKoro1/articleImg_src/blob/master/weibo_img_move/005Y4rCogy1fsnslyz5pnj309j0cdgm6.jpg?raw=true)
+
+    微信公众号：OBKoro1前端进阶积累
+
+    ![微信公众号](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/1631b6f52f7e7015.jpeg?raw=true)
 
 
 ### 找对象呀：
 
-> 因为生活圈子比较小，同事之间也不会去搞那些花里胡哨的，虽然着急,但也一直没有主动的去找对象，在这里真诚的找一下对象。
+> 因为生活圈子比较小，虽然着急,但也一直没有主动的去找对象，在这里真诚的找一下对象。
 
 ### 基本信息
 
