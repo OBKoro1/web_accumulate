@@ -3,8 +3,11 @@
  * @Author: OBKoro1
  * @Created_time: 2019-06-24 10:13:36
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-08-02 12:37:27
- * @Description: 根据特殊字段删除编译后的issue组件
+ * @LastEditTime: 2019-08-02 15:14:00
+ * @Description: 
+ * 复制readme到codeBlack、Brush_algorithm
+ * 更新进阶积累文档readme
+ * 根据特殊字段删除编译后的issue组件
  */
 
 const fs = require('fs')
@@ -14,7 +17,6 @@ const findMarkdown = require('./findMarkdown')
 findMarkdown.findMarkdown(findMarkdown.source, delComponents)
 
 const commitParam = process.argv[2] // commit 参数
-console.log('process.argv1', process.argv,process.execPath,process.cwd())
 
 compareFile('./docs/codeBlack/README.md', '../codeBlack')
 compareFile('./docs/algorithm/README.md', '../Brush_algorithm')

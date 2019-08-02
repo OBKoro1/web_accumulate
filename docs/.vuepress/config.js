@@ -3,7 +3,7 @@
  * @Author: OBKoro1
  * @Date: 2019-07-29 15:24:40
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-08-01 20:34:58
+ * @LastEditTime: 2019-08-02 15:18:19
  * @Description: 
  */
 module.exports = {
@@ -105,6 +105,7 @@ module.exports = {
         '/accumulate/amateur/推箱子'
       ],
       '/codeBlack/': [
+        '/codeBlack/执行shell命令行',
         '/codeBlack/正则表达式收集',
         '/codeBlack/数组交集差集',
         '/codeBlack/数组完全乱序',
