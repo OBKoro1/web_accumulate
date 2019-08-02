@@ -3,7 +3,7 @@
  * @Author: OBKoro1
  * @Created_time: 2019-06-24 10:13:36
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-08-02 12:20:17
+ * @LastEditTime: 2019-08-02 12:37:27
  * @Description: 根据特殊字段删除编译后的issue组件
  */
 
@@ -14,17 +14,17 @@ const findMarkdown = require('./findMarkdown')
 findMarkdown.findMarkdown(findMarkdown.source, delComponents)
 
 const commitParam = process.argv[2] // commit 参数
-console.log('process.argv1', process.argv)
+console.log('process.argv1', process.argv,process.execPath,process.cwd())
 
-compareFile('./docs/codeBlack/README.md', '../codeBlack/README.md')
-compareFile('./docs/algorithm/README.md', '../Brush_algorithm/README.md')
+compareFile('./docs/codeBlack/README.md', '../codeBlack')
+compareFile('./docs/algorithm/README.md', '../Brush_algorithm')
 
 
 // 复制文件
 function compareFile(file, elesFile) {
     fs.copyFileSync(
         file,
-        elesFile,
+        `${elesFile}/README.md`,
     );
     myExecSync(`ls && cd ${elesFile} && git add . && git commit -m ${commitParam} && git push`)
     function myExecSync(cmd) {
@@ -55,23 +55,23 @@ function compareFile(file, elesFile) {
 }
 
 // 更新前端进阶文档
-// fs.copyFileSync(
-//     `./docs/accumulate/README.md`,
-//     `./docs/.vuepress/dist/README.md`,
-// );
+fs.copyFileSync(
+    `./docs/accumulate/README.md`,
+    `./docs/.vuepress/dist/README.md`,
+);
 
 function delComponents(dir) {
-    // fs.readFile(dir, 'utf-8', (err, content) => {
-    //     if (err) throw err
-    //     content = content.replace(/<comment-comment.*\/>/g, '')
-    //     let index = content.indexOf(findMarkdown.specialString)
-    //     if (index !== -1) {
-    //         content = content.substring(0, index)
-    //     }
-    //     fs.writeFile(dir, content, (err) => {
-    //         if (err) throw err
-    //         console.log(`删除评论组件： ${dir}`)
-    //     })
-    // })
+    fs.readFile(dir, 'utf-8', (err, content) => {
+        if (err) throw err
+        content = content.replace(/<comment-comment.*\/>/g, '')
+        let index = content.indexOf(findMarkdown.specialString)
+        if (index !== -1) {
+            content = content.substring(0, index)
+        }
+        fs.writeFile(dir, content, (err) => {
+            if (err) throw err
+            console.log(`删除评论组件： ${dir}`)
+        })
+    })
 }
 

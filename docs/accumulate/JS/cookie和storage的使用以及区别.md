@@ -152,6 +152,3 @@ cookie 使用起来还是需要小心一点，有兴趣的可以看一下这个[
 <!-- 特殊字符串：用于修改/删除markdown的结尾提示语-OBKoro1 -->
 ### 点个[Star](https://github.com/OBKoro1/web_accumulate)支持我一下~
 
-<!-- '特殊字符串：用于删除编译后的issue组件-OBKoro1 -->
-<!-- more -->
-<comment-comment/>

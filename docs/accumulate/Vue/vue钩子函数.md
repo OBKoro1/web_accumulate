@@ -437,6 +437,3 @@ Vue提供了很多钩子，但很多钩子我们几乎不会用到，只有清�
 <!-- 特殊字符串：用于修改/删除markdown的结尾提示语-OBKoro1 -->
 ### 点个[Star](https://github.com/OBKoro1/web_accumulate)支持我一下~
 
-<!-- '特殊字符串：用于删除编译后的issue组件-OBKoro1 -->
-<!-- more -->
-<comment-comment/>

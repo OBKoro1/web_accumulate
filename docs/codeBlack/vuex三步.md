@@ -106,6 +106,3 @@ store.dispatch('nameAction', '传过去的新名字')
 <!-- 特殊字符串：用于修改/删除markdown的结尾提示语-OBKoro1 -->
 ### 点个[Star](https://github.com/OBKoro1/codeBlack)支持我一下~
 
-<!-- '特殊字符串：用于删除编译后的issue组件-OBKoro1 -->
-<!-- more -->
-<comment-comment/>
