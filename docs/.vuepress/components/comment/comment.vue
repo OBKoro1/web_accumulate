@@ -3,7 +3,7 @@
  * @Author: OBKoro1
  * @Created_time: 2019-06-23 14:48:30
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-08-01 14:44:22
+ * @LastEditTime: 2019-08-02 18:10:36
  * @Description: gitalk评论组件
  * 文章：https://juejin.im/post/5c9e30fb6fb9a05e1c4cecf6
  -->
@@ -19,7 +19,8 @@ export default {
   name: "comment",
   data() {
     return {
-      gitalk: null
+      gitalk: null,
+      gitalkOBKoro1: {}
     };
   },
   mounted() {
@@ -113,10 +114,16 @@ export default {
       script.src = "https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js";
       body.appendChild(script);
       script.onload = () => {
-        let val = sessionStorage.gitalkOBKoro1;
-        if (val && val === "issue失败") {
+        this.gitalkOBKoro1 =
+          sessionStorage.gitalkOBKoro1 &&
+          JSON.parse(sessionStorage.gitalkOBKoro1);
+        if (this.gitalkOBKoro1 && this.gitalkOBKoro1.href === location.href) {
           this.newGitalk(false);
         } else {
+          this.gitalkOBKoro1 = {
+            href: location.href,
+            num: 0
+          };
           this.newGitalk();
         }
       };
@@ -144,6 +151,9 @@ export default {
       if (createLabels) {
         labels = this.issueLabels();
       }
+      if (this.gitalkOBKoro1.num > 2) {
+        labels = [];
+      }
       console.log("labels", labels);
       let article = this.$page.excerpt.replace(
         new RegExp('<div class="line-numbers-wrapper">.*?<\\/div>', "g"),
@@ -169,14 +179,18 @@ export default {
           distractionFreeMode: false
         };
         this.errCatch();
+        console.log("location", location.href);
         if (this.gitalk) {
           // 更新配置并重新请求
-          sessionStorage.setItem("gitalkOBKoro1", "issue失败");
+          this.gitalkOBKoro1.num++;
+          console.log("this.gitalkOBKoro1", this.gitalkOBKoro1);
+          sessionStorage.setItem("gitalkOBKoro1", this.gitalkOBKoro1);
+          debugger;
           location.reload();
         } else {
           this.gitalk = new Gitalk(commentConfig);
           this.gitalk.render("gitalk-container");
-          sessionStorage.setItem("gitalkOBKoro1", "issue成功");
+          sessionStorage.setItem("gitalkOBKoro1", this.gitalkOBKoro1);
         }
       }
     },
