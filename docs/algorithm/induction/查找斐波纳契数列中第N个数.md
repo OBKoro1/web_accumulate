@@ -85,11 +85,10 @@ const fibonacci = n => {
 
 最后一题的提交，甩的第二名看不到我的车尾灯，开心！
 
-第一回刷算法题，以后要继续坚持！
-
-### [代码地址](https://github.com/OBKoro1/Brush_algorithm/blob/master/codeSource/FibonacciSequence.html)
-
 2018.8.5
 <!-- 特殊字符串：用于修改/删除markdown的结尾提示语-OBKoro1 -->
 ### 点个[Star](https://github.com/OBKoro1/Brush_algorithm)支持我一下~
 
+<!-- '特殊字符串：用于删除编译后的issue组件-OBKoro1 -->
+<!-- more -->
+<comment-comment/>

@@ -3,7 +3,7 @@
  # @Author: OBKoro1
  # @Created_time: 2019-06-24 09:47:03
  # @LastEditors: OBKoro1
- # @LastEditTime: 2019-07-20 15:23:35
+ # @LastEditTime: 2019-08-02 11:48:43
  # @Description: 部署 
 ###
 
@@ -15,8 +15,10 @@
 # 确保脚本抛出遇到的错误
 set -e
 
+echo $1
+
 # 生成静态文件
-npm run build
+npm run build $1
 
 # 进入生成的文件夹
 cd docs/.vuepress/dist
@@ -26,7 +28,6 @@ cd docs/.vuepress/dist
 
 git init
 git add -A
-echo $1
 # npm run d 'commit值'
 git commit -m $1
 

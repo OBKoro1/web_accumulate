@@ -3,11 +3,13 @@
  * @Author: OBKoro1
  * @Created_time: 2019-06-24 10:13:25
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-08-01 14:54:03
+ * @LastEditTime: 2019-08-02 11:47:17
  * @Description: 查找markdown 添加特殊字符以及评论组件
  */
 const fs = require('fs')
 const findMarkdown = require('./findMarkdown')
+
+console.log('process.argv1', process.argv)
 
 // 查找markdown
 findMarkdown.findMarkdown(findMarkdown.source, writeComponents)
