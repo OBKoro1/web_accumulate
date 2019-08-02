@@ -3,22 +3,22 @@
  * @Author: OBKoro1
  * @Created_time: 2019-06-24 10:13:36
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-08-02 12:07:56
+ * @LastEditTime: 2019-08-02 12:20:17
  * @Description: 根据特殊字段删除编译后的issue组件
  */
 
 const fs = require('fs')
+const execSync = require('child_process').execSync; // 执行命令
 const findMarkdown = require('./findMarkdown')
 
 findMarkdown.findMarkdown(findMarkdown.source, delComponents)
 
-// TODO: 一键替换另外两个文件的markdown
-// 并且更新markdown
-
+const commitParam = process.argv[2] // commit 参数
 console.log('process.argv1', process.argv)
 
 compareFile('./docs/codeBlack/README.md', '../codeBlack/README.md')
 compareFile('./docs/algorithm/README.md', '../Brush_algorithm/README.md')
+
 
 // 复制文件
 function compareFile(file, elesFile) {
@@ -26,7 +26,7 @@ function compareFile(file, elesFile) {
         file,
         elesFile,
     );
-    myExecSync(`ls && cd ${elesFile} && git add . && git commit -m 'msg' && git push`)
+    myExecSync(`ls && cd ${elesFile} && git add . && git commit -m ${commitParam} && git push`)
     function myExecSync(cmd) {
         // 除了该方法直到子进程完全关闭后才返回 执行完毕 返回
         try {
