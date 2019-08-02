@@ -1,4 +1,4 @@
-# JS基础系列-重新认识call,apply,bind
+# JS基础系列-重新认识call apply bind
 
 函数原型链中的 apply，call 和 bind 方法是 JavaScript 中相当重要的概念，与 this 关键字密切相关，相当一部分人对它们的理解还是比较浅显，所谓js基础扎实，绕不开这些基础常用的API，这次让我们来彻底掌握它们吧！
 

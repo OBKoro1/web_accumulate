@@ -3,7 +3,7 @@
  * @Author: OBKoro1
  * @Created_time: 2019-06-23 14:48:30
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-08-02 18:18:02
+ * @LastEditTime: 2019-08-02 18:22:02
  * @Description: gitalk评论组件
  * 文章：https://juejin.im/post/5c9e30fb6fb9a05e1c4cecf6
  -->
@@ -183,13 +183,11 @@ export default {
         if (this.gitalk) {
           // 更新配置并重新请求
           this.gitalkOBKoro1.num++;
-          console.log("this.gitalkOBKoro1", this.gitalkOBKoro1);
           sessionStorage.setItem(
             "gitalkOBKoro1",
             JSON.stringify(this.gitalkOBKoro1)
           );
-          debugger;
-          // location.reload();
+          location.reload();
         } else {
           this.gitalk = new Gitalk(commentConfig);
           this.gitalk.render("gitalk-container");
