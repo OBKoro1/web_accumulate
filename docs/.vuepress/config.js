@@ -3,7 +3,7 @@
  * @Author: OBKoro1
  * @Date: 2019-07-29 15:24:40
  * @LastEditors: OBKoro1
- * @LastEditTime: 2019-08-02 15:18:19
+ * @LastEditTime: 2019-08-06 11:36:36
  * @Description: 
  */
 module.exports = {
@@ -165,7 +165,8 @@ module.exports = {
           children: [
             '/algorithm/medium/第k大元素',
             '/algorithm/medium/丑数',
-            '/algorithm/medium/统计数字'
+            '/algorithm/medium/统计数字',
+            '/algorithm/medium/无重复字符的最长子串',
           ]
         }
       ]
