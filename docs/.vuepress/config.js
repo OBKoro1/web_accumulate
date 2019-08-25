@@ -2,8 +2,8 @@
  * @Github: https://github.com/OBKoro1
  * @Author: OBKoro1
  * @Date: 2019-07-29 15:24:40
- * @LastEditors: OBKoro1
- * @LastEditTime: 2019-08-06 11:36:36
+ * LastEditors: OBKoro1
+ * LastEditTime: 2019-08-25 14:15:28
  * @Description: 
  */
 module.exports = {
@@ -68,6 +68,7 @@ module.exports = {
     ],
     sidebar: {
       '/accumulate/': [
+        '/accumulate/JS/prototype.md',
         '/accumulate/JS/JS基础-call和apply还有bind.md',
         '/accumulate/tool/博客外链失效一键替换',
         '/accumulate/tool/koroFileHeader',
@@ -105,6 +106,7 @@ module.exports = {
         '/accumulate/amateur/推箱子'
       ],
       '/codeBlack/': [
+        '/codeBlack/Object.create实现',
         '/codeBlack/执行shell命令行',
         '/codeBlack/正则表达式收集',
         '/codeBlack/数组交集差集',
