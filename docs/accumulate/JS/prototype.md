@@ -1,4 +1,4 @@
-### JS基础-原型、原型链
+# JS基础-原型、原型链
 
 JS的原型、原型链一直是比较难理解的内容，不少初学者甚至有一定经验的老鸟都不一定能完全说清楚，更多的"很可能"是一知半解，而这部分内容又是JS的核心内容，想要技术进阶的话肯定不能对这个概念一知半解，碰到问题靠“猜”，却不理解它的规则！
 
@@ -97,6 +97,7 @@ let newObj = new someFn() // 构造调用函数
 
 ```js
 SubType.prototype = new SuperType();  // 原型继承：SubType继承SuperType
+SubType.prototype.constructor = SubType // 重新指定constructor指向 方便找到构造函数
 // 挂载SuperType的this和prototype的属性和方法到SubType.prototype上
 ```
 
@@ -104,7 +105,8 @@ SubType.prototype = new SuperType();  // 原型继承：SubType继承SuperType
 2. 构造调用的第三点：该函数的this会绑定在新创建的对象上。
 3. 新对象赋值给`SubType.prototype`
 
-原型类型还有缺点：多个实例对引用类型的操作会被篡改，这里就不扩展了。
+原型类型有个缺点：多个实例对引用类型的操作会被篡改。
+> 因为每次实例化引用类型的数据都指向同一个地址，所以它们读/写的是同一个数据，当一个实例对其进行操作，其他实例的数据就会一起更改。
 
 ### 原型链是什么
 
@@ -117,7 +119,7 @@ const newObj__proto__ = Object.getPrototypeOf(newObj) // 获取newObj的原型�
 newObj__proto__ === foo.prototype // true 验证newObj的原型指向foo
 const foo__proto__ = Object.getPrototypeOf(foo.prototype) // 获取foo.prototype的原型
 foo__proto__ === Object.prototype // true foo.prototype的原型是Object.prototype
-```
+``
 如果用以前的语法，从`newObj`查找`foo`的原型，是这样的：
 ```js
 newObj.__proto__.__proto__ // 这种关系就是原型链
@@ -182,7 +184,7 @@ Object.getPrototypeOf(stringPrototype) === Object.prototype // true String对象
 ```js
 let test = function () { }
 let fnPrototype = Object.getPrototypeOf(test)
-stringPrototype === Function.prototype // true test的原型是Function.prototype
+fnPrototype === Function.prototype // true test的原型是Function.prototype
 Object.getPrototypeOf(Function.prototype) === Object.prototype // true
 ```
 
