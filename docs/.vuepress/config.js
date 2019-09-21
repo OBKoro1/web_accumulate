@@ -3,7 +3,7 @@
  * @Author: OBKoro1
  * @Date: 2019-07-29 15:24:40
  * LastEditors: OBKoro1
- * LastEditTime: 2019-08-25 14:15:28
+ * LastEditTime: 2019-09-21 19:29:38
  * @Description: 
  */
 module.exports = {
@@ -68,6 +68,7 @@ module.exports = {
     ],
     sidebar: {
       '/accumulate/': [
+        '/accumulate/JS/JS基础-继承',
         '/accumulate/JS/prototype.md',
         '/accumulate/JS/JS基础-call和apply还有bind.md',
         '/accumulate/tool/博客外链失效一键替换',
