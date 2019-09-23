@@ -4,7 +4,7 @@
 
 #### 本篇文章需要先理解原型、原型链以及`call `的相关知识：
 
-[JS基础-函数、对象和原型、原型链的关系](https://juejin.im/post/5d469e0851882544b85c32ef)
+[JS基础-函数、对象和原型、原型链的关系](https://juejin.im/post/5d622f14f265da03a1486408)
 
 [js基础-面试官想知道你有多理解call,apply,bind？](https://juejin.im/post/5d469e0851882544b85c32ef)
 
