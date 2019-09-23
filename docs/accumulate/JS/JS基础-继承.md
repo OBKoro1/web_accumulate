@@ -4,6 +4,7 @@
 
 #### 本篇文章需要先理解原型、原型链以及`call `的相关知识：
 
+
 [JS基础-函数、对象和原型、原型链的关系](https://juejin.im/post/5d622f14f265da03a1486408)
 
 [js基础-面试官想知道你有多理解call,apply,bind？](https://juejin.im/post/5d469e0851882544b85c32ef)
@@ -75,7 +76,7 @@ function fatherFn() {
 }
 ```
 
-![原型链继承返回其他对象,将导致原型链继承失败](https://github.com/OBKoro1/articleImg_src/blob/master/2019/2019_9_16_inherit_2.png?raw=true)
+![原型链继承返回其他对象,将导致原型链继承失败](/img/remote/1460000020462550?w=1256&h=800)
 
 PS： 本文中构造调用函数都不能返回其他函数，下文不再提及该点。
 
@@ -142,7 +143,7 @@ console.log('借用构造函数子类实例', sonFnInstance)
 
 #### 借用构造函数继承的子类实例
 
-![借用构造函数继承的子类实例](https://github.com/OBKoro1/articleImg_src/blob/master/2019/2019_9_16_inherit_3.png?raw=true)
+![借用构造函数继承的子类实例](/img/remote/1460000020462551?w=852&h=360)
 
 ####  借用构造函数继承做了什么？
 
@@ -243,7 +244,7 @@ let newObj = cloneObject(oldObj)
 oldObj.p = 2
 console.log('oldObj newObj', oldObj, newObj)
 ```
-![原型式继承](https://github.com/OBKoro1/articleImg_src/blob/master/2019/2019_9_16_inherit_5.png?raw=true)
+![原型式继承](/img/remote/1460000020462553?w=477&h=75)
 
 #### 原型式继承优缺点：
 
@@ -352,7 +353,7 @@ function _inherits(son, father) {
 
 ## 扩展：
 
-### 为什么要修正construct指向？
+### 为什么要修正constructor指向？
 
 在寄生组合式继承中有一段如下一段修正constructor 指向的代码，很多人对于它的作用以及为什么要修正它不太清楚。
 
@@ -360,7 +361,7 @@ function _inherits(son, father) {
 son.prototype.constructor = son; // 修正constructor 指向
 ```
 
-#### construct的作用
+#### constructor的作用
 
 [MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/constructor)的定义：**返回创建实例对象的`Object`构造函数的引用**。
 
@@ -371,7 +372,7 @@ let instance = new sonFn()
 instance.constructor // sonFn函数
 ```
 
-#### `construct`的应用场景：
+#### `constructor`的应用场景：
 
 **当我们只有实例对象没有构造函数的引用时**：
 
@@ -383,13 +384,13 @@ instance.constructor // sonFn函数
 let instance = new sonFn() // 实例化子类
 export instance;
 // 多轮导入+导出，导致sonFn追踪非常麻烦，或者不想在文件中再引入sonFn
-let  fn = instance.construct
+let  fn = instance.constructor
 // do something： new fn() / fn.prototype / fn.length / fn.arguments等等
 ```
 
-#### 保持`construct`指向的一致性：
+#### 保持`constructor`指向的一致性：
 
-因此每次重写函数的prototype都应该修正一下`construct`的指向，以保持读取`construct`行为的一致性。
+因此每次重写函数的prototype都应该修正一下`constructor`的指向，以保持读取`constructor`行为的一致性。
 
 ### 小结
 
