@@ -2,7 +2,7 @@
  * Author: OBKoro1
  * Date: 2019-10-22 17:07:54
  * LastEditors: OBKoro1
- * LastEditTime: 2019-10-22 17:10:07
+ * LastEditTime: 2019-10-31 20:00:57
  * FilePath: /web_accumulate/docs/.vuepress/config/algorithm.js
  * Description: 前端算法页面配置
  */
@@ -43,7 +43,8 @@ const medium = [
     '/algorithm/medium/第k大元素',
     '/algorithm/medium/丑数',
     '/algorithm/medium/统计数字',
-    '/algorithm/medium/无重复字符的最长子串'
+    '/algorithm/medium/无重复字符的最长子串',
+    '/algorithm/medium/摆动序列'
 ]
 
 module.exports = {
