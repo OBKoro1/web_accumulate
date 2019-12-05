@@ -1,13 +1,14 @@
 /*
  * Author: OBKoro1
  * Date: 2019-10-22 17:02:20
- * LastEditors: OBKoro1
- * LastEditTime: 2019-10-22 17:03:03
+ * @LastEditors: OBKoro1
+ * @LastEditTime: 2019-12-05 19:40:13
  * FilePath: /web_accumulate/docs/.vuepress/config/accumulate.js
  * Description: 前端积累页面左侧配置
  */
 
 module.exports = [
+    '/accumulate/tool/ESLint插件',
     '/accumulate/JS/JS基础-继承',
     '/accumulate/JS/prototype.md',
     '/accumulate/JS/JS基础-call和apply还有bind.md',
