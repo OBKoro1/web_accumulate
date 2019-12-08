@@ -1,5 +1,4 @@
-## 手摸手教你写个ESLint 插件以及了解ESLint的运行原理
-
+## 手摸手教你写个ESLint插件以及了解ESLint的运行原理
 
 这篇文章目的是介绍如何创建一个ESLint插件和创建一个`ESLint` `rule`，用以帮助我们更深入的理解ESLint的运行原理，并且在有必要时可以根据需求创建出一个完美满足自己需求的Lint规则。
 
@@ -353,7 +352,7 @@ eslint插件都是以`npm`包的形式来引用的，所以需要把插件发布
 
 ### 集成到项目:
 
-安装`npm`包：`npm i eslint-plugin-korolint -D`
+安装`npm`包：`npm i eslint-plugin-korolint  -D`
 
 1. 常规的方法: `引入插件一条条写入规则`
 
@@ -394,6 +393,8 @@ module.exports = output;
 
 使用方法：
 
+使用`extends`来继承插件的配置，`extends`不止这种继承方式，即使你传入一个npm包，一个文件的相对路径地址，eslint也能继承其中的配置。
+
 ```js
 // .eslintrc.js
 module.exports = {
@@ -401,8 +402,6 @@ module.exports = {
 }
 ```
 PS : 这种使用方式, npm的包名不能为`eslint-plugin-xx-xx`,只能为`eslint-plugin-xx`否则会有报错，被这个问题搞得头疼o(╥﹏╥)o
-
-
 
 ## 扩展：
 
@@ -425,11 +424,11 @@ PS : 这种使用方式, npm的包名不能为`eslint-plugin-xx-xx`,只能为`es
 setTimeout(() => {
 
 }, 1000)
-// 修复后
-const countNumber = 1000
+// 修复后 变量名故意写错 为了让用户去修改它
+const countNumber1 = 1000
 setTimeout(() => {
 
-}, countNumber)
+}, countNumber2)
 ```
 
 1. 在rule的meta对象上打开修复功能:
