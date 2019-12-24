@@ -1,8 +1,8 @@
 /*
  * Author: OBKoro1
  * Date: 2019-10-22 16:24:34
- * LastEditors: OBKoro1
- * LastEditTime: 2019-11-21 19:58:38
+ * LastEditors  : OBKoro1
+ * LastEditTime : 2019-12-24 14:55:07
  * FilePath: /web_accumulate/docs/.vuepress/config/codeBlack.js
  * Description: 代码块左侧页面配置
  */
@@ -10,6 +10,7 @@
 //  TODO 获取dom在浏览器中的位置getBoundingClientRect()
 
 module.exports = [
+  '/codeBlack/fixed的从父原则',
   '/codeBlack/进度条',
   '/codeBlack/instanceof实现原理',
   '/codeBlack/移动端手写下拉刷新',
