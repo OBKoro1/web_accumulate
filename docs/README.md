@@ -24,9 +24,11 @@ footer: MIT Licensed | Copyright © 2018-present OBKoro1
 
 * 开源项目:
 
-    [VsCode文件头部注释生成插件](https://github.com/OBKoro1/koro1FileHeader): 自动添加文件头部注释, 养成规范好习惯。
+    [autoCommit](https://github.com/OBKoro1/autoCommit): 一键补充之前忘记提交commit, 填满你GitHub的commit记录。
 
-    [下载/替换 markdown中的图片](https://github.com/OBKoro1/markdown-img-down-site-change): 用于处理图片外链失效的情况
+    [VsCode文件头部注释生成插件](https://github.com/OBKoro1/koro1FileHeader): 自动添加文件头部注释等各种自定义功能, 支持一键添加佛祖保佑永无BUG、神兽护体等注释图案。
+
+    [下载/替换 markdown中的图片](https://github.com/OBKoro1/markdown-img-down-site-change): 搜索目标文件夹中的markdown文件，找到目标图片，提供下载图片，替换图片链接的功能 - 用于处理图片外链失效的情况
 
     [H5 notification浏览器桌面通知](https://github.com/OBKoro1/notification-Koro1): 浏览器桌面弹窗
 * [关于](/about.html)
