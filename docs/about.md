@@ -7,8 +7,10 @@
 * [掘金年度作者](https://juejin.im/user/58714f0eb123db4a2eb95372/posts)
 * [Github](https://github.com/OBKoro1)
 * 开源项目:
+    
+    [autoCommit](https://github.com/OBKoro1/autoCommit): 用来补充github之前忘记提交commit, 填满你GitHub的commit记录。
 
-    [VsCode文件头部注释生成插件](https://github.com/OBKoro1/koro1FileHeader): 自动添加文件头部注释, 养成规范好习惯。
+    [VsCode文件头部注释生成插件](https://github.com/OBKoro1/koro1FileHeader): 自动添加文件头部注释等各种自定义功能, 一键生成多种注释图案。
 
     [下载/替换 markdown中的图片](https://github.com/OBKoro1/markdown-img-down-site-change): 用于处理图片外链失效的情况
 
