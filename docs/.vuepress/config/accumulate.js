@@ -1,8 +1,8 @@
 /*
  * Author: OBKoro1
  * Date: 2019-10-22 17:02:20
- * @LastEditors: OBKoro1
- * @LastEditTime: 2019-12-05 19:40:13
+ * LastEditors: OBKoro1
+ * LastEditTime: 2020-05-19 03:07:34
  * FilePath: /web_accumulate/docs/.vuepress/config/accumulate.js
  * Description: 前端积累页面左侧配置
  */
@@ -24,6 +24,7 @@ module.exports = [
     '/accumulate/tool/js事件循环机制',
     '/accumulate/tool/http缓存',
     '/accumulate/tool/js垃圾回收机制',
+    '/accumulate/tool/骚注释工具',
     '/accumulate/JS/Object.defineProperty',
     '/accumulate/Vue/极简双向绑定',
     '/accumulate/Vue/vue钩子函数',
