@@ -29,7 +29,7 @@
     ![微信公众号](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/1631b6f52f7e7015.jpeg?raw=true)
 
 
-### 找对象呀：
+<!-- ### 找对象呀：
 
 > 因为生活圈子比较小，虽然着急,但也一直没有主动的去找对象，在这里真诚的找一下对象。
 
@@ -162,4 +162,4 @@ PS: 基于以上性格, 侧面证明了我的性格比较好以及我是一个�
 
 #### 16 年 02 月:
 
-![](https://github.com/OBKoro1/articleImg_src/blob/master/koro/201602koro.jpg?raw=true)
+![](https://github.com/OBKoro1/articleImg_src/blob/master/koro/201602koro.jpg?raw=true) -->
