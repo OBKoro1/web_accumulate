@@ -1,13 +1,17 @@
 /*
  * Author: OBKoro1
  * Date: 2019-10-22 17:02:20
- * LastEditors: OBKoro1
- * LastEditTime: 2020-05-19 03:07:34
- * FilePath: /web_accumulate/docs/.vuepress/config/accumulate.js
+ * LastEditors  : OBKoro1
+ * LastEditTime : 2021-01-12 15:49:41
+ * FilePath     : \web_accumulate\docs\.vuepress\config\accumulate.js
  * Description: 前端积累页面左侧配置
  */
 
 module.exports = [
+    '/accumulate/electron/electron-terminal-demo',
+    '/accumulate/tool/electron-playground',
+    '/accumulate/year/2020',
+    '/accumulate/tool/autoCommit',
     '/accumulate/tool/ESLint插件',
     '/accumulate/JS/JS基础-继承',
     '/accumulate/JS/prototype.md',
