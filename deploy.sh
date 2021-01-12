@@ -3,7 +3,7 @@
  # @Author: OBKoro1
  # @Created_time: 2019-06-24 09:47:03
  # LastEditors  : OBKoro1
- # LastEditTime : 2021-01-12 16:15:06
+ # LastEditTime : 2021-01-12 16:16:22
  # @Description: 部署 
 ###
 
@@ -47,4 +47,4 @@ git commit -m $1
 
 git push origin master:master # 推到github上
 
-# 先执行npm run build 'commit参数' 在执行 npm run d 'commit参数'
+# 直接执行 npm run d 'commit参数'
