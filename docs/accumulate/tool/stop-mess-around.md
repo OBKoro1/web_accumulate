@@ -36,17 +36,22 @@
 ### 使用示例
 
 1. 添加摸鱼网站以及匹配摸鱼网站弹窗提示、关闭网页
-![start](https://img-blog.csdnimg.cn/202106250059254.gif#pic_center)
+
+![](https://github.com/OBKoro1/stop-mess-around/blob/master/static/start.gif?raw=true)
+
 2. 一键开启/关闭以及批量添加摸鱼网站
 
-![addCheckout](https://img-blog.csdnimg.cn/20210625005924363.gif#pic_center)
+![](https://github.com/OBKoro1/stop-mess-around/blob/master/static/addCheckout.gif?raw=true)
 
-3. 匹配摸鱼网站后出现的提示信息 - 随机激励语录
+3. 匹配摸鱼网站后出现的提示信息 - 随机语录
 
-![mottoSetting](https://img-blog.csdnimg.cn/20210625005925326.gif#pic_center)
+![](https://github.com/OBKoro1/stop-mess-around/blob/master/static/mottoSetting.gif?raw=true)
+
 4. 一些设置提示。
 
-![setting](https://img-blog.csdnimg.cn/20210625005924750.gif#pic_center)
+![](https://github.com/OBKoro1/stop-mess-around/blob/master/static/setting.gif?raw=true)
+
+
 ### 安装插件
 
 #### chrome应用商店
@@ -59,7 +64,8 @@
 
 1. 打开仓库的[releases](https://github.com/OBKoro1/stop-mess-around/releases), 下载最新版本的`zip`包到本地。
 
-![downZip](https://img-blog.csdnimg.cn/20210625010603658.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L09CS29ybzE=,size_16,color_FFFFFF,t_70#pic_center)
+![下载zip包](https://github.com/OBKoro1/stop-mess-around/blob/master/static/downZip.jpg?raw=true)
+
 2. 解压刚刚下载的zip包变成一个文件夹。
 3. 进入chrome扩展程序管理页面
 
@@ -68,7 +74,10 @@
 4. 打开开发者模式
 5. 加载已解压的扩展程序
 6. 选择刚才解压的那个文件夹。
-![setPlugin](https://img-blog.csdnimg.cn/20210625010603503.gif#pic_center)
+
+![本地安装插件](https://github.com/OBKoro1/stop-mess-around/blob/master/static/setPlugin.gif?raw=true)
+
+
 ### 插件文档
 
 [快速上手以及使用说明](https://github.com/OBKoro1/stop-mess-around/wiki/%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B%E4%BB%A5%E5%8F%8A%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E)
@@ -85,12 +94,18 @@
 
 1. 它是用于生成文件头部注释以及函数注释的，帮助我们养成良好的编码习惯，规范整个团队风格。
 2. 插件从18年5月维护至今, 2.7K+ Star，插件支持所有主流语言,功能强大，灵活方便，文档齐全，食用简单！
-![headTip](https://img-blog.csdnimg.cn/20210625010721742.gif#pic_center)
-![functionParams](https://img-blog.csdnimg.cn/20210625010718989.gif#pic_center)
+
+![头部注释](https://raw.githubusercontent.com/OBKoro1/koro1FileHeader/master/images/example.gif)
+
+![函数注释](https://github.com/OBKoro1/koro1FileHeader/raw/master/images/function-params.gif?raw=true)
+
 #### [AutoCommit](https://github.com/OBKoro1/autoCommit)
 
 这是一个用于Git自动commit的VSCode插件，它可以用来补充之前忘记提交commit，帮助你把首页的绿色格子填满。
-![autoCommit](https://img-blog.csdnimg.cn/20210625010731634.gif#pic_center)
+
+![autoCommit](https://github.com/OBKoro1/autoCommit/raw/master/images/autoCommit.gif?raw=true)
+
+
 ### License
 
 [MIT](http://opensource.org/licenses/MIT)
@@ -99,7 +114,7 @@
 
 十块八块不嫌多，三块五块也是爱 😘
 
-![](https://img-blog.csdnimg.cn/img_convert/83470560af7e6dc944d557998f676377.png)
+![](https://github.com/OBKoro1/koro1FileHeader/raw/master/images/money1.jpg?raw=true)
 
 ### 联系我
 
