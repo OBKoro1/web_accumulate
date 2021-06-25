@@ -41,7 +41,7 @@
 
 ![addCheckout](https://img-blog.csdnimg.cn/20210625005924363.gif#pic_center)
 
-3. 匹配摸鱼网站后出现的提示信息 - 随机语录
+3. 匹配摸鱼网站后出现的提示信息 - 随机激励语录
 
 ![mottoSetting](https://img-blog.csdnimg.cn/20210625005925326.gif#pic_center)
 4. 一些设置提示。

@@ -3,7 +3,7 @@
  # @Author: OBKoro1
  # @Created_time: 2019-06-24 09:47:03
  # LastEditors  : OBKoro1
- # LastEditTime : 2021-01-12 16:16:22
+ # LastEditTime : 2021-06-25 14:44:28
  # @Description: 部署 
 ###
 
@@ -26,10 +26,14 @@ cd docs/.vuepress/dist
 # 如果是发布到自定义域名
 # echo 'www.example.com' > CNAME
 
+ls
+
 git init
-git add -A
+git add .
 # npm run d 'commit值'
 git commit -m $1
+
+echo 'commit1'
 
 # 如果发布到 https://<USERNAME>.github.io
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
@@ -41,10 +45,18 @@ git push -f git@github.com:OBKoro1/web_accumulate.git master:gh-pages
 
 cd -
 
+echo '根目录'
+
+ls
+
 git add .
 
 git commit -m $1
 
+echo 'commit2'
+
 git push origin master:master # 推到github上
+
+echo '大功告成'
 
 # 直接执行 npm run d 'commit参数'
