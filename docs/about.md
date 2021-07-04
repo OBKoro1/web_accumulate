@@ -2,31 +2,136 @@
 
 ![](https://github.com/OBKoro1/articleImg_src/blob/master/weibo_img_move/005Y4rCogy1frhyu07uofj31hc0u0ah3.jpg?raw=true)
 
-### 作者信息
+## 热烈欢迎
 
-* [掘金年度作者](https://juejin.im/user/58714f0eb123db4a2eb95372/posts)
-* [Github](https://github.com/OBKoro1)
-* 开源项目:
-    
-    [autoCommit](https://github.com/OBKoro1/autoCommit): 一键补充之前忘记提交commit, 填满你GitHub的commit记录。
+Hi，大家好，我是OBKoro1，大家可以叫koro(扣肉)。
 
-    [VsCode文件头部注释生成插件](https://github.com/OBKoro1/koro1FileHeader): 自动添加文件头部注释等各种自定义功能, 支持一键添加佛祖保佑永无BUG、神兽护体等注释图案。
+很高兴你能来我的博客，希望我输出的内容能够让你有所收获。
 
-    [下载/替换 markdown中的图片](https://github.com/OBKoro1/markdown-img-down-site-change): 搜索目标文件夹中的markdown文件，找到目标图片，提供下载图片，替换图片链接的功能 - 用于处理图片外链失效的情况
+**希望你能够培养好自己的核心竞争力，多做有益于未来的事情**。
 
-    [H5 notification浏览器桌面通知](https://github.com/OBKoro1/notification-Koro1): 浏览器桌面弹窗
+**在这个浮躁的时代，按照自己的节奏和脚步一点点慢慢成长**。
 
-* 联系方式：
+**最终成为一个悠闲，自在，内心充实，安全感满满的人**~ 😘
 
-    邮箱：obkoro1@foxmail.com
+### 联系方式:
 
-    微信：OBkoro1
+* 社区: [GitHub](https://github.com/OBKoro1)、 [公众号](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/1631b6f52f7e7015.jpeg?raw=true)、[掘金](https://juejin.cn/user/78820536236951/posts)、[segmentfault](https://segmentfault.com/u/obkoro1/articles)、[博客](http://obkoro1.com/web_accumulate/)
 
-    ![](https://github.com/OBKoro1/articleImg_src/blob/master/weibo_img_move/005Y4rCogy1fsnslyz5pnj309j0cdgm6.jpg?raw=true)
+* 邮箱: obkoro1@foxmail.com / [微信](https://github.com/OBKoro1/articleImg_src/blob/master/weibo_img_move/005Y4rCogy1fsnslyz5pnj309j0cdgm6.jpg?raw=true)号: OBkoro1
 
-    微信公众号：OBKoro1前端进阶积累
+### 了解一下我的得意开源作品吧
 
-    ![微信公众号](https://github.com/OBKoro1/articleImg_src/blob/master/juejin/1631b6f52f7e7015.jpeg?raw=true)
+希望大家一定要了解一下我的这几个开源作品 都是广受好评 实用型的工具，说不定你就发现了宝贝，对你很有用呢😝
+
+#### [koroFileHeader](https://github.com/OBKoro1/koro1FileHeader)
+
+1. 它是用于生成文件头部注释以及函数注释的，帮助我们养成良好的编码习惯，规范整个团队风格。
+2. 插件从18年5月维护至今, 2.7K+ Star，插件支持所有主流语言,功能强大，灵活方便，文档齐全，食用简单！
+
+![头部注释](https://raw.githubusercontent.com/OBKoro1/koro1FileHeader/master/images/example.gif)
+
+![函数注释](https://github.com/OBKoro1/koro1FileHeader/raw/master/images/function-params.gif?raw=true)
+
+#### [stop-mess-around](https://github.com/OBKoro1/stop-mess-around)
+
+chrome插件**通过强制的手段禁止大家浪费时间摸鱼**，在上班/学习期间下意识的打开摸鱼网站, 自动检测摸鱼网站, 提示激励信息后, 关闭摸鱼网站。
+
+![](https://github.com/OBKoro1/stop-mess-around/raw/dev/static/start.gif?raw=true)
+
+#### [AutoCommit](https://github.com/OBKoro1/autoCommit)
+
+* 这是一个可以在任意时间范围自动提交commit的VSCode插件
+* 它可以自由控制每天的commit次数, 随机commit次数，使你的commit提交看起来更加逼真。
+* **它在平常不用运行，需要的时候花十几分钟一键刷commit，填满你的github首页绿色格子**。
+
+![](https://github.com/OBKoro1/autoCommit/raw/master/images/autoCommit.gif?raw=true)
+
+### 欢迎赞助
+
+如果我的开源项目还不错，对你有所帮助的话，就请我喝杯水吧~
+
+十块八块不嫌多，三块五块也是爱 😘
+
+![](https://github.com/OBKoro1/koro1FileHeader/raw/master/images/money1.jpg?raw=true)
+
+---
+
+### 关于扣肉
+
+![这是我](https://github.com/OBKoro1/articleImg_src/blob/master/weibo_img_move/005Y4rCogy1fsnsxa6lnlj30a70dldld.jpg?raw=true)
+
+上面是18年初的照片，我一直以来变化不大，现在会胖点 😭。
+
+我是95年生人，目前在上海工作，来自福建。
+
+再过几年可能要回福建发展，如果有在福建发展的小伙伴可以加我一下，多个朋友多条路嘛😝
+
+我的性格比较逗比，参考班级中比较闹腾的几个人的性格。
+
+我的情绪管理能力比较好，比较温和，就算是非常愤怒，也从来都没乱发脾气，没有失控过。
+
+我是一个热衷于开发效率工具与写原创博客的程序猿，在Github和社区你可以了解到这一点。
+
+我在上班时间之外基本都在这些爱好上面：
+
+**学习成长**
+
+工作日下班一般是十点左右开始学习，学到十二点多这样子(每天睡觉都好晚，接近两点😭)。
+
+周六周日如果没事情的话，早上睡觉，下午会看看书，然后维护一下开源项目，学习这样子。
+
+**高分电影和电视剧**
+
+我看电视剧还是比较少的，更多时候都是在看电影，强烈推荐大家也多看看优秀的电影，
+
+多看优秀的电影可以延长人类生命的广度(角色的多样化)和深度(引发的思考)。
+
+在我看来多看优秀的电影、电视剧会在潜移默化的情况让我们成为更好的人，帮助我们去塑造的三观，在遇到不同情况下如何去处理去选择。
+
+**篮球**
+
+我近期很喜欢打球，以前突破和组织比较多，今年来有意识的去锻炼投篮能力。
+
+现在中距离投篮也很厉害，蛮自信的，所以我成为一个投突传能力都有的boy。
+
+最近经常被包夹，在球场上威胁比较大，这也是对我能力的一种认可 哈哈哈。
+
+**健身**
+
+每周我会健身三次，在健身房撸铁+有氧、户外跑步。
+
+因为对身体健康也有帮助所以我很积极的去健身，况且我已经从健身流汗这件事感受到巨大的乐趣。
+
+现在我已经健身一年了，希望我可以继续坚持下去，养成一辈子的习惯。(2021年7月)
+
+**音乐**
+
+很多场景下都喜欢听歌(上班、下班学习、通勤、收拾房间、挂衣服、洗澡...)，特别是上班的时候，戴上降噪耳机，感觉世界都安静了，这样就可以专注的code了！
+
+听歌的类型比较喜欢能够让人心情愉悦，最喜欢的就是杰伦哥了，此外还喜欢很多歌手(陈奕迅、陈一发儿、毛不易、许嵩、好妹妹乐队、杨宗纬、李宗盛...)。
+
+每隔一两个月，我都会去K歌，叫上几个好友，唱三四个小时，虽然唱的不是很好听，但好在开心、尽兴！
+
+**游戏**
+
+我不玩手游，都是玩lol，跟朋友一起开黑（这游戏没人一起玩根本玩不下去）
+
+以前不懂事的时候，游戏打得非常多，不懂得怎么去控制自己，现在已经养成习惯，游戏时间比较固定。
+
+周五、周六、周日这三天九点多 十点多开始打游戏打到十二点多，一点多。
+
+### 最后
+> 再次衷心献上我的祝福😘
+
+很高兴你能来我的博客，希望我输出的内容能够让你有所收获。
+
+**希望你能够培养好自己的核心竞争力，多做有益于未来的事情**。
+
+**在这个浮躁的时代，按照自己的节奏和脚步一点点慢慢成长**。
+
+**最终成为一个悠闲，自在，内心充实，安全感满满的人**~ 😘
+
 
 
 <!-- ### 找对象呀：
