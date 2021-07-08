@@ -1,9 +1,8 @@
-# 我用来阻止你摸鱼看直播、知乎和微博的Chrome插件
-> chrome插件**通过强制的手段禁止大家浪费时间摸鱼**，在上班/学习期间下意识的打开摸鱼网站, 自动检测摸鱼网站, 提示激励信息后, 关闭摸鱼网站。
+# stop-mess-around
 
-### Github地址
+### 项目介绍
 
-[stop-mess-around](https://github.com/OBKoro1/stop-mess-around)
+这是一个防摸鱼的chrome插件： **通过强制的手段禁止大家浪费时间摸鱼**，在上班/学习期间下意识的打开摸鱼网站, 自动检测摸鱼网站, 提示激励信息后, 关闭摸鱼网站。
 
 ### 插件解决的问题: 停止下意识的摸鱼
 
@@ -33,6 +32,11 @@
 
 希望这个开源工具可以有效的帮助大家减少摸鱼时间，提高工作和学习的效率。
 
+### 插件文档
+
+[安装插件、快速上手以及使用说明](https://github.com/OBKoro1/stop-mess-around/wiki/%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B%E4%BB%A5%E5%8F%8A%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E)
+
+[插件节省下来的时间如何合理利用](https://github.com/OBKoro1/stop-mess-around/wiki/%E5%A6%82%E4%BD%95%E5%90%88%E7%90%86%E5%88%A9%E7%94%A8%E6%97%B6%E9%97%B4)
 ### 使用示例
 
 1. 添加摸鱼网站以及匹配摸鱼网站弹窗提示、关闭网页
@@ -51,42 +55,44 @@
 
 ![](https://github.com/OBKoro1/stop-mess-around/blob/master/static/setting.gif?raw=true)
 
+### chrome应用商店
 
-### 安装插件
+1. 打开[Chrome应用商店搜索: stop-mess-around](https://chrome.google.com/webstore/detail/stop-mess-around/gbjbkekbbjbieijpebieifkmahlagncm/related?hl=zh-CN)，点击安装即可。
 
-#### chrome应用商店
+![](https://github.com/OBKoro1/stop-mess-around/blob/master/static/down.png?raw=true)
 
-审核中，暂不支持。
+2. 固定插件到顶部
 
-#### 本地安装
+![](https://github.com/OBKoro1/stop-mess-around/blob/master/static/top.png?raw=true)
 
-只需要6步即可安装，非常方便，快捷。
+## 快速上手
+> 下面有几张演示的gif, 可能需要翻墙才能加载出来。
 
-1. 打开仓库的[releases](https://github.com/OBKoro1/stop-mess-around/releases), 下载最新版本的`zip`包到本地。
+1. [安装插件](https://github.com/OBKoro1/stop-mess-around/wiki/%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B%E4%BB%A5%E5%8F%8A%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E#%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6) 
+2. 左键点击插件图标，打开插件管理面板
 
-![下载zip包](https://github.com/OBKoro1/stop-mess-around/blob/master/static/downZip.jpg?raw=true)
+![](https://github.com/OBKoro1/stop-mess-around/blob/master/static/openoptions.png?raw=true)
 
-2. 解压刚刚下载的zip包变成一个文件夹。
-3. 进入chrome扩展程序管理页面
+3. 点击新增按钮新增摸鱼网站、或者一键添加摸鱼网站。
 
-选项(右上角)-> 更多工具 -> 扩展程序
+![一键开启/关闭以及批量添加摸鱼网站](https://github.com/OBKoro1/stop-mess-around/blob/master/static/addCheckout.gif?raw=true)
+4. 打开任意网站，插件会去匹配是否添加到摸鱼网站列表中
+5. 如果匹配到则会打开一个含有提示信息的弹窗,关闭弹窗后将会停留几秒后关闭网站或者跳转到指定网站。
 
-4. 打开开发者模式
-5. 加载已解压的扩展程序
-6. 选择刚才解压的那个文件夹。
+![添加摸鱼网站并检查](https://github.com/OBKoro1/stop-mess-around/blob/master/static/start.gif?raw=true)
 
-![本地安装插件](https://github.com/OBKoro1/stop-mess-around/blob/master/static/setPlugin.gif?raw=true)
+### 点个Star吧~
 
+如果觉得这个插件还不错，对你有所帮助的话，就给我点个Star吧，谢谢兄弟姐妹们~
 
-### 插件文档
+### 欢迎赞助
 
-[快速上手以及使用说明](https://github.com/OBKoro1/stop-mess-around/wiki/%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B%E4%BB%A5%E5%8F%8A%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E)
+如果觉得插件还不错，对你有所帮助的话，就请我喝杯水吧~
 
-[插件节省下来的时间如何合理利用](https://github.com/OBKoro1/stop-mess-around/wiki/%E5%A6%82%E4%BD%95%E5%90%88%E7%90%86%E5%88%A9%E7%94%A8%E6%97%B6%E9%97%B4)
+十块八块不嫌多，三块五块也是爱 😘
 
-### 点个Star吧
+![](https://github.com/OBKoro1/koro1FileHeader/raw/master/images/money1.jpg?raw=true)
 
-如果觉得这个插件还不错，对你有所帮助的话，就给我点个[Star]((https://github.com/OBKoro1/stop-mess-around))吧~
 
 ### 我的其他开源推荐
 
@@ -103,18 +109,13 @@
 
 这是一个用于Git自动commit的VSCode插件，它可以用来补充之前忘记提交commit，帮助你把首页的绿色格子填满。
 
-![autoCommit](https://github.com/OBKoro1/autoCommit/raw/master/images/autoCommit.gif?raw=true)
+![](https://github.com/OBKoro1/autoCommit/raw/master/images/autoCommit.gif?raw=true)
 
 
 ### License
 
 [MIT](http://opensource.org/licenses/MIT)
 
-### 欢迎赞助
-
-十块八块不嫌多，三块五块也是爱 😘
-
-![](https://github.com/OBKoro1/koro1FileHeader/raw/master/images/money1.jpg?raw=true)
 
 ### 联系我
 
