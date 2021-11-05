@@ -2,8 +2,8 @@
  * @Github: https://github.com/OBKoro1
  * @Author: OBKoro1
  * @Date: 2019-07-29 15:24:40
- * LastEditors: OBKoro1
- * LastEditTime: 2019-10-22 17:10:24
+ * LastEditors  : OBKoro1
+ * LastEditTime : 2021-11-05 18:19:06
  * @Description: 
  */
 
@@ -38,26 +38,25 @@ module.exports = {
     nav: [
       { text: '前端积累', link: '/accumulate/' },
       { text: '前端算法', link: '/algorithm/' },
+      { text: '大厂前端需要的能力', link: 'https://github.com/OBKoro1/web-basics' },
       { text: '代码块', link: '/codeBlack/' },
       {
-        text: 'GitHub',
+        text: 'GitHub开源',
         items: [
           {
-            text: '前端进阶积累',
-            link: 'https://github.com/OBKoro1/web_accumulate'
-          },
-          {
-            text: '开箱即用的代码块',
-            link: 'https://github.com/OBKoro1/web_accumulate'
-          },
-          {
-            text: '前端算法',
-            link: 'https://github.com/OBKoro1/Brush_algorithm'
-          },
-          {
-            text: 'VsCode头部注释插件',
+            text: 'VSCode自动生成头部注释和函数注释',
             link:
               'https://github.com/OBKoro1/koro1FileHeader'
+          },
+          {
+            text: '提高学习、工作效率，禁止摸鱼的谷歌插件',
+            link:
+              'https://github.com/OBKoro1/stop-mess-around'
+          },
+          {
+            text: '自动刷github首页commit绿格子',
+            link:
+              'https://github.com/OBKoro1/autoCommit'
           },
           {
             text: '一键替换markdown失效图片外链',
