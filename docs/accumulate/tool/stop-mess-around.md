@@ -1,89 +1,130 @@
-# stop-mess-around
+# 减少摸鱼的时间和频率的Chrome插件：新增摸鱼倒计时、摸鱼时间统计、休息一下、github1s 在线VSCode查看github仓库代码等功能
+
+<div style="display: flex;">
+    <a style="margin-right: 15px" href="https://github.com/OBKoro1/stop-mess-around">
+        <img alt="koro1FileHeader Repo stars" src="https://img.shields.io/github/stars/OBKoro1/stop-mess-around">
+    </a>
+    <a style="margin-right: 15px" href="https://github.com/OBKoro1/stop-mess-around/wiki/%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B%E4%BB%A5%E5%8F%8A%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E">
+        <img alt="wiki文档详细" src="https://img.shields.io/badge/wiki文档-齐全详细-blue">
+    </a>
+    <a  href="hhttps://github.com/OBKoro1/stop-mess-around/releases">
+        <img style="margin-right: 15px" alt="持续维护" src="https://img.shields.io/badge/2021年开源-持续维护-blue">
+        <img style="margin-right: 15px" alt="cicd" src="https://img.shields.io/badge/版本打包-release-blue">
+    </a>
+    <a style="margin-right: 15px" href="https://github.com/OBKoro1/stop-mess-around/blob/master/LICENSE">
+        <img alt="开源协议-MIT" src="https://img.shields.io/badge/license-MIT-blue">
+    </a>
+</div>
+
 
 ### 项目介绍
 
-这是一个防摸鱼的chrome插件： **通过强制的手段禁止大家浪费时间摸鱼**，在上班/学习期间下意识的打开摸鱼网站, 自动检测摸鱼网站, 提示激励信息后, 关闭摸鱼网站。
+减少摸鱼的时间和频率的Chrome插件：**在上班/学习期间很容易下意识的打开摸鱼网站，插件帮助我们减少摸鱼的时间和频率，提高我们上班和学习的效率，节省时间用于学习提升自己或者享受生活**。
 
-### 插件解决的问题: 停止下意识的摸鱼
-
-在工作、学习期间，如果事情不是太忙，或者说在学习/忙碌一小段时间之后。
-
-**就会下意识的打开或者输入知乎、掘金沸点、微博等网站，开始了摸鱼时光**。
-
-**可能是摸鱼奶头乐太快乐了，时间很快就过去两三个小时，而忘记自己的工作、学习初衷了**。
-
-事后我们通常会为之内疚，觉得很浪费时间
-
-但无奈摸鱼网站深谙人性弱点，仅靠我们自身的自律还是很难去抵抗这种诱惑。
-
-作者本人曾经也深受其害，后来我想到可以用工具来限制这种下意识的行为。
-
-于是很喜欢写工具的我, 写了一个脚本**用来检测摸鱼网站、检测到了就自动关闭摸鱼网站**。
-
-**我在经过一段时间的使用之后，我就再也没有在电脑上打开摸鱼网站了，工作学习效率也提高了很多**。
-
-**很奇怪，每次打开之后就被插件提示我不要摸鱼，然后被关闭摸鱼网站。**
-
-**久而久之我就戒掉了在休息的间隙没事做就打开摸鱼网站的习惯了**。
-
-**就我个人而言，真的很有用，很有效果，为我节省了很多时间**。
-
-所以我将它做成chrome插件，开发了可视化的界面，方便不懂技术的人也可以直接上手使用。
-
-希望这个开源工具可以有效的帮助大家减少摸鱼时间，提高工作和学习的效率。
+如果觉得这个插件还不错，对你有所帮助的话，就点个[Star⭐️](https://github.com/OBKoro1/stop-mess-around)吧~
 
 ### 插件文档
 
-[安装插件、快速上手以及使用说明](https://github.com/OBKoro1/stop-mess-around/wiki/%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B%E4%BB%A5%E5%8F%8A%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E)
+[安装插件以及快速上手](https://github.com/OBKoro1/stop-mess-around/wiki/%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B#%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6)
 
-[插件节省下来的时间如何合理利用](https://github.com/OBKoro1/stop-mess-around/wiki/%E5%A6%82%E4%BD%95%E5%90%88%E7%90%86%E5%88%A9%E7%94%A8%E6%97%B6%E9%97%B4)
-### 使用示例
+[功能示例以及使用说明](https://github.com/OBKoro1/stop-mess-around/wiki/%E5%8A%9F%E8%83%BD%E7%A4%BA%E4%BE%8B%E4%BB%A5%E5%8F%8A%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E)
 
-1. 添加摸鱼网站以及匹配摸鱼网站弹窗提示、关闭网页
+[更新日志](https://github.com/OBKoro1/stop-mess-around/blob/master/CHANNGELOG.md)
 
-![](https://github.com/OBKoro1/stop-mess-around/blob/master/static/start.gif?raw=true)
 
-2. 一键开启/关闭以及批量添加摸鱼网站
 
-![](https://github.com/OBKoro1/stop-mess-around/blob/master/static/addCheckout.gif?raw=true)
 
-3. 匹配摸鱼网站后出现的提示信息 - 随机语录
+### 插件的价值与使用场景
 
-![](https://github.com/OBKoro1/stop-mess-around/blob/master/static/mottoSetting.gif?raw=true)
+> 就我个人而言，真的很有用，很有效果。帮我抵制了摸鱼网站的诱惑，减少了摸鱼的时间与频率，为我节省了很多时间。
 
-4. 一些设置提示。
+#### 摸鱼时起到提醒的作用，在摸鱼的时候知道自己在摸鱼。
 
-![](https://github.com/OBKoro1/stop-mess-around/blob/master/static/setting.gif?raw=true)
+匹配摸鱼网站有弹窗提醒，关闭摸鱼检测又有倒计时和摸鱼时长统计。
 
-### chrome应用商店
+在摸鱼的时候知道自己摸鱼，休息好之后，就又可以投入学习和工作了。
 
-1. 打开[Chrome应用商店搜索: stop-mess-around](https://chrome.google.com/webstore/detail/stop-mess-around/gbjbkekbbjbieijpebieifkmahlagncm/related?hl=zh-CN)，点击安装即可。
+而不是**下意识的打开网页浏览摸鱼网站，因为奶头乐比较爽，然后一看就是好几个小时过去了，事后又会觉得内疚与空虚**。
 
-![](https://github.com/OBKoro1/stop-mess-around/blob/master/static/down.png?raw=true)
+#### 自制力较差的同学，想要提高工作和学习的效率，但是又经常摸鱼，
 
-2. 固定插件到顶部
+自制力差的同学可以用工具来对抗诱惑，摸鱼的快乐很容易让人沉迷。
 
-![](https://github.com/OBKoro1/stop-mess-around/blob/master/static/top.png?raw=true)
+从而导致工作和学习的效率并不高。
 
-## 快速上手
-> 下面有几张演示的gif, 可能需要翻墙才能加载出来。
+**插件使用时间久了，自然而然也会降低自己摸鱼的频率和时间的**。
+  
+摸鱼少了，工作和学习的效率就高了。
 
-1. [安装插件](https://github.com/OBKoro1/stop-mess-around/wiki/%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B%E4%BB%A5%E5%8F%8A%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E#%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6) 
-2. 左键点击插件图标，打开插件管理面板
+节省下来的时间，可以用于学习提升自己或者享受生活（早点下班，去阅读，去健身，去吃喝玩乐，做任何自己喜欢的事情）。
 
-![](https://github.com/OBKoro1/stop-mess-around/blob/master/static/openoptions.png?raw=true)
+#### 需要稍微奋斗~~卷~~一下的时候，希望自己减少点摸鱼。
 
-3. 点击新增按钮新增摸鱼网站、或者一键添加摸鱼网站。
+ * 比如需求截止时间要到了，希望自己减少点摸鱼。
+    
+ * 比如某段时间比较忙，希望自己减少点摸鱼。
+    
+ * 比如要忙着毕设、期末考试等，希望自己减少点摸鱼
+    
+#### 奋斗逼、卷王
 
-![一键开启/关闭以及批量添加摸鱼网站](https://github.com/OBKoro1/stop-mess-around/blob/master/static/addCheckout.gif?raw=true)
-4. 打开任意网站，插件会去匹配是否添加到摸鱼网站列表中
-5. 如果匹配到则会打开一个含有提示信息的弹窗,关闭弹窗后将会停留几秒后关闭网站或者跳转到指定网站。
+这类同学不多说了，懂得都懂。😂
 
-![添加摸鱼网站并检查](https://github.com/OBKoro1/stop-mess-around/blob/master/static/start.gif?raw=true)
+## 插件功能示例
 
-### 点个Star吧~
+### 演示Gif
 
-如果觉得这个插件还不错，对你有所帮助的话，就给我点个Star吧，谢谢兄弟姐妹们~
+![](https://github.com/OBKoro1/stop-mess-around/blob/dev/static/example/run-introduction.gif?raw=true)
+
+### 匹配摸鱼网址
+
+打开网页后，插件会自动匹配自己配置的摸鱼网站。
+
+成功匹配后，弹出提示信息，提示用户关闭摸鱼网站。
+
+如果觉得疲惫了，也可以选择休息一下。
+
+![](https://github.com/OBKoro1/stop-mess-around/blob/dev/static/feat/matchWebSite.jpg?raw=true)
+
+### 网站摸鱼检测关闭，摸鱼休息时间提醒
+
+当你关闭摸鱼网站检测时，会在摸鱼网站的右侧有一个倒计时提醒以及摸鱼时间统计。
+
+如果不需要，这项配置可以在插件的管理面板的设置中关闭的。
+
+![](https://github.com/OBKoro1/stop-mess-around/blob/dev/static/feat/restTipTime.jpg?raw=true)
+
+### 近百日摸鱼时间统计表
+
+插件会统计近一百天的摸鱼数据，超过一百天则会被删掉。
+
+每天会根据摸鱼耗时进行排序，会统计摸鱼休息时间的点击情况。
+
+如果提前关闭摸鱼，会返回剩余的摸鱼时间
+
+![](https://github.com/OBKoro1/stop-mess-around/blob/dev/static/feat/touchFishTable.jpg?raw=true)
+
+### 插件管理面板
+
+点击插件图标，打开插件管理模板，对插件进行配置。
+
+![](https://github.com/OBKoro1/stop-mess-around/blob/dev/static/feat/setting-feat.jpg?raw=true)
+
+### 在线VSCode快速查看仓库代码
+
+现在查看Github仓库代码，可以直接把`github.com/仓库地址`改成`github.dev/仓库地址`(官方)和`github1s.com/地址`，这两种形式来使用在线版的VSCode来查看。
+
+* 在[github1s](https://chrome.google.com/webstore/detail/open-in-vs-code-github1sc/neloiopjjeflfnecdlajhopdlojlkhll?hl=zh-CN)这个插件看到这个小功能，因为确实蛮实用的，也不想再装插件了，想着把它也集成到本插件中
+
+* 插件直接把按钮显示在仓库名旁边，这样在`wiki`、`actions`、`issues`、`Pull Request`等页面也可以使用
+
+* 支持`github.dev`(默认)以及`github1s`，可以去（插件管理面板 => 设置）更改
+
+PS：我以前都是用`Octotree`文件树来查看代码的，现在感觉可以把这个插件删掉了 哈哈，还是直接用在线VSCode比较香
+
+![](https://github.com/OBKoro1/stop-mess-around/blob/dev/static/feat/lookCode.jpg?raw=true)
+
+
 
 ### 欢迎赞助
 
@@ -93,15 +134,20 @@
 
 ![](https://github.com/OBKoro1/koro1FileHeader/raw/master/images/money1.jpg?raw=true)
 
-
 ### 我的其他开源推荐
 
 #### [koroFileHeader](https://github.com/OBKoro1/koro1FileHeader)
 
-1. 它是用于生成文件头部注释以及函数注释的，帮助我们养成良好的编码习惯，规范整个团队风格。
-2. 插件从18年5月维护至今, 2.7K+ Star，插件支持所有主流语言,功能强大，灵活方便，文档齐全，食用简单！
+1. 它是用于一键生成文件头部注释并自动更新最后编辑人和编辑时间、函数注释自动生成和参数提取。
+2. 插件支持所有主流语言,功能强大，配置灵活方便，文档齐全，食用简单！
+3. 插件从2018年5月维护至今, 3K+ Star，关闭issue 300+
+4. 目前拥有250K+的用户，VSCode图表统计日安装用户100多-400多人，帮助用户养成良好的编码习惯，规范整个团队风格。
+
+自动生成头部注释以及自动更新头部注释
 
 ![头部注释](https://raw.githubusercontent.com/OBKoro1/koro1FileHeader/master/images/example.gif)
+
+函数注释参数生成以及参数自动提取
 
 ![函数注释](https://github.com/OBKoro1/koro1FileHeader/raw/master/images/function-params.gif?raw=true)
 

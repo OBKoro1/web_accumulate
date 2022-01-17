@@ -1,10 +1,10 @@
 ###
- # @Github: https://github.com/OBKoro1
- # @Author: OBKoro1
- # @Created_time: 2019-06-24 09:47:03
- # LastEditors  : OBKoro1
- # LastEditTime : 2021-06-25 15:27:18
- # @Description: 部署 
+# @Github: https://github.com/OBKoro1
+# @Author: OBKoro1
+# @Created_time: 2019-06-24 09:47:03
+# LastEditors  : OBKoro1
+# LastEditTime : 2022-01-18 01:46:00
+# @Description: 部署
 ###
 
 !/usr/bin/env sh
@@ -59,5 +59,5 @@ git push origin master:master # 推到github上
 
 echo '大功告成'
 
-# TODO: 不能以 'feat: commit信息的形式推送'
-# 只能 npm run d 'commit信息'
+# TODO: 部署传参
+# npm run d -- 'commit信息'

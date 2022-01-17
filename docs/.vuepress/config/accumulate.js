@@ -2,14 +2,14 @@
  * Author: OBKoro1
  * Date: 2019-10-22 17:02:20
  * LastEditors  : OBKoro1
- * LastEditTime : 2021-12-15 11:46:12
+ * LastEditTime : 2022-01-18 01:35:32
  * FilePath     : /web_accumulate/docs/.vuepress/config/accumulate.js
  * Description: 前端积累页面左侧配置
  */
 
 module.exports = [
-    '/accumulate/year/2021',
     '/accumulate/tool/stop-mess-around',
+    '/accumulate/year/2021',
     '/accumulate/electron/electron-terminal-demo',
     '/accumulate/tool/electron-playground',
     '/accumulate/year/2020',
