@@ -3,7 +3,7 @@
 # @Author: OBKoro1
 # @Created_time: 2019-06-24 09:47:03
 # LastEditors  : OBKoro1
-# LastEditTime : 2022-01-18 01:46:00
+# LastEditTime : 2022-01-18 02:26:35
 # @Description: 部署
 ###
 
@@ -18,7 +18,7 @@ set -e
 echo $1
 
 # 生成静态文件
-npm run build $1
+npm run build -- $1
 
 # 进入生成的文件夹
 cd docs/.vuepress/dist

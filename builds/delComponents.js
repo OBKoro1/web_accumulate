@@ -2,8 +2,8 @@
  * @Github: https://github.com/OBKoro1
  * @Author: OBKoro1
  * @Created_time: 2019-06-24 10:13:36
- * LastEditors: OBKoro1
- * LastEditTime: 2019-09-21 19:47:42
+ * LastEditors  : OBKoro1
+ * LastEditTime : 2022-01-18 02:28:28
  * @Description: 
  * 复制readme到codeBlack、Brush_algorithm
  * 更新进阶积累文档readme
@@ -16,8 +16,15 @@ const findMarkdown = require('./findMarkdown')
 
 findMarkdown.findMarkdown(findMarkdown.source, delComponents)
 
-const commitParam = process.argv[2] // commit 参数
+function getParams(){
+    // 去掉路径等不需要的参数
+    process.argv.shift()
+    process.argv.shift() 
+    return process.argv.join('')
+}
 
+const commitParam = getParams()
+console.log('===============', commitParam)
 compareFile('./docs/codeBlack/README.md', '../codeBlack')
 compareFile('./docs/algorithm/README.md', '../Brush_algorithm')
 
@@ -28,7 +35,7 @@ function compareFile(file, elesFile) {
         file,
         `${elesFile}/README.md`,
     );
-    myExecSync(`ls && cd ${elesFile} && git add . && git commit -m ${commitParam} && git push`)
+    myExecSync(`ls && cd ${elesFile} && git add . && git commit -m '${commitParam}' && git push`)
     function myExecSync(cmd) {
         // 除了该方法直到子进程完全关闭后才返回 执行完毕 返回
         try {
